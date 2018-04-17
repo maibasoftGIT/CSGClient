@@ -17976,8 +17976,8 @@ var CommonMessageComponent = (function () {
 var GlobalAssets = (function () {
     //this.GET_CMRC_FINANCE_DETAILS_BY_DIS = this.BASE_URL + "/Dashboard/GetCMRCFinancialDetails?cmrcId=";
     function GlobalAssets() {
-        this.environment = "local";
-        this.environment = "local";
+        this.environment = "azureProd";
+        this.environment = "azureProd";
         if (this.environment === "local") {
             this.BASE_URL = "http://localhost:59611/api";
             this.TOKEN = "http://localhost:59611/Token";
