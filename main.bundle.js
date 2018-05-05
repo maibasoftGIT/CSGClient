@@ -18881,8 +18881,8 @@ var GlobalAssets = (function () {
                 this.TOKEN = "https://csguatapi.azurewebsites.net/Token";
             }
             if (this.environment === "azureProd") {
-                this.BASE_URL = "https://apicsg.azurewebsites.net/api";
-                this.TOKEN = "https://apicsg.azurewebsites.net/Token";
+                this.BASE_URL = "https://csgapi.azurewebsites.net/api";
+                this.TOKEN = "https://csgapi.azurewebsites.net/Token";
             }
         },
         enumerable: true,
