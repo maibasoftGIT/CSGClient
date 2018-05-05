@@ -1335,6 +1335,7 @@ var CMRCDashboardComponent = (function () {
                     _this._globalURL.isLoading = false;
                 }
             }
+            _this._globalURL.isLoading = false;
         }).catch(function (res) {
             _this._globalURL.isLoading = false;
             _this.message = _this._common_message.CatchBlockMsg;
@@ -18601,8 +18602,8 @@ var GlobalAssets = (function () {
             this.TOKEN = "https://csguatapi.azurewebsites.net/Token";
         }
         if (this.environment === "azureProd") {
-            this.BASE_URL = "https://apicsg.azurewebsites.net/api";
-            this.TOKEN = "https://apicsg.azurewebsites.net/Token";
+            this.BASE_URL = "https://csgapi.azurewebsites.net/api";
+            this.TOKEN = "https://csgapi.azurewebsites.net/Token";
         }
         this.GET_NEXT_CODE = this.BASE_URL + "/Account/GetNextCode?code=";
         this.gettest = this.BASE_URL + "/Test/GetTest";
