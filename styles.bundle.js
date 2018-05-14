@@ -113,14 +113,14 @@ module.exports = __webpack_require__.p + "fontawesome-webfont.b06871f281fee6b241
 /***/ "../../../../../src/app/assets/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "fontawesome-webfont.af7ae505a9eed503f8b8.woff2";
+// module.exports = __webpack_require__.p + "fontawesome-webfont.af7ae505a9eed503f8b8.woff2";
 
 /***/ }),
 
 /***/ "../../../../../src/app/assets/bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "fontawesome-webfont.fee66e712a8a08eef580.woff";
+// module.exports = __webpack_require__.p + "fontawesome-webfont.fee66e712a8a08eef580.woff";
 
 /***/ }),
 
