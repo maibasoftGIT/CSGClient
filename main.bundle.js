@@ -1628,7 +1628,7 @@ var AreaComponent = (function () {
 /***/ "../../../../../src/app/components/cmrc/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<dashboard-selector></dashboard-selector>"
+module.exports = "<!-- <div class=\"modal-backdrop in\" *ngIf=\"_globalURL.isLoading\">\r\n  <loading-selector>\r\n  </loading-selector>\r\n</div> -->\r\n<!-- <div *ngIf=\"showMessage\">\r\n  <message-selector [message]=\"message\">\r\n  </message-selector>\r\n</div> -->\r\n<div *ngIf=\"showErrorMessage\">\r\n    <error-message-selector [message]=\"message\">\r\n    </error-message-selector>\r\n  </div>\r\n  <div *ngIf=\"showWarningMessage\">\r\n    <warning-message-selector [message]=\"message\">\r\n    </warning-message-selector>\r\n  </div>\r\n  <section class=\"row content-header\" style=\"padding-top:30px;\">\r\n      <div class=\"col-md-4\">\r\n        <label style=\"font-size:20px\" *ngIf=\"showCmrcDashbord\">\r\n          CMRC DASHBOARD DETAILS\r\n        </label>\r\n      </div>\r\n      <div class=\"col-md-8\">\r\n        <div class=\"col-md-2\">\r\n          <label style=\"font-size:15px\" *ngIf=\"showVoOnlyForCMRC == '2'\">\r\n            <span *ngIf=\"lang.en\">SELECT VO</span>\r\n            <span *ngIf=\"lang.mr\">व्हीओ निवडा</span>\r\n          </label>\r\n        </div>\r\n        <div class=\"col-md-5\">\r\n          <select [disabled]=\"!showCmrcDashbord\" class=\"form-control\" (change)=\"voDashboard(selectedVoId.viewModel)\" (ngModel)=\"selectedVoId\"\r\n            #selectedVoId=\"ngModel\" id=\"selectVo\" name=\"selectVo\">\r\n            <option *ngFor=\"let Vo of Vos\" [value]=\"Vo.Key\">{{Vo.Value}}</option>\r\n          </select>\r\n        </div>\r\n        <div class=\"col-md-2\">\r\n          <label>\r\n            <button [disabled]=\"showCmrcDashbord\" class=\"btn btn-primary\" (click)=\"refreshDashboard()\">CHANGE</button>\r\n          </label>\r\n        </div>\r\n        <div class=\"col-md-3\">\r\n          <button class=\"btn btn-primary\" (click)=\"showCMRCDashboard()\" [disabled]=\"showCmrcDashbord\">\r\n            VIEW MY DASHBOARD\r\n          </button>\r\n        </div>\r\n      </div>\r\n    \r\n    </section>\r\n  <section class=\"content\" *ngIf=\"showCmrcDashbord\" style=\"margin-top:27px;\">\r\n    <!-- Info boxes -->\r\n    <div class=\"modal-backdrop in\" *ngIf=\"_globalURL.isLoading\">\r\n      <loading-selector>\r\n      </loading-selector>\r\n    </div>\r\n    <div class=\" vo_dashboard\">\r\n      <div class=\"row\">\r\n        <div class=\"col-sm-4\">\r\n          <div class=\"box-body box_section\">\r\n            <table class=\"table\" style=\"width:100%\">\r\n              <thead>\r\n                <tr *ngFor=\"let count of cmrcCounts\" style=\"border:1px solid #fff\">\r\n                  <th class=\"finance-heading-name\">\r\n                    <div class=\"dashboard-finance-details\">\r\n                      <h5>\r\n                        <b>\r\n                          <span *ngIf=\"lang.en\">\r\n                            TOTAL\r\n                            <span class=\"text-center\" style=\"margin-top:0px\">{{count.Type | uppercase}} </span>\r\n                          </span>\r\n                          <span *ngIf=\"lang.mr\">एकूण\r\n                            <span class=\"text-center\" style=\"margin-top:0px\">{{count.Type | uppercase}} </span>\r\n                          </span>\r\n                        </b>\r\n                      </h5>\r\n                    </div>\r\n                  </th>\r\n                  <th class=\"finance-heading-value\">\r\n                    <div class=\"dashboard-finance-details\">\r\n                      <h5>\r\n                        <b>{{count.Count}}</b>\r\n                      </h5>\r\n                    </div>\r\n                  </th>\r\n                </tr>\r\n                <tr style=\"border:1px solid #fff\">\r\n                  <th class=\"finance-heading-name\">\r\n                    <div class=\"dashboard-finance-details\">\r\n                      <h5>\r\n                        <b>\r\n                          TOTAL CAPITAL RESERVED FUND\r\n                        </b>\r\n                      </h5>\r\n                    </div>\r\n                  </th>\r\n                  <th class=\"finance-heading-value\">\r\n                    <div class=\"dashboard-finance-details\">\r\n                      <h5>\r\n                        <b>{{financeDetails.TotalFundAmtAvailable | currency: 'INR'}}</b>\r\n                      </h5>\r\n                    </div>\r\n                  </th>\r\n                </tr>\r\n                <tr style=\"border:1px solid #fff\">\r\n                  <th class=\"finance-heading-name\">\r\n                    <div class=\"dashboard-finance-details\">\r\n                      <h5>\r\n                        <b>\r\n                          TOTAL FUND DISTRIBUTED\r\n                        </b>\r\n                      </h5>\r\n                    </div>\r\n                  </th>\r\n                  <th class=\"finance-heading-value\">\r\n                    <div class=\"dashboard-finance-details\">\r\n                      <h5>\r\n                        <b>{{financeDetails.TotalFundAmtSpend | currency: 'INR'}}</b>\r\n                      </h5>\r\n                    </div>\r\n                  </th>\r\n                </tr>\r\n                <tr style=\"border:1px solid #fff\">\r\n                  <th class=\"finance-heading-name\">\r\n                    <div class=\"dashboard-finance-details\">\r\n                      <h5>\r\n                        <b>\r\n                          TOTAL FUND AVAILABLE\r\n                        </b>\r\n                      </h5>\r\n                    </div>\r\n                  </th>\r\n                  <th class=\"finance-heading-value\">\r\n                    <div class=\"dashboard-finance-details\">\r\n                      <h5>\r\n                        <b>{{financeDetails.TotalAmtAvailable | currency: 'INR'}}</b>\r\n                      </h5>\r\n                    </div>\r\n                  </th>\r\n                </tr>\r\n              </thead>\r\n            </table>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-md-8\">\r\n          <div class=\"box-body box_section\" style=\"overflow:auto;\">\r\n            <table class=\"table table-bordered common_table\">\r\n              <caption class=\"text-center btn-info\" style=\"color:#fff; background-color: cadetblue\">\r\n                <h4 style=\"margin:-3px 10px;\" *ngIf=\"lang.en\">\r\n                  <label class=\"table-head\"> COMMUNITY MANAGED RESOURCE CENTER (CMRC)</label>\r\n                  <button class=\"btn btn-primary pdf-button\" (click)=\"R23CmrcSummeryExportToPDF()\">\r\n                    <span>\r\n                      <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n                    </span>\r\n                    PDF</button>\r\n                </h4>\r\n                <h4 style=\"margin:-3px 10px;\" *ngIf=\"lang.mr\">\r\n                  <label class=\"table-head\"> समुदाय संगोपन संसाधन केंद्र</label>\r\n                  <button class=\"btn btn-primary pdf-button\" (click)=\"R23CmrcSummeryExportToPDF()\">\r\n                    <span>\r\n                      <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n                    </span>\r\n                    PDF</button>\r\n                </h4>\r\n              </caption>\r\n              <thead>\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">CMRC NAME</span>\r\n                    <span *ngIf=\"lang.mr\">सि.एम.आर.सी. नाव</span>\r\n                  </th>\r\n                  <td colspan=\"3\">{{cmrcDetails.Name | uppercase}}</td>\r\n                </tr>\r\n                <br>\r\n              </thead>\r\n              <tbody style=\"margin-top:12px;\">\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">AREA</span>\r\n                    <span *ngIf=\"lang.mr\">क्षेत्र</span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.Area | uppercase}}</td>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">PAN CARD NUMBER</span>\r\n                    <span *ngIf=\"lang.mr\">पॅन कार्ड क्रमांक </span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.PanCardNumber}}</td>\r\n                </tr>\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">VILLAGE NAME</span>\r\n                    <span *ngIf=\"lang.mr\">गावाचे नांव </span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.Taluka | uppercase}}</td>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">CMRC FORMATION DATE</span>\r\n                    <span *ngIf=\"lang.mr\">\r\n                      सीएमआरसी स्थापना दिनांक\r\n                    </span>\r\n                  </th>\r\n  \r\n                  <td>{{cmrcDetails.FormationDate | date: 'dd-MMM-yyyy'}}</td>\r\n                </tr>\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">ADDRESS</span>\r\n                    <span *ngIf=\"lang.mr\">पत्ता </span>\r\n                  </th>\r\n                  <td style=\"width:32%;\">{{cmrcDetails.Address | uppercase}}</td>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">BANK AC NO</span>\r\n                    <span *ngIf=\"lang.mr\">\r\n                      बँक खाते क्रमांक\r\n                    </span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.BankAccountNumber}}</td>\r\n                </tr>\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">TALUKA</span>\r\n                    <span *ngIf=\"lang.mr\">तालुका </span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.Taluka | uppercase}}</td>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">BANK NAME</span>\r\n                    <span *ngIf=\"lang.mr\">बँकेचे नांव </span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.BankName | uppercase}}</td>\r\n                </tr>\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">DISTRICT</span>\r\n                    <span *ngIf=\"lang.mr\">जिल्हा </span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.District | uppercase}}</td>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">BRANCH NAME</span>\r\n                    <span *ngIf=\"lang.mr\">शाखा नांव </span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.BranchName | uppercase}}</td>\r\n                </tr>\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">PINCODE</span>\r\n                    <span *ngIf=\"lang.mr\">पिनकोड </span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.PinCode}}</td>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">BANK ADDRESS</span>\r\n                    <span *ngIf=\"lang.mr\">बँक पत्ता </span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.BankAddress | uppercase}} </td>\r\n                </tr>\r\n                <tr>\r\n                  <th></th>\r\n                  <td></td>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">IFSC CODE </span>\r\n                    <span *ngIf=\"lang.mr\">आय.एफ.एस.सी </span>\r\n                  </th>\r\n                  <td>{{cmrcDetails.IFSCCode}}</td>\r\n                </tr>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"\" style=\"margin-top:12px\">\r\n        <div class=\"row\">\r\n          <div class=\"col-md-12\">\r\n            <h4 class=\"btn-warning text-center\" style=\"font-weight:bold;background-color: cadetblue;padding: 6px;margin-bottom:1px;\">\r\n              <span *ngIf=\"lang.en\">FUND AMOUNT DISTRIBUTION</span>\r\n              <span *ngIf=\"lang.mr\">फंड वाटप </span>\r\n            </h4>\r\n          </div>\r\n        </div>\r\n        <div class=\"row\">\r\n          <div class=\"col-md-12\">\r\n            <div class=\"box-body box_section\">\r\n              <table class=\"table table-bordered common_table\">\r\n                <thead>\r\n                  <tr>\r\n                    <th>\r\n                      <span *ngIf=\"lang.en\">VO</span>\r\n                      <span *ngIf=\"lang.mr\">व्हीओ नाव</span>\r\n                    </th>\r\n                    <th>\r\n                      <span *ngIf=\"lang.en\">AMOUNT</span>\r\n                      <span *ngIf=\"lang.mr\">रक्कम </span>\r\n                    </th>\r\n                    <th>\r\n                      <span *ngIf=\"lang.en\">AMOUNT PAID DATE</span>\r\n                      <span *ngIf=\"lang.mr\">रक्कम देय दिनांक </span>\r\n                    </th>\r\n                    <th>\r\n                      <span *ngIf=\"lang.en\">\r\n                        AMOUNT REASON\r\n                      </span>\r\n                      <span *ngIf=\"lang.mr\">\r\n                        निधी कारण\r\n                      </span>\r\n                    </th>\r\n                  </tr>\r\n                </thead>\r\n                <tbody>\r\n                  <tr *ngFor=\"let fundDetail of fundDetails\">\r\n                    <td>{{fundDetail.ToVOName}}</td>\r\n                    <td>{{fundDetail.ApproveAmount | currency: 'INR'}}</td>\r\n                    <td>{{fundDetail.ApprovedDate| date: 'dd-MMM-yyyy'}}</td>\r\n                    <td>{{fundDetail.FundReason}}</td>\r\n                  </tr>\r\n                  <tr>\r\n                    <td>-</td>\r\n                    <td>{{totalApprovedAmt | currency: 'INR'}}</td>\r\n                    <td>-</td>\r\n                    <td>-</td>\r\n                  </tr>\r\n                </tbody>\r\n              </table>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n  \r\n      <div class=\"row\" style=\"margin-left:0px;margin-right:0px;\">\r\n        <h5 class=\"btn-warning text-center\" style=\"background-color: cadetblue;padding: 6px;\">\r\n          <button type=\"button\" class=\"btn btn-primary\" (click)=\"getBalancesheet(null, null, 2)\">\r\n            REFRESH\r\n          </button>\r\n          BALANCESHEET\r\n          <small style=\"color: #fff\">( FROM -{{lastFinanceYearOrFromDt}} till - {{todaysOrToDt}} )</small>\r\n          <span>\r\n            <button class=\"btn btn-primary pdf-button\" (click)=\"ExportBalancesheetToPdf()\" value=\"Export PDF\" style=\"margin:-3px 10px;\">\r\n              <span>\r\n                <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n              </span>\r\n              PDF\r\n            </button>\r\n          </span>\r\n        </h5>\r\n      </div>\r\n  \r\n      <div class=\"row\" style=\"margin-left:0px;margin-right:0px;\">\r\n        <div class=\"col-md-12 well well-lg \" style=\" padding: 10px;\">\r\n          <div class=\"col-md-5\">\r\n            <label>\r\n              SELECT FROM DATE\r\n            </label>\r\n            <ng-datepicker class=\"dt-picker-format\" [(ngModel)]=\"balanceSheetFromDt\" #frDt [options]=\"options\">\r\n            </ng-datepicker>\r\n            <!-- <input class=\"form-control\" type=\"date\" #balanceSheetFromDt> -->\r\n          </div>\r\n          <div class=\"col-md-7\">\r\n            <div class=\"col-md-9\">\r\n              <label>\r\n                SELECT TO DATE\r\n              </label>\r\n              <ng-datepicker class=\"dt-picker-format\" [(ngModel)]=\"balanceSheetToDt\" #toDt [options]=\"options\">\r\n              </ng-datepicker>\r\n              <!-- <input class=\"form-control\" type=\"date\" #balanceSheetToDt> -->\r\n            </div>\r\n            <div class=\"col-md-3\">\r\n              <button type=\"button\" class=\"btn btn-primary\" (click)=\"getBalancesheet(frDt, toDt, 1)\" style=\"margin-top:21px;\">\r\n                LOAD\r\n              </button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <!--  Liabilities Income and Asset -->\r\n      <div class=\"col-md-12 box_section\">\r\n        <div class=\"col-md-6\" style=\"padding-right: 0px;\">\r\n          <div class=\"box-body\" style=\"padding-right: 0px;\">\r\n            <table class=\"table table-bordered common_table\">\r\n              <thead>\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">LIABILITIES</span>\r\n                    <span *ngIf=\"lang.mr\">देणे </span>\r\n                  </th>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">AMOUNT</span>\r\n                    <span *ngIf=\"lang.mr\">रक्कम </span>\r\n                  </th>\r\n                </tr>\r\n              </thead>\r\n              <tbody>\r\n                <tr>\r\n                  <td>\r\n                    <a routerLink=\"#\" (click)=\"naviagateToAccTransaction(2)\">\r\n                      <span *ngIf=\"lang.en\"> CURRENT LIABILITIES</span>\r\n                      <span *ngIf=\"lang.mr\">चालू देणे </span>\r\n                    </a>\r\n                  </td>\r\n                  <td>\r\n                    <a routerLink=\"#\" (click)=\"naviagateToAccTransaction(2)\">\r\n                      {{balancesheetCMRC.LiabilityAmount | currency: 'INR'}}\r\n                    </a>\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td>\r\n                    <span *ngIf=\"lang.en\"> CAPITAL RESERVED </span>\r\n                    <span *ngIf=\"lang.mr\"> आरक्षित भांडवल </span>\r\n                  </td>\r\n                  <td>\r\n                    {{balancesheetCMRC.CapitalReserved | currency: 'INR'}}\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td>\r\n                    <a routerLink=\"#\" (click)=\"naviagateToAccTransaction(2)\">\r\n                      <span *ngIf=\"lang.en\">NET INCOME/ LOSS</span>\r\n                      <span *ngIf=\"lang.mr\">निव्वळ फायदा /तोटा </span>\r\n                    </a>\r\n                  </td>\r\n                  <td>\r\n                    {{balancesheetCMRC.NetProfitOrLoss | currency: 'INR'}}\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">TOTAL</span>\r\n                    <span *ngIf=\"lang.mr\">एकूण </span>\r\n                  </th>\r\n                  <td>{{balancesheetCMRC.TotalLiability + balancesheetCMRC.CapitalReserved | currency: 'INR'}}</td>\r\n                </tr>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-md-6\" style=\"padding-left: 0px;\">\r\n          <div class=\"box-body\" style=\"padding-left: 0px;\">\r\n            <table class=\"table table-bordered common_table\">\r\n              <thead>\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">ASSETS </span>\r\n                    <span *ngIf=\"lang.mr\">मालमत्ता </span>\r\n                  </th>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">AMOUNT </span>\r\n                    <span *ngIf=\"lang.mr\">रक्कम </span>\r\n                  </th>\r\n                </tr>\r\n              </thead>\r\n              <tbody>\r\n                <tr>\r\n                  <td>\r\n                    <a routerLink=\"#\" (click)=\"naviagateToAccTransaction(1)\">\r\n                      <span *ngIf=\"lang.en\">CURRENT ASSETS </span>\r\n                      <span *ngIf=\"lang.mr\">सध्याची मालमत्ता </span>\r\n                    </a>\r\n                  </td>\r\n                  <td>\r\n                    <a routerLink=\"#\" (click)=\"naviagateToAccTransaction(1)\">\r\n                      {{balancesheetCMRC.AssetAmount | currency: 'INR'}}\r\n                    </a>\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td>\r\n                    <span *ngIf=\"lang.en\">CASH IN HAND </span>\r\n                    <span *ngIf=\"lang.mr\">रोख रक्कम </span>\r\n                  </td>\r\n                  <td>{{balancesheetCMRC.CashInHandAmount | currency: 'INR'}}</td>\r\n                </tr>\r\n                <tr>\r\n                  <td>\r\n                    <span *ngIf=\"lang.en\">CASH AT BANK </span>\r\n                    <span *ngIf=\"lang.mr\">बँकेतील रक्कम </span>\r\n                  </td>\r\n                  <td>{{balancesheetCMRC.cashAtBankAmount | currency: 'INR'}}</td>\r\n                </tr>\r\n                <tr>\r\n                  <th>\r\n                    <span *ngIf=\"lang.en\">TOTAL</span>\r\n                    <span *ngIf=\"lang.mr\">एकूण </span>\r\n                  </th>\r\n                  <td>{{balancesheetCMRC.TotalAsset | currency: 'INR'}}</td>\r\n                </tr>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <!-- End Liabilities and asset-->\r\n  \r\n  \r\n  \r\n      <!-- Income and Expenditure  Detail -->\r\n      <div class=\"row\">\r\n        <div class=\"col-md-6\" style=\"margin-top:24px;\">\r\n          <div class=\"box-body box_section\">\r\n            <table class=\"table table-bordered common_table\">\r\n              <thead>\r\n                <tr>\r\n                  <th colspan=\"2\">\r\n                    <span *ngIf=\"lang.en\">INCOME & EXPENDITURE</span>\r\n                    <span *ngIf=\"lang.mr\">उत्पन्न / खर्च</span>\r\n                  </th>\r\n                </tr>\r\n              </thead>\r\n              <thead>\r\n                <tr>\r\n                  <td>\r\n                    <span *ngIf=\"lang.en\">INCOME </span>\r\n                    <span *ngIf=\"lang.mr\">उत्पन्न </span>\r\n                  </td>\r\n                  <td>{{balancesheetCMRC.IncomeAmount | currency: 'INR'}}</td>\r\n                </tr>\r\n                <tr>\r\n                  <td>\r\n                    <span *ngIf=\"lang.en\">EXPENSE </span>\r\n                    <span *ngIf=\"lang.mr\">खर्च </span>\r\n                  </td>\r\n                  <td>{{balancesheetCMRC.ExpenseAmount | currency: 'INR'}}</td>\r\n                </tr>\r\n                <tr>\r\n                  <td>\r\n                    <span *ngIf=\"lang.en\">NET INCOME/LOSSS</span>\r\n                    <span *ngIf=\"lang.mr\">निव्वळ उत्पन्न/खर्च </span>\r\n                  </td>\r\n                  <td>{{balancesheetCMRC.IncomeAmount - balancesheetCMRC.ExpenseAmount | currency: 'INR'}}</td>\r\n                </tr>\r\n              </thead>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <!-- End Income and Expenditure detail -->\r\n    </div>\r\n    <!-- end Scheme SHG Table -->\r\n    <!-- Start Scheme Scheme Table -->\r\n  \r\n    <!-- Start Detail Table -->\r\n  \r\n  </section>\r\n  <!-- /.content -->\r\n  \r\n  <!--VO DASHBORD-->\r\n  <!--Anjali...-->\r\n  <!-- Main content -->\r\n  \r\n  <span *ngIf=\"showVoDashbord\">\r\n    <!-- <div class=\"\" *ngIf=\"showVoOnlyForCMRC == 2\">\r\n          <button [disabled]=\"showCmrcDashbord\" class=\"btn btn-primary\" (click)=\"refreshDashboard()\" style=\"margin-left:20px;\">CHANGE</button>\r\n        </div> -->\r\n    <vo-dashboard></vo-dashboard>\r\n  </span>"
 
 /***/ }),
 
@@ -1638,22 +1638,561 @@ module.exports = "<dashboard-selector></dashboard-selector>"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CMRCDashboardComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_cmrc_services__ = __webpack_require__("../../../../../src/app/services/cmrc.services.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_access_token__ = __webpack_require__("../../../../../src/app/environments/access_token.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_Global__ = __webpack_require__("../../../../../src/app/environments/Global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_CommanMssage__ = __webpack_require__("../../../../../src/app/environments/CommanMssage.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_GlobalVeriables__ = __webpack_require__("../../../../../src/app/environments/GlobalVeriables.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__environments_language_config__ = __webpack_require__("../../../../../src/app/environments/language.config.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_reports_exportpdf__ = __webpack_require__("../../../../../src/app/services/reports/exportpdf.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_common_service__ = __webpack_require__("../../../../../src/app/services/common.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_vo_services__ = __webpack_require__("../../../../../src/app/services/vo.services.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_date_fns_locale_en__ = __webpack_require__("../../../../date-fns/locale/en/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_date_fns_locale_en___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_date_fns_locale_en__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
 
 var CMRCDashboardComponent = (function () {
-    function CMRCDashboardComponent() {
+    function CMRCDashboardComponent(_cmrcservice, _access_token, _globalURL, voService, _common_message, _router, _commonService, globalVariable, lang, exportToPdf) {
+        this._cmrcservice = _cmrcservice;
+        this._access_token = _access_token;
+        this._globalURL = _globalURL;
+        this.voService = voService;
+        this._common_message = _common_message;
+        this._router = _router;
+        this._commonService = _commonService;
+        this.globalVariable = globalVariable;
+        this.lang = lang;
+        this.exportToPdf = exportToPdf;
+        this.balanceSheetToDt = new Date();
+        this.balanceSheetFromDt = new Date();
+        this.options = {
+            minYear: 2000,
+            maxYear: (new Date().getFullYear() + 1),
+            displayFormat: 'MMM D[,] YYYY',
+            barTitleFormat: 'MMMM YYYY',
+            dayNamesFormat: 'dd',
+            firstCalendarDay: 0,
+            locale: __WEBPACK_IMPORTED_MODULE_11_date_fns_locale_en__,
+            //minDate: new Date(Date.now()), // Minimal selectable date
+            //minDate: new Date("2016-03-03"),
+            // maxDate: new Date(Date.now()),  // Maximal selectable date
+            barTitleIfEmpty: 'Click to select a date'
+        };
+        this.showlabel = false;
+        this.CapitalReserdev = 1000000;
+        this.hidelabel = true;
+        this.isDataCountLoaded = true;
+        this.totalApprovedAmt = 0;
+        this.shgCount = 0;
+        this.memebrCount = 0;
+        this.totalshgCount = 0;
+        this.totalMemCount = 0;
+        this.totalCastCount = 0;
+        this.memebersDataCasteWise = new Array();
+        this.schemeWiseSHGCasteData = null;
+        this.casteWiseData = null;
+        _globalURL.isLoading = false;
+        this.cmrcDetails = null;
+        if (sessionStorage.getItem("access_token") == "") {
+            _router.navigate(['../login']);
+        }
+        this.showCmrcDashbord = true;
+        this.showVoDashbord = false;
+        this.financeDetails = null;
     }
+    CMRCDashboardComponent.prototype.ngOnInit = function () {
+        this.lastFinanceYearOrFromDt = "1 APR" + (new Date().getFullYear()) + " ";
+        this.todaysOrToDt = this._commonService.getTodaysDate();
+        this.getBalancesheet(this.lastFinanceYearOrFromDt, this.todaysOrToDt, 0);
+        this.globalVariable.VoId = 0;
+        this.globalVariable.roleId = this.globalVariable.CMRCRoleId;
+        this.getCMRCDetail();
+        this.getAllVoShgMemberCount();
+        this.getVoIdAndName();
+        this._globalURL.isLoading = true;
+        this.totalMembers = 0;
+        this.totalLoanApprovedAmt = 0;
+        this.purpose_total_mem = 0;
+        this.purpose_total_mem = 0;
+        this.purpose_total_mem_per = 0;
+        this.purpose_total_amt = 0;
+        this.purpose_total_amt_per = 0;
+        this.caste_total_mem = 0;
+        this.caste_total_mem_per = 0;
+        this.caste_total_loan_con_mem = 0;
+        this.caste_total_loan_con_mem_per = 0;
+        this.caste_total_loan_not_con_mem = 0;
+        this.caste_total_loan_not_con_mem_per = 0;
+        this.CashInHand = 0;
+        this.caste_total_loan_amt = 0;
+        this.getFund();
+        this.showVoOnlyForCMRC = sessionStorage.getItem("roleId");
+    };
+    CMRCDashboardComponent.prototype.getAllVOCMRCId = function () {
+        var _this = this;
+        this.showCmrcDashbord = true;
+        this.showVoDashbord = false;
+        this._cmrcservice.get(this._globalURL.GET_VO_BY_CMRC_ID, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this._router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                _this.getAllVOCMRC = res.Data;
+                _this._globalURL.isLoading = false;
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+            }
+        })
+            .catch(function (err) {
+            _this._globalURL.isLoading = false;
+            _this.message = _this._common_message.CatchBlockMsg;
+            _this.showErrorMessage = true;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+        });
+    };
+    //cmrc vo shg and member count..
+    CMRCDashboardComponent.prototype.getAllVoShgMemberCount = function () {
+        var _this = this;
+        this.showCmrcDashbord = true;
+        this.showVoDashbord = false;
+        this._cmrcservice.get(this._globalURL.GET_VO_SHG_MEMBER_COUNT_CMRC, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this._router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                _this.cmrcCounts = res.Data;
+                _this._globalURL.isLoading = false;
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+            }
+        })
+            .catch(function (err) {
+            _this._globalURL.isLoading = false;
+            _this.message = _this._common_message.CatchBlockMsg;
+            _this.showErrorMessage = true;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+        });
+    };
+    CMRCDashboardComponent.prototype.getCMRCDetail = function () {
+        var _this = this;
+        debugger;
+        this.showCmrcDashbord = true;
+        this.showVoDashbord = false;
+        this.globalVariable.VoId = 0;
+        var finalUrl = "";
+        if (sessionStorage.getItem("roleId") == "2") {
+            this._globalURL.get_GET_USER_PROFILE_DETAIL = "";
+            finalUrl = this._globalURL.GET_USER_PROFILE_DETAIL + (sessionStorage.getItem("roleId") == null ? "2" : sessionStorage.getItem("roleId"));
+        }
+        else
+            finalUrl = this._globalURL.GET_USER_PROFILE_DETAIL;
+        this._cmrcservice.get(finalUrl, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this._router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                _this.cmrcDetails = res.Data;
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+            }
+        })
+            .catch(function (err) {
+            _this._globalURL.isLoading = false;
+            _this.message = _this._common_message.CatchBlockMsg;
+            _this.showErrorMessage = true;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+        });
+        this._cmrcservice.get(sessionStorage.getItem("roleId") == "2" ? this._globalURL.GET_CMRC_FINANCE_DETAILS : this._globalURL.GET_CMRC_FINANCE_DETAILS + "?cmrcId=" + sessionStorage.getItem("cmrcId"), sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            _this._globalURL.isLoading = false;
+            if (res.Status === true)
+                _this.financeDetails = res.Data;
+            else {
+                _this.financeDetails = null;
+                _this.showErrorMessage = true;
+                _this._common_message.CMRC_Finance_Details_Failed_to_load;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+            }
+        }).catch(function (res) {
+            _this._globalURL.isLoading = false;
+            _this.showErrorMessage = true;
+            _this._common_message.CMRC_Finance_Details_Failed_to_load;
+            console.log("error while getting the CMRC finance details " + res);
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+        });
+    };
+    //GET vo in dropdown ...
+    CMRCDashboardComponent.prototype.getBalancesheet = function (frDt, toDt, conf) {
+        var _this = this;
+        debugger;
+        this._globalURL.isLoading = true;
+        if (conf == 2) {
+            frDt = this.lastFinanceYearOrFromDt = "1 APR" + (new Date().getFullYear());
+            toDt = this.todaysOrToDt = this._commonService.getTodaysDate();
+            this.balanceSheetFromDt = new Date();
+            this.balanceSheetToDt = new Date();
+        }
+        if (conf == 1) {
+            this.lastFinanceYearOrFromDt = frDt.displayValue;
+            this.todaysOrToDt = toDt.displayValue;
+            frDt = this._commonService.convertToDate(frDt);
+            toDt = this._commonService.convertToDate(toDt);
+        }
+        var balFinalUrl = "";
+        if (sessionStorage.getItem("roleId") == "2") {
+            this._globalURL.get_GET_BALANCESHEET = "";
+            balFinalUrl = this._globalURL.GET_BALANCESHEET + (sessionStorage.getItem("roleId") == null ? "2" : sessionStorage.getItem("roleId")) + "&frDt=" + frDt + "&toDt=" + toDt;
+        }
+        else
+            balFinalUrl = this._globalURL.GET_BALANCESHEET + "&frDt=" + frDt + "&toDt=" + toDt;
+        this._cmrcservice.get(balFinalUrl, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this._router.navigate(['../login']);
+            }
+            if (res.Status == undefined)
+                if (res.status == 200) {
+                    _this.balancesheetCMRC = JSON.parse(res._body).Data;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            else {
+                if (res.Status == true) {
+                    _this.balancesheetCMRC = res.Data;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            }
+            _this._globalURL.isLoading = false;
+        }).catch(function (res) {
+            _this._globalURL.isLoading = false;
+            _this.message = _this._common_message.CatchBlockMsg;
+            _this.showErrorMessage = true;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+        });
+    };
+    CMRCDashboardComponent.prototype.getVoIdAndName = function () {
+        var _this = this;
+        this.showCmrcDashbord = true;
+        this.showVoDashbord = false;
+        this._globalURL.isLoading = true;
+        this._cmrcservice.get(this._globalURL.GET_VO_CMRCID, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this._router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                _this.Vos = res.Data;
+                _this._globalURL.isLoading = false;
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+            }
+        }).catch(function (res) {
+            _this._globalURL.isLoading = false;
+            _this.message = _this._common_message.CatchBlockMsg;
+            _this.showErrorMessage = true;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+        });
+    };
+    CMRCDashboardComponent.prototype.refreshDashboard = function () {
+        this.showVoDashbord = false;
+        this.showCmrcDashbord = true;
+    };
+    // GET ALL VO DASHBORD....
+    CMRCDashboardComponent.prototype.voDashboard = function (selectedVoId) {
+        sessionStorage.setItem("voId", selectedVoId);
+        sessionStorage.setItem("viewForRoleId", "3");
+        this._globalURL.get_GET_SHEMEWISE_SHG = selectedVoId.toString();
+        this._globalURL.get_TOTAL_SHGANDMEMBER_COUNT = selectedVoId.toString();
+        this._globalURL.get_GET_MARRITAL_STATUS_WISE_DATA = selectedVoId.toString();
+        this._globalURL.get_GET_AGE_WISE_DATA = selectedVoId.toString();
+        this._globalURL.get_GET_LOAN_PURPOSE_WISE_DATA = selectedVoId.toString();
+        this._globalURL.get_GET_LOAN_CASTE_WISE_DATA = selectedVoId.toString();
+        this._globalURL.get_GET_FINANCE_DETAILS = selectedVoId.toString();
+        this._globalURL.get_GET_BALANCESHEET = selectedVoId.toString();
+        this._globalURL.get_GET_USER_PROFILE_DETAIL = selectedVoId.toString();
+        this.showVoDashbord = true;
+        this.showCmrcDashbord = false;
+    };
+    CMRCDashboardComponent.prototype.naviagateToAccTransaction = function (glTypeId) {
+        this.globalVariable.selectedGLTypeId = glTypeId;
+        this._router.navigate(['/cmrc/cmrcAccTransaction']);
+    };
+    CMRCDashboardComponent.prototype.getFund = function () {
+        var _this = this;
+        this._globalURL.isLoading = true;
+        this.totalApprovedAmt = 0;
+        var finalUrl = "";
+        if (sessionStorage.getItem("roleId") === "2")
+            finalUrl = this._globalURL.GET_ALL_VO_FUND_DETAILS_FOR_CMRC + "?status=" + 2;
+        else
+            finalUrl = this._globalURL.GET_ALL_VO_FUND_DETAILS_FOR_CMRC + "?status=2&cmrcId=" + sessionStorage.getItem("cmrcId");
+        this._cmrcservice.get(finalUrl, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this._router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                //this.reRenderDT();
+                _this.fundDetails = res.Data;
+                for (var item in res.Data) {
+                    _this.totalApprovedAmt = _this.totalApprovedAmt + res.Data[item].ApproveAmount;
+                }
+                _this._globalURL.isLoading = false;
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+            }
+        })
+            .catch(function (res) {
+            _this._globalURL.isLoading = false;
+            _this.message = _this._common_message.CatchBlockMsg;
+            _this.showErrorMessage = true;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+        });
+    };
+    CMRCDashboardComponent.prototype.showCMRCDashboard = function () {
+        this.showCmrcDashbord = true;
+        this.showVoDashbord = false;
+        this.globalVariable.roleId = this.globalVariable.CMRCRoleId;
+    };
+    CMRCDashboardComponent.prototype.R23CmrcSummeryExportToPDF = function () {
+        this._globalURL.isLoading = true;
+        this.exportToPdf.R23CmrcSummeryExportToPDF(this.cmrcDetails, this.cmrcCounts, this.globalVariable.cmrcBaseCode);
+        this._globalURL.isLoading = false;
+    };
+    CMRCDashboardComponent.prototype.R41PurposewiseLoanDistExportToPdf = function () {
+        this._globalURL.isLoading = true;
+        var totalData = {
+            "TotalMember": this.purpose_total_mem.toString(),
+            "TotalMemberPer": this.purpose_total_mem_per.toString(),
+            "TotalAmount": this.purpose_total_amt.toString(),
+            "TotalAmountPer": this.purpose_total_amt_per.toString()
+        };
+        var VoName = {
+            "Name": this.voDetails.VOName,
+            "Code": this.voDetails.Code,
+        };
+        this.exportToPdf.R41PurposewiseLoanDistExportToPdf(this.GetPurposeWiseData, totalData, VoName);
+        this._globalURL.isLoading = false;
+    };
+    CMRCDashboardComponent.prototype.ExportBalancesheetToPdf = function () {
+        debugger;
+        this._globalURL.isLoading = true;
+        this.globalVariable.CashInHand = this.balancesheetCMRC.cashAtBankAmount;
+        this.globalVariable.CashAtBank = this.balancesheetCMRC.CashInHandAmount;
+        this.globalVariable.TotalAvailableAmount = this.balancesheetCMRC.cashAtBankAmount + this.balancesheetCMRC.CashInHandAmount;
+        var reportData = {
+            "balancesheet": this.balancesheetCMRC,
+            "CashInHand": this.globalVariable.CashInHand,
+            "CashAtBank": this.globalVariable.CashAtBank,
+            "TotalAvailableAmount": this.globalVariable.TotalAvailableAmount
+        };
+        var headerData = {
+            "CMRCName": this.globalVariable.CMRCName,
+            "CMRCCode": this.globalVariable.cmrcBaseCode,
+            "VOName": "",
+            "VoCode": "",
+            "frDt": this.lastFinanceYearOrFromDt,
+            "toDt": this.todaysOrToDt
+        };
+        this.exportToPdf.RExportBalancesheetToPdf(reportData, headerData);
+        this._globalURL.isLoading = false;
+    };
+    CMRCDashboardComponent.prototype.voProfileDetails = function () {
+        this._globalURL.isLoading = true;
+        debugger;
+        var forVoName = {
+            "Name": this.voDetails.VOName,
+        };
+        this.exportToPdf.voProfileDetails(this.voDetails, forVoName);
+        this._globalURL.isLoading = false;
+    };
+    CMRCDashboardComponent.prototype.maritalStatusWiseDataForVo = function () {
+        this._globalURL.isLoading = true;
+        var VoName = {
+            "Name": this.voDetails.VOName,
+        };
+        this.exportToPdf.maritalStatusWiseDataForVo(this.GetMarritalStatusData, this.voDetails, VoName);
+        this._globalURL.isLoading = false;
+    };
+    CMRCDashboardComponent.prototype.ageWiseDataForVo = function () {
+        this._globalURL.isLoading = true;
+        var VoName = {
+            "Name": this.voDetails.VOName,
+            "Code": this.voDetails.Code,
+        };
+        this.exportToPdf.ageWiseDataForVo(this.GetAgeWiseData, VoName);
+        this._globalURL.isLoading = false;
+    };
+    CMRCDashboardComponent.prototype.castWiseLoanDistributionDataForVo = function () {
+        this._globalURL.isLoading = true;
+        var total = {
+            "CastTotalMembers": this.caste_total_mem.toString(),
+            "CastTotalMemberPer": this.caste_total_mem_per.toString(),
+            "CastTotalLoanConsumedMem": this.caste_total_loan_con_mem.toString(),
+            "CastTotalLoanConsumedMemberPer": this.caste_total_loan_con_mem_per.toString(),
+            "CastTotalLoanNotConsumedMem": this.caste_total_loan_not_con_mem.toString(),
+            "CastTotalLoanNotConsumedMemPer": this.caste_total_loan_not_con_mem_per.toString(),
+            "CasteTotalLoanAmt": this.caste_total_loan_amt.toString()
+        };
+        var VoName = {
+            "Name": this.voDetails.VOName,
+            "Code": this.voDetails.Code,
+        };
+        this.exportToPdf.castWiseLoanDistributionDataForVo(this.GetCasteWiseData, total, VoName);
+        this._globalURL.isLoading = false;
+    };
+    CMRCDashboardComponent.prototype.R38_SchemeAndCastWiseSHGDetailPDF = function () {
+        this._globalURL.isLoading = true;
+        //this.schemeWiseSHGCasteData
+        var forVoName = {
+            "Name": this.voDetails.VOName,
+            "Code": this.voDetails.Code,
+            "CMRCName": this.voDetails.CMRCName,
+            "ParentCode": this.voDetails.ParentCode,
+        };
+        this.exportToPdf.R38_SchemeAndCastWiseSHGDetails(this.schemeWiseSHGCasteData, this.casteWiseData, this.shgCount, this.memebrCount, forVoName);
+        this._globalURL.isLoading = false;
+    };
     CMRCDashboardComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'cmrc-dashboard',
             template: __webpack_require__("../../../../../src/app/components/cmrc/dashboard/dashboard.component.html"),
             styles: [__webpack_require__("../../../../../src/app/components/app.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_cmrc_services__["a" /* CMRCService */],
+            __WEBPACK_IMPORTED_MODULE_3__environments_access_token__["a" /* AccessToken */],
+            __WEBPACK_IMPORTED_MODULE_4__environments_Global__["a" /* GlobalAssets */],
+            __WEBPACK_IMPORTED_MODULE_10__services_vo_services__["a" /* VOService */],
+            __WEBPACK_IMPORTED_MODULE_5__environments_CommanMssage__["a" /* CommonMessageComponent */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */],
+            __WEBPACK_IMPORTED_MODULE_9__services_common_service__["a" /* CommonService */],
+            __WEBPACK_IMPORTED_MODULE_6__environments_GlobalVeriables__["a" /* GlobalVariable */],
+            __WEBPACK_IMPORTED_MODULE_7__environments_language_config__["a" /* LangulageConf */],
+            __WEBPACK_IMPORTED_MODULE_8__services_reports_exportpdf__["a" /* ExportToPDF */]])
     ], CMRCDashboardComponent);
     return CMRCDashboardComponent;
 }());
@@ -4998,7 +5537,7 @@ var MaritalStatusComponent = (function () {
 /***/ "../../../../../src/app/components/cmrc/memShare/memShare.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal-backdrop in\" *ngIf=\"_globalURL.isLoading\">\r\n    <loading-selector>\r\n    </loading-selector>\r\n</div>\r\n<div *ngIf=\"showMessage\">\r\n    <message-selector [message]=\"message\">\r\n    </message-selector>\r\n</div>\r\n<div *ngIf=\"ShowErrormsg\">\r\n    <error-message-selector [message]=\"message\">\r\n    </error-message-selector>\r\n</div>\r\n<!-- <div *ngIf=\"showWarningMessage\">\r\n    <warning-message-selector [message]=\"message\">\r\n    </warning-message-selector>\r\n  </div> -->\r\n<section class=\"content-header\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\" style=\"padding:3px;\">\r\n            <div class=\"col-md-6\">\r\n                <label class=\"heading-title\">\r\n                    <span *ngIf=\"lang.en\">MEMBER FEES DETAILS FORM </span>\r\n                    <span *ngIf=\"lang.mr\"> सदस्य शेअर्स तपशील फॉर्म</span>\r\n                </label>\r\n            </div>\r\n            <div class=\"col-md-3  col-md-offset-2\">\r\n                <button class=\"btn btn-primary refresh-button\" (click)=\"ngOnInit()\">\r\n                    <i class=\"fa fa-refresh\" aria-hidden=\"true\"></i>\r\n                </button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n<section class=\"content\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <div class=\"box box-default\">\r\n                <div class=\"col-md-4\">\r\n                    <div class=\"form-group\">\r\n                        <label for=\"text\">\r\n                            <span *ngIf=\"lang.en\">SELECT VO </span>\r\n                            <span *ngIf=\"lang.mr\"> व्हीओ निवडा </span>\r\n                        </label>\r\n                        <select class=\"form-control\" (change)=\"getShgNameAndId(selectedVoId)\" #selectVo=\"ngModel\" [(ngModel)]=\"selectedVoId\" name=\"selectVo\"\r\n                            id=\"selectVo\">\r\n                            <option *ngFor=\"let Vo of Vos\" [value]=\"Vo.Key\">{{Vo.Value | uppercase}}</option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-4\">\r\n                    <div class=\"form-group\">\r\n                        <label for=\"text\">\r\n                            <span *ngIf=\"lang.en\">SELECT SHG </span>\r\n                            <span *ngIf=\"lang.mr\"> एसएचजि निवडा </span>\r\n                        </label>\r\n                        <select [(ngModel)]=\"selectedShgId\" name=\"selectedShgId\" class=\"form-control\" id=\"selectShg\">\r\n                            <option *ngFor=\"let shg of shgs\" [value]=\"shg.Key\">{{shg.Value | uppercase}}</option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <!-- <div class=\"box-header TableHeaderInsideAll_Buttons\">\r\n                        <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#createDistrict\">CREATE NEW DISTRICT</button>\r\n                    </div> -->\r\n                <div class=\"col-md-4\">\r\n                    <div class=\"form-group\">\r\n                        <!-- <label for=\"text\">\r\n                            <span *ngIf=\"lang.en\">LOAD MEMBER</span>\r\n                            <span *ngIf=\"lang.mr\"> सदस्य </span>\r\n                        </label> -->\r\n                        <button class=\"form-control\" type=\"button\" class=\"btn btn-primary\" (click)=\"getMemShareDetails()\" style=\"margin-top:24px;\">\r\n                            <span *ngIf=\"lang.en\">SEARCH MEMBER</span>\r\n                            <span *ngIf=\"lang.mr\"> सदस्य शोधा </span>\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"box-body\">\r\n                    <table datatable class=\"table table-bordered loan_table_common\" cellspacing=\"0\" width=\"100%\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">FULL NAME</span>\r\n                                    <span *ngIf=\"lang.mr\"> पूर्ण नाव </span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">SHARE AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\"> शेयर रक्कम </span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">CODE</span>\r\n                                    <span *ngIf=\"lang.mr\"> कोड </span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">ACTION</span>\r\n                                    <span *ngIf=\"lang.mr\"> कृती </span>\r\n                                </th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr *ngFor=\"let memShare of memShares\">\r\n                                <!-- <td>{{memShare.SHGId}}</td> -->\r\n                                <td>{{memShare.FirstName + \" \" + memShare.MiddleName + \" \" + memShare.LastName | uppercase}}</td>\r\n                                <td *ngIf=\"memberShareModel.ShareAmount != null && memberShareModel.ShareAmount != undefined\">{{memShare.ShareAmount | currency: 'INR'}}</td>\r\n                                <td>{{memShare.Code}}</td>\r\n                                <td class=\"record-action\">\r\n                                    <button title=\"View Details\" class=\"Lastbutton\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#returnMemShare\"\r\n                                        (click)=\"delete(memShare)\">\r\n                                        <span *ngIf=\"lang.en\">RETURN</span>\r\n                                        <span *ngIf=\"lang.mr\"> परत </span>\r\n                                    </button>\r\n                                </td>\r\n                            </tr>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- data table end -->\r\n</section>\r\n<div id=\"returnMemShare\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">\r\n                    <span *ngIf=\"lang.en\">MEMBER FEES </span>\r\n                    <span *ngIf=\"lang.mr\"> सदस्य शेअर्स </span>\r\n                </h4>\r\n            </div>\r\n            <div style=\"margin-left: 30px;font-size: 20px;\">\r\n                <label *ngIf=\"memberShareModel.ShareAmount != null && memberShareModel.ShareAmount != undefined\">AMOUNT: {{memberShareModel.ShareAmount != null && memberShareModel.ShareAmount != 'undefined' ? memberShareModel.ShareAmount : ''}}</label>\r\n                <br/>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <p>ARE YOU SURE YOU WANT TO RETURN THE SHARE AMOUNT OF</p>\r\n                <p>\r\n                    <b>{{memberShareModel.FirstName + \" \" + memberShareModel.MiddleName + \" \" + memberShareModel.LastName |\r\n                        uppercase}}\r\n                    </b>\r\n                </p>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"\">\r\n                    <div class=\"modal-footer\">\r\n                        <div class=\"form-group\">\r\n                            <button type=\"button\" data-dismiss=\"modal\" class=\"btn btn-primary\" (click)=\"returnMemberShare(memberShareModel)\">\r\n                                <span *ngIf=\"lang.en\">YES </span>\r\n                                <span *ngIf=\"lang.mr\">होय </span>\r\n                            </button>\r\n                            <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">\r\n                                <span *ngIf=\"lang.en\">NO </span>\r\n                                <span *ngIf=\"lang.mr\">नाही </span>\r\n                            </button>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"modal-backdrop in\" *ngIf=\"_globalURL.isLoading\">\r\n    <loading-selector>\r\n    </loading-selector>\r\n</div>\r\n<div *ngIf=\"showMessage\">\r\n    <message-selector [message]=\"message\">\r\n    </message-selector>\r\n</div>\r\n<div *ngIf=\"ShowErrormsg\">\r\n    <error-message-selector [message]=\"message\">\r\n    </error-message-selector>\r\n</div>\r\n<!-- <div *ngIf=\"showWarningMessage\">\r\n    <warning-message-selector [message]=\"message\">\r\n    </warning-message-selector>\r\n  </div> -->\r\n<section class=\"content-header\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\" style=\"padding:3px;\">\r\n            <div class=\"col-md-6\">\r\n                <label class=\"heading-title\">\r\n                    <span *ngIf=\"lang.en\">MEMBER FEES DETAILS FORM </span>\r\n                    <span *ngIf=\"lang.mr\"> सदस्य शेअर्स तपशील फॉर्म</span>\r\n                </label>\r\n            </div>\r\n            <div class=\"col-md-3  col-md-offset-2\">\r\n                <button class=\"btn btn-primary refresh-button\" (click)=\"ngOnInit()\">\r\n                    <i class=\"fa fa-refresh\" aria-hidden=\"true\"></i>\r\n                </button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n<section class=\"content\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <div class=\"box box-default\">\r\n                <div class=\"col-md-4\">\r\n                    <div class=\"form-group\">\r\n                        <label for=\"text\">\r\n                            <span *ngIf=\"lang.en\">SELECT VO </span>\r\n                            <span *ngIf=\"lang.mr\"> व्हीओ निवडा </span>\r\n                        </label>\r\n                        <select class=\"form-control\" (change)=\"getShgNameAndId(selectedVoId)\" #selectVo=\"ngModel\" [(ngModel)]=\"selectedVoId\" name=\"selectVo\"\r\n                            id=\"selectVo\">\r\n                            <option *ngFor=\"let Vo of Vos\" [value]=\"Vo.Key\">{{Vo.Value | uppercase}}</option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-4\">\r\n                    <div class=\"form-group\">\r\n                        <label for=\"text\">\r\n                            <span *ngIf=\"lang.en\">SELECT SHG </span>\r\n                            <span *ngIf=\"lang.mr\"> एसएचजि निवडा </span>\r\n                        </label>\r\n                        <select [(ngModel)]=\"selectedShgId\" name=\"selectedShgId\" class=\"form-control\" id=\"selectShg\">\r\n                            <option *ngFor=\"let shg of shgs\" [value]=\"shg.Key\">{{shg.Value | uppercase}}</option>\r\n                        </select>\r\n                    </div>\r\n                </div>\r\n                <!-- <div class=\"box-header TableHeaderInsideAll_Buttons\">\r\n                        <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#createDistrict\">CREATE NEW DISTRICT</button>\r\n                    </div> -->\r\n                <div class=\"col-md-4\">\r\n                    <div class=\"form-group\">\r\n                        <!-- <label for=\"text\">\r\n                            <span *ngIf=\"lang.en\">LOAD MEMBER</span>\r\n                            <span *ngIf=\"lang.mr\"> सदस्य </span>\r\n                        </label> -->\r\n                        <button class=\"form-control\" type=\"button\" class=\"btn btn-primary\" (click)=\"getMemShareDetails()\" style=\"margin-top:24px;\">\r\n                            <span *ngIf=\"lang.en\">SEARCH MEMBER</span>\r\n                            <span *ngIf=\"lang.mr\"> सदस्य शोधा </span>\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"box-body\">\r\n                    <table datatable class=\"table table-bordered loan_table_common\" cellspacing=\"0\" width=\"100%\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">FULL NAME</span>\r\n                                    <span *ngIf=\"lang.mr\"> पूर्ण नाव </span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">SHARE AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\"> शेयर रक्कम </span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">CODE</span>\r\n                                    <span *ngIf=\"lang.mr\"> कोड </span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">ACTION</span>\r\n                                    <span *ngIf=\"lang.mr\"> कृती </span>\r\n                                </th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr *ngFor=\"let memShare of memShares\">\r\n                                <!-- <td>{{memShare.SHGId}}</td> -->\r\n                                <td>{{memShare.FirstName + \" \" + memShare.MiddleName + \" \" + memShare.LastName | uppercase}}</td>\r\n                                <td *ngIf=\"memberShareModel.ShareAmount != null && memberShareModel.ShareAmount != undefined\">{{memShare.ShareAmount | currency: 'INR'}}</td>\r\n                                <td>{{memShare.Code}}</td>\r\n                                <td class=\"record-action\">\r\n                                    <button title=\"View Details\" class=\"Lastbutton\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#returnMemShare\"\r\n                                        (click)=\"delete(memShare)\">\r\n                                        <span *ngIf=\"lang.en\">RETURN</span>\r\n                                        <span *ngIf=\"lang.mr\"> परत </span>\r\n                                    </button>\r\n                                </td>\r\n                            </tr>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- data table end -->\r\n</section>\r\n<div id=\"returnMemShare\" *ngIf=\"memberShareModel!=null && memberShareModel!=undefined\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">\r\n                    <span *ngIf=\"lang.en\">MEMBER FEES </span>\r\n                    <span *ngIf=\"lang.mr\"> सदस्य शेअर्स </span>\r\n                </h4>\r\n            </div>\r\n            <div style=\"margin-left: 30px;font-size: 20px;\">\r\n                <label *ngIf=\"memberShareModel.ShareAmount != null && memberShareModel.ShareAmount != undefined\">AMOUNT: {{memberShareModel.ShareAmount != null && memberShareModel.ShareAmount != 'undefined' ? memberShareModel.ShareAmount : ''}}</label>\r\n                <br/>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <p>ARE YOU SURE YOU WANT TO RETURN THE SHARE AMOUNT OF</p>\r\n                <p>\r\n                    <b>{{memberShareModel.FirstName + \" \" + memberShareModel.MiddleName + \" \" + memberShareModel.LastName |\r\n                        uppercase}}\r\n                    </b>\r\n                </p>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"\">\r\n                    <div class=\"modal-footer\">\r\n                        <div class=\"form-group\">\r\n                            <button type=\"button\" data-dismiss=\"modal\" class=\"btn btn-primary\" (click)=\"returnMemberShare(memberShareModel)\">\r\n                                <span *ngIf=\"lang.en\">YES </span>\r\n                                <span *ngIf=\"lang.mr\">होय </span>\r\n                            </button>\r\n                            <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">\r\n                                <span *ngIf=\"lang.en\">NO </span>\r\n                                <span *ngIf=\"lang.mr\">नाही </span>\r\n                            </button>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -10119,6 +10658,12 @@ var DashboardBaseComponent = (function () {
         this.commonService = commonService;
         this.service = service;
         this.exportToPDF = exportToPDF;
+        //Its just a warning, ignore it.
+        //Id specifies either VOID or CMRC Id
+        //    @Input() VoId: number;
+        //RoleIdId specifies either VOID or CMRC RoleIdId
+        // If CMRC wants to View VO's Dashboard, then Id and Role of VO needs to sent
+        //  @Input() VoRoleId: number;
         this.Id = 0;
         this.RoleId = 0;
         this.balanceSheetToDt = new Date();
@@ -10146,8 +10691,8 @@ var DashboardBaseComponent = (function () {
         this.isSchemLoading = false;
         if (sessionStorage.getItem("access_token") == "")
             router.navigate(['../login']);
-        this.Id = this.VoId;
-        this.RoleId = this.VoRoleId;
+        this.Id = 0;
+        this.RoleId = 0;
     }
     DashboardBaseComponent.prototype.ngOnInit = function () {
         this.balanceSheetFromDt = new Date("APR 1 " + (new Date().getFullYear()));
@@ -10961,14 +11506,6 @@ var DashboardBaseComponent = (function () {
             .catch(function (res) {
         });
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Number)
-    ], DashboardBaseComponent.prototype, "VoId", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Number)
-    ], DashboardBaseComponent.prototype, "VoRoleId", void 0);
     DashboardBaseComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'dashboard-selector',
@@ -14895,7 +15432,7 @@ module.exports = "<div class=\"wrapper\" style=\"\">\r\n    <header class=\"main
 /***/ "../../../../../src/app/components/sc/loan/loan.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal-backdrop in\" *ngIf=\"_globalURL.isLoading\">\r\n    <loading-selector>\r\n    </loading-selector>\r\n</div>\r\n<div *ngIf=\"showMessage\">\r\n    <message-selector [message]=\"message\">\r\n    </message-selector>\r\n</div>\r\n<section class=\"content\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <div>\r\n                <!--<h4 class=\"loan_detail\">MEMBERS LOAN DETAILS</h4>-->\r\n                <h3>\r\n                    <span *ngIf=\"selectedLoanStatus ==globalVariable.NEW_LOAN\">\r\n                        <span *ngIf=\"lang.en\">NEW LOAN REQUEST DETAILS</span>\r\n                        <span *ngIf=\"lang.mr\">नवीन कर्ज विनंती तपशील</span>\r\n                    </span>\r\n                    <span *ngIf=\"selectedLoanStatus ==globalVariable.APPROVED_LOAN\">\r\n                        <span *ngIf=\"lang.en\">APPROVED LOANS DETAILS</span>\r\n                        <span *ngIf=\"lang.mr\">मंजूर कर्ज तपशील</span>\r\n                    </span>\r\n                    <span *ngIf=\"selectedLoanStatus ==globalVariable.REJECTED_LOAN\">\r\n                        <span *ngIf=\"lang.en\">REJECTED LOANS DETAILS</span>\r\n                        <span *ngIf=\"lang.mr\">अस्वीकृत कर्ज तपशील</span>\r\n                    </span>\r\n                    <span *ngIf=\"selectedLoanStatus ==globalVariable.CLOSED_LOAN\">\r\n                        <span *ngIf=\"lang.en\">CLOSED LOANS DETAILS</span>\r\n                        <span *ngIf=\"lang.mr\">बंद कर्ज तपशील</span>\r\n                    </span>\r\n                </h3>\r\n            </div>\r\n            <div class=\"box box-default\">\r\n                <div class=\"box-body\">\r\n                    <ul class=\"nav nav-pills\">\r\n                        <li [ngClass]=\"selectedLoanStatus == globalVariable.NEW_LOAN ? 'active' : ''\">\r\n                            <a routerLink='/sc/loan' (click)=\"loanSHGLoanData(globalVariable.NEW_LOAN)\">\r\n                                <span *ngIf=\"lang.en\">NEW LOAN REQUEST</span>\r\n                                <span *ngIf=\"lang.mr\">नवीन कर्ज विनंती</span>\r\n                            </a>\r\n                        </li>\r\n                        <li [ngClass]=\"selectedLoanStatus == globalVariable.APPROVED_LOAN ? 'active' : ''\">\r\n                            <a routerLink='/sc/loan' (click)=\"loanSHGLoanData(globalVariable.APPROVED_LOAN)\">\r\n                                <span *ngIf=\"lang.en\">APPROVED LOAN</span>\r\n                                <span *ngIf=\"lang.mr\">मंजूर कर्ज</span>\r\n                            </a>\r\n                        </li>\r\n                        <li [ngClass]=\"selectedLoanStatus == globalVariable.REJECTED_LOAN ? 'active' : ''\">\r\n                            <a routerLink='/sc/loan' (click)=\"loanSHGLoanData(globalVariable.REJECTED_LOAN)\">\r\n                                <span *ngIf=\"lang.en\">REJECTED LOAN</span>\r\n                                <span *ngIf=\"lang.mr\">अस्वीकृत कर्ज</span>\r\n                            </a>\r\n                        </li>\r\n                        <li [ngClass]=\"selectedLoanStatus == globalVariable.CLOSED_LOAN ? 'active' : ''\">\r\n                            <a routerLink='/sc/loan' (click)=\"loanSHGLoanData(globalVariable.CLOSED_LOAN)\">\r\n                                <span *ngIf=\"lang.en\">CLOSED LOAN</span>\r\n                                <span *ngIf=\"lang.mr\">बंद कर्ज</span>\r\n                            </a>\r\n                        </li>\r\n                    </ul>\r\n                </div>\r\n                <div *ngIf=\"memberLoanDetails.length >= 1\" class=\"box-body\">\r\n                    <table class=\"table table-bordered\" cellspacing=\"0\" width=\"100%\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">LOAN ID</span>\r\n                                    <span *ngIf=\"lang.mr\">कर्ज आयडी</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">APPLICATION FORM</span>\r\n                                    <span *ngIf=\"lang.mr\">अर्ज</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">MEMBER NAME</span>\r\n                                    <span *ngIf=\"lang.mr\">सदस्याचे नाव</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">SHG NAME</span>\r\n                                    <span *ngIf=\"lang.mr\">एसएचजी चे नाव</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">SHARE AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">सामायिक रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">LOAN AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">कर्जाचे कारण</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">LOAN REASON</span>\r\n                                    <span *ngIf=\"lang.mr\">कर्जाचे कारण</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">REQUEST DATE</span>\r\n                                    <span *ngIf=\"lang.mr\">विनंतीची तारीख</span>\r\n                                </th>\r\n                                <th *ngIf=\"selectedLoanStatus ==2\">\r\n                                    <span *ngIf=\"lang.en\">ACTION</span>\r\n                                    <span *ngIf=\"lang.mr\">कृती</span>\r\n                                </th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr *ngFor=\"let memberLoanDetail of memberLoanDetails\">\r\n                                <td>{{memberLoanDetail.LoanId}}</td>\r\n                                <td>\r\n                                    <span *ngIf=\"memberLoanDetail.Photo == null\">\r\n                                        <span *ngIf=\"lang.en\">NO IMAGE</span>\r\n                                        <span *ngIf=\"lang.mr\">फोटो नाही</span>\r\n                                    </span>\r\n                                    <span *ngIf=\"memberLoanDetail.Photo != null\">\r\n                                        <a target=\"_blank\" href=\"{{memberLoanDetail.Photo}}\">\r\n                                            <span *ngIf=\"lang.en\">SEE FORM</span>\r\n                                            <span *ngIf=\"lang.mr\">फॉर्म पहा</span>\r\n                                        </a>\r\n                                    </span>\r\n                                </td>\r\n                                <td>{{memberLoanDetail.MemberFirstName}} {{memberLoanDetail.MemberLastName}}</td>\r\n                                <td>{{memberLoanDetail.SHGName}}</td>\r\n                                <td>{{memberLoanDetail.ShareAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.LoanAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.LoanReason}}</td>\r\n                                <td>{{memberLoanDetail.RequestDate | date: 'dd-MMM-yyyy'}}</td>\r\n                                <td *ngIf=\"selectedLoanStatus ==2\">\r\n                                    <button class=\"btn btn-primary\" (click)=\"setLoanId(memberLoanDetail)\" data-toggle=\"modal\" data-target=\"#loanApplicationActionForm\">\r\n                                        <span *ngIf=\"lang.en\">ACTION</span>\r\n                                        <span *ngIf=\"lang.mr\">कृती</span>\r\n                                    </button>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    TOTAL SUM\r\n                                </td>\r\n                                <td colspan=\"4\"></td>\r\n                                <td>\r\n                                    {{totalLoanAmount | currency: 'INR'}}\r\n                                </td>\r\n                            </tr>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n\r\n<div id=\"loanApplicationActionForm\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\" style=\"width: 80%\">\r\n        <div class=\"modal-content\">\r\n            <form #loanForm=\"ngForm\">\r\n                <div class=\"modal-header\">\r\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" >&times;</button>\r\n                    <h4 class=\"modal-title\">APPROVE OR REJECT LOAN APPLICATION FORM for - {{memberDetailsCallBack.MemberFirstName}} {{memberDetailsCallBack.MemberLastName}}</h4>\r\n                    <p>\r\n                        <b> TOTAL AVAILABLE FUND - {{totalApprovedAmt | currency: 'INR'}}</b>\r\n                    </p>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">LOAN AMOUNT</span>\r\n                        <span *ngIf=\"lang.mr\">कर्जाची रक्कम</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"text\" disabled [(ngModel)]=\"amount\" class=\"form-control\" id=\"amount\" name=\"amount\" required maxlength=\"50\">\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">APPROVED LOAN AMOUNT</span>\r\n                        <span *ngIf=\"lang.mr\">मंजूर कर्जाची रक्कम</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"text\" (ngModel)=\"approvedLoanAmt\" #approvedLoanAmt=\"ngModel\" (input)=\"checkIfAmountExceed($event.target.value)\" class=\"form-control\" id=\"approvedLoanAmt\"\r\n                        name=\"approvedLoanAmt\" maxlength=\"50\">\r\n                    <div *ngIf=\"ifAmountExceed\" class=\"alert-danger comman-error-mesage\">\r\n                        <span *ngIf=\"lang.en\">APPROVE AMOUNT CAN NOT BE MORE THAN REQUEST AMOUNT</span>\r\n                        <span *ngIf=\"lang.mr\">मंजूर रक्कम विनंतीच्या रकमेपेक्षा अधिक असू शकत नाही</span>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">MEMBER SHARE AMOUNT</span>\r\n                        <span *ngIf=\"lang.mr\">सदस्याची सामाइक रक्कम</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"shareAmount\" id=\"shareAmount\" name=\"shareAmount\" maxlength=\"50\">\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">INTEREST RATE PER MONTH</span>\r\n                        <span *ngIf=\"lang.mr\">व्याज दर</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <select type=\"text\" (ngModel)=\"interest\" #interest=\"ngModel\" class=\"form-control\" id=\"interest\" name=\"interest\">\r\n                        <option value=\"1\">1</option>\r\n                        <option value=\"2\">2</option>\r\n                        <option value=\"3\">3</option>\r\n                        <option value=\"4\">4</option>\r\n                        <option value=\"5\">5</option>\r\n                        <option value=\"6\">6</option>\r\n                        <option value=\"7\">7</option>\r\n                        <option value=\"8\">8</option>\r\n                        <option value=\"9\">9</option>\r\n                        <option value=\"10\">10</option>\r\n                        <option value=\"11\">11</option>\r\n                        <option value=\"12\">12</option>\r\n                        <option value=\"13\">13</option>\r\n                        <option value=\"14\">14</option>\r\n                        <option value=\"15\">15</option>\r\n                        <option value=\"16\">16</option>\r\n                        <option value=\"17\">17</option>\r\n                        <option value=\"18\">18</option>\r\n                        <option value=\"19\">19</option>\r\n                        <option value=\"20\">20</option>\r\n                        <option value=\"21\">21</option>\r\n                        <option value=\"22\">22</option>\r\n                        <option value=\"23\">23</option>\r\n                        <option value=\"24\">24</option>\r\n                        <option value=\"25\">25</option>\r\n                        <option value=\"26\">26</option>\r\n                        <option value=\"27\">27</option>\r\n                        <option value=\"28\">28</option>\r\n                        <option value=\"29\">29</option>\r\n                        <option value=\"30\">30</option>\r\n                    </select>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">TENURE</span>\r\n                        <span *ngIf=\"lang.mr\">मिळकत</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <select (ngModel)=\"tenure\" name=\"tenure\" #tenure=\"ngModel\" class=\"form-control\" id=\"tenure\" name=\"tenure\">\r\n                        <option value=\"6\">6 Month</option>\r\n                        <option value=\"7\">7 Month</option>\r\n                        <option value=\"8\">8 Month</option>\r\n                        <option value=\"9\">9 Month</option>\r\n                        <option value=\"10\">10 Month</option>\r\n                        <option value=\"11\">11 Month</option>\r\n                        <option value=\"12\">12 Month</option>\r\n                        <option value=\"13\">13 Month</option>\r\n                        <option value=\"14\">14 Month</option>\r\n                        <option value=\"15\">15 Month</option>\r\n                        <option value=\"16\">16 Month</option>\r\n                        <option value=\"17\">17 Month</option>\r\n                        <option value=\"18\">18 Month</option>\r\n                        <option value=\"19\">19 Month</option>\r\n                        <option value=\"20\">20 Month</option>\r\n                        <option value=\"21\">21 Month</option>\r\n                        <option value=\"22\">22 Month</option>\r\n                        <option value=\"23\">23 Month</option>\r\n                        <option value=\"24\">24 Month</option>\r\n                    </select>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">EFFECTIVE START DATE</span>\r\n                        <span *ngIf=\"lang.mr\">प्रभावी प्रारंभ तारीख</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"date\" (ngModel)=\"effectiveDate\" #effectiveDate=\"ngModel\" class=\"form-control\" id=\"effectiveDate\" name=\"effectiveDate\" required maxlength=\"50\">\r\n                </div>\r\n                <div class=\"container-fluid\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-md-12 \">\r\n                            <button class=\"btn btn-primary\" style=\"margin-top:9px;\" type=\"button\" (click)=\"calculateRepayment(loanForm.value)\">CACLULATE REPAYMENT</button>\r\n                            <button class=\"btn btn-primary\" style=\"margin-top:9px;\" type=\"button\" (click)=\"calculateRepaymentPDF()\">PDF</button>\r\n\r\n                            <table class=\"table table-bordered\" cellspacing=\"0\" style=\"margin-top:8px;\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\"># INSTALLMENT</span>\r\n                                            <span *ngIf=\"lang.mr\"># हप्ता</span>\r\n                                        </th>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\">MONTH</span>\r\n                                            <span *ngIf=\"lang.mr\">महिना</span>\r\n                                        </th>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\">PRINCIPAL AMOUNT</span>\r\n                                            <span *ngIf=\"lang.mr\">मूळ रक्कम</span>\r\n                                        </th>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\">INTEREST AMOUNT</span>\r\n                                            <span *ngIf=\"lang.mr\">व्याजाची रक्कम</span>\r\n                                        </th>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\">TOTAL PAYABLE AMOUNT</span>\r\n                                            <span *ngIf=\"lang.mr\">एकूण देण्याची रक्कम</span>\r\n                                        </th>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\">OUTSTANDING AMOUNT</span>\r\n                                            <span *ngIf=\"lang.mr\">थकबाकी रक्कम</span>\r\n                                        </th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tr *ngFor=\"let memberLoanDetail of memLoanRepaymentDetails; let rowIndex=index\">\r\n                                    <td>{{rowIndex+1}}</td>\r\n                                    <td>{{memberLoanDetail.Date | date: 'dd-MMM-yyyy'}}</td>\r\n                                    <td>{{memberLoanDetail.FixedPayableAmt}}</td>\r\n                                    <td>{{memberLoanDetail.InterestAmt}}</td>\r\n                                    <td>{{memberLoanDetail.TotalPayableAmt}}</td>\r\n                                    <td>{{memberLoanDetail.OutstandingAmt}}</td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td>\r\n                                        <b>\r\n                                            <span *ngIf=\"lang.en\">TOTAL SUM</span>\r\n                                            <span *ngIf=\"lang.mr\">एकूण बेरीज</span>\r\n                                        </b>\r\n                                    </td>\r\n                                    <td>-</td>\r\n                                    <td>\r\n                                        <b>{{totalLoanAmt}}</b>\r\n                                    </td>\r\n                                    <td>\r\n                                        <b>{{totalPrinciple}}</b>\r\n                                    </td>\r\n                                    <td>\r\n                                        <b>{{totalPayable}}</b>\r\n                                    </td>\r\n                                </tr>\r\n                            </table>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">APPROVE</span>\r\n                        <span *ngIf=\"lang.mr\">मंजूर</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"radio\" name=\"Action\" (change)=\"setStatus(1)\" />\r\n                </div>\r\n                <div class=\"col-md-2 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">REJECT</span>\r\n                        <span *ngIf=\"lang.mr\">नकार</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"radio\" name=\"Action\" (change)=\"setStatus(4)\" />\r\n                </div>\r\n                <div class=\"col-md-4 form-group\" *ngIf=\"showComment\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">REJECT REASON</span>\r\n                        <span *ngIf=\"lang.mr\">नकाराचे कारण</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\"></span>\r\n                    </label>\r\n                    <textarea class=\"form-control\" (ngModel)=\"RejectReason\" name=\"RejectReason\" #RejectReason=\"ngModel\">\r\n                                       </textarea>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">LOAN APPROVED DATE</span>\r\n                        <span *ngIf=\"lang.mr\">कर्जाची मंजूर तारीख</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"date\" (ngModel)=\"ApprovedDate\" class=\"form-control\" id=\"ApprovedDate\" name=\"ApprovedDate\" required #ApprovedDate=\"ngModel\">\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">SELECT PAYMENT MODE</span>\r\n                        <span *ngIf=\"lang.mr\">पेमेंट मोड निवडा</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <select class=\"form-control\" (ngModel)=\"selectedPaymentModeId\" required name=\"selectedPaymentModeId\" #selectedPaymentModeId=\"ngModel\">\r\n                        <option [value]=\"1\">CASH AT HAND</option>\r\n                        <option [value]=\"2\">CASH AT BANK</option>\r\n                    </select>\r\n                    <div *ngIf=\"selectedPaymentModeId.invalid && selectedPaymentModeId.touched\" class=\"alert-danger comman-error-mesage\">\r\n                        <div [hidden]=\"!selectedPaymentModeId.hasError('required')\">\r\n                            <span *ngIf=\"lang.en\">PLEASE SELECT PAYMENT MODE</span>\r\n                            <span *ngIf=\"lang.mr\">कृपया पेमेंट मोड निवडा !</span>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <div class=\"form-group\" style=\"margin-top:10px;\">\r\n                        <div class=\"col-md-4\" style=\"float:right;\" *ngIf=\"showSaveButton\">\r\n                            <input class=\"btn btn-primary\" type=\"button\" (click)=\"UpdateStatus(loanForm.value); loanForm.reset()\" data-dismiss=\"modal\"\r\n                                value=\"SAVE ACTION\" />\r\n                            <input class=\"btn btn-default\" type=\"button\" (click)=\"clear(); loanForm.reset()\" value=\"CANCEL\" data-dismiss=\"modal\" />\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"modal-backdrop in\" *ngIf=\"_globalURL.isLoading\">\r\n    <loading-selector>\r\n    </loading-selector>\r\n</div>\r\n<div *ngIf=\"showMessage\">\r\n    <message-selector [message]=\"message\">\r\n    </message-selector>\r\n</div>\r\n<section class=\"content\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n            <div>\r\n                <!--<h4 class=\"loan_detail\">MEMBERS LOAN DETAILS</h4>-->\r\n                <h3>\r\n                    <span *ngIf=\"selectedLoanStatus ==globalVariable.NEW_LOAN\">\r\n                        <span *ngIf=\"lang.en\">NEW LOAN REQUEST DETAILS</span>\r\n                        <span *ngIf=\"lang.mr\">नवीन कर्ज विनंती तपशील</span>\r\n                    </span>\r\n                    <span *ngIf=\"selectedLoanStatus ==globalVariable.APPROVED_LOAN\">\r\n                        <span *ngIf=\"lang.en\">APPROVED LOANS DETAILS</span>\r\n                        <span *ngIf=\"lang.mr\">मंजूर कर्ज तपशील</span>\r\n                    </span>\r\n                    <span *ngIf=\"selectedLoanStatus ==globalVariable.REJECTED_LOAN\">\r\n                        <span *ngIf=\"lang.en\">REJECTED LOANS DETAILS</span>\r\n                        <span *ngIf=\"lang.mr\">अस्वीकृत कर्ज तपशील</span>\r\n                    </span>\r\n                    <span *ngIf=\"selectedLoanStatus ==globalVariable.CLOSED_LOAN\">\r\n                        <span *ngIf=\"lang.en\">CLOSED LOANS DETAILS</span>\r\n                        <span *ngIf=\"lang.mr\">बंद कर्ज तपशील</span>\r\n                    </span>\r\n                </h3>\r\n            </div>\r\n            <div class=\"box box-default\">\r\n                <div class=\"box-body\">\r\n                    <ul class=\"nav nav-pills\">\r\n                        <li [ngClass]=\"selectedLoanStatus == globalVariable.NEW_LOAN ? 'active' : ''\">\r\n                            <a routerLink='/sc/loan' (click)=\"loanSHGLoanData(globalVariable.NEW_LOAN)\">\r\n                                <span *ngIf=\"lang.en\">NEW LOAN REQUEST</span>\r\n                                <span *ngIf=\"lang.mr\">नवीन कर्ज विनंती</span>\r\n                            </a>\r\n                        </li>\r\n                        <li [ngClass]=\"selectedLoanStatus == globalVariable.APPROVED_LOAN ? 'active' : ''\">\r\n                            <a routerLink='/sc/loan' (click)=\"loanSHGLoanData(globalVariable.APPROVED_LOAN)\">\r\n                                <span *ngIf=\"lang.en\">APPROVED LOAN</span>\r\n                                <span *ngIf=\"lang.mr\">मंजूर कर्ज</span>\r\n                            </a>\r\n                        </li>\r\n                        <li [ngClass]=\"selectedLoanStatus == globalVariable.REJECTED_LOAN ? 'active' : ''\">\r\n                            <a routerLink='/sc/loan' (click)=\"loanSHGLoanData(globalVariable.REJECTED_LOAN)\">\r\n                                <span *ngIf=\"lang.en\">REJECTED LOAN</span>\r\n                                <span *ngIf=\"lang.mr\">अस्वीकृत कर्ज</span>\r\n                            </a>\r\n                        </li>\r\n                        <li [ngClass]=\"selectedLoanStatus == globalVariable.CLOSED_LOAN ? 'active' : ''\">\r\n                            <a routerLink='/sc/loan' (click)=\"loanSHGLoanData(globalVariable.CLOSED_LOAN)\">\r\n                                <span *ngIf=\"lang.en\">CLOSED LOAN</span>\r\n                                <span *ngIf=\"lang.mr\">बंद कर्ज</span>\r\n                            </a>\r\n                        </li>\r\n                    </ul>\r\n                </div>\r\n                <div *ngIf=\"memberLoanDetails.length >= 1\" class=\"box-body\">\r\n                    <table class=\"table table-bordered\" cellspacing=\"0\" width=\"100%\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">LOAN ID</span>\r\n                                    <span *ngIf=\"lang.mr\">कर्ज आयडी</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">APPLICATION FORM</span>\r\n                                    <span *ngIf=\"lang.mr\">अर्ज</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">MEMBER NAME</span>\r\n                                    <span *ngIf=\"lang.mr\">सदस्याचे नाव</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">SHG NAME</span>\r\n                                    <span *ngIf=\"lang.mr\">एसएचजी चे नाव</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">SHARE AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">सामायिक रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">LOAN AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">कर्जाचे कारण</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">LOAN REASON</span>\r\n                                    <span *ngIf=\"lang.mr\">कर्जाचे कारण</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">REQUEST DATE</span>\r\n                                    <span *ngIf=\"lang.mr\">विनंतीची तारीख</span>\r\n                                </th>\r\n                                <th *ngIf=\"selectedLoanStatus == globalVariable.NEW_LOAN\">\r\n                                    <span *ngIf=\"lang.en\">ACTION</span>\r\n                                    <span *ngIf=\"lang.mr\">कृती</span>\r\n                                </th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr *ngFor=\"let memberLoanDetail of memberLoanDetails\">\r\n                                <td>{{memberLoanDetail.LoanId}}</td>\r\n                                <td>\r\n                                    <span *ngIf=\"memberLoanDetail.Photo == null\">\r\n                                        <span *ngIf=\"lang.en\">NO IMAGE</span>\r\n                                        <span *ngIf=\"lang.mr\">फोटो नाही</span>\r\n                                    </span>\r\n                                    <span *ngIf=\"memberLoanDetail.Photo != null\">\r\n                                        <a target=\"_blank\" href=\"{{memberLoanDetail.Photo}}\">\r\n                                            <span *ngIf=\"lang.en\">SEE FORM</span>\r\n                                            <span *ngIf=\"lang.mr\">फॉर्म पहा</span>\r\n                                        </a>\r\n                                    </span>\r\n                                </td>\r\n                                <td>{{memberLoanDetail.MemberFirstName}} {{memberLoanDetail.MemberLastName}}</td>\r\n                                <td>{{memberLoanDetail.SHGName}}</td>\r\n                                <td>{{memberLoanDetail.ShareAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.LoanAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.LoanReason}}</td>\r\n                                <td>{{memberLoanDetail.RequestDate | date: 'dd-MMM-yyyy'}}</td>\r\n                                <td *ngIf=\"selectedLoanStatus ==2\">\r\n                                    <button class=\"btn btn-primary\" (click)=\"setLoanId(memberLoanDetail)\" data-toggle=\"modal\" data-target=\"#loanApplicationActionForm\">\r\n                                        <span *ngIf=\"lang.en\">ACTION</span>\r\n                                        <span *ngIf=\"lang.mr\">कृती</span>\r\n                                    </button>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    TOTAL SUM\r\n                                </td>\r\n                                <td colspan=\"4\"></td>\r\n                                <td>\r\n                                    {{totalLoanAmount | currency: 'INR'}}\r\n                                </td>\r\n                            </tr>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n\r\n<div id=\"loanApplicationActionForm\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\" style=\"width: 80%\">\r\n        <div class=\"modal-content\">\r\n            <form #loanForm=\"ngForm\">\r\n                <div class=\"modal-header\">\r\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" >&times;</button>\r\n                    <h4 class=\"modal-title\">APPROVE OR REJECT LOAN APPLICATION FORM for - {{memberDetailsCallBack.MemberFirstName}} {{memberDetailsCallBack.MemberLastName}}</h4>\r\n                    <p>\r\n                        <b> TOTAL AVAILABLE FUND - {{totalApprovedAmt | currency: 'INR'}}</b>\r\n                    </p>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">LOAN AMOUNT</span>\r\n                        <span *ngIf=\"lang.mr\">कर्जाची रक्कम</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"text\" disabled [(ngModel)]=\"amount\" class=\"form-control\" id=\"amount\" name=\"amount\" required maxlength=\"50\">\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">APPROVED LOAN AMOUNT</span>\r\n                        <span *ngIf=\"lang.mr\">मंजूर कर्जाची रक्कम</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"text\" (ngModel)=\"approvedLoanAmt\" #approvedLoanAmt=\"ngModel\" (input)=\"checkIfAmountExceed($event.target.value)\" class=\"form-control\" id=\"approvedLoanAmt\"\r\n                        name=\"approvedLoanAmt\" maxlength=\"50\">\r\n                    <div *ngIf=\"ifAmountExceed\" class=\"alert-danger comman-error-mesage\">\r\n                        <span *ngIf=\"lang.en\">APPROVE AMOUNT CAN NOT BE MORE THAN REQUEST AMOUNT</span>\r\n                        <span *ngIf=\"lang.mr\">मंजूर रक्कम विनंतीच्या रकमेपेक्षा अधिक असू शकत नाही</span>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">MEMBER SHARE AMOUNT</span>\r\n                        <span *ngIf=\"lang.mr\">सदस्याची सामाइक रक्कम</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"shareAmount\" id=\"shareAmount\" name=\"shareAmount\" maxlength=\"50\">\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">INTEREST RATE PER MONTH</span>\r\n                        <span *ngIf=\"lang.mr\">व्याज दर</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <select type=\"text\" (ngModel)=\"interest\" #interest=\"ngModel\" class=\"form-control\" id=\"interest\" name=\"interest\">\r\n                        <option value=\"1\">1</option>\r\n                        <option value=\"2\">2</option>\r\n                        <option value=\"3\">3</option>\r\n                        <option value=\"4\">4</option>\r\n                        <option value=\"5\">5</option>\r\n                        <option value=\"6\">6</option>\r\n                        <option value=\"7\">7</option>\r\n                        <option value=\"8\">8</option>\r\n                        <option value=\"9\">9</option>\r\n                        <option value=\"10\">10</option>\r\n                        <option value=\"11\">11</option>\r\n                        <option value=\"12\">12</option>\r\n                        <option value=\"13\">13</option>\r\n                        <option value=\"14\">14</option>\r\n                        <option value=\"15\">15</option>\r\n                        <option value=\"16\">16</option>\r\n                        <option value=\"17\">17</option>\r\n                        <option value=\"18\">18</option>\r\n                        <option value=\"19\">19</option>\r\n                        <option value=\"20\">20</option>\r\n                        <option value=\"21\">21</option>\r\n                        <option value=\"22\">22</option>\r\n                        <option value=\"23\">23</option>\r\n                        <option value=\"24\">24</option>\r\n                        <option value=\"25\">25</option>\r\n                        <option value=\"26\">26</option>\r\n                        <option value=\"27\">27</option>\r\n                        <option value=\"28\">28</option>\r\n                        <option value=\"29\">29</option>\r\n                        <option value=\"30\">30</option>\r\n                    </select>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">TENURE</span>\r\n                        <span *ngIf=\"lang.mr\">मिळकत</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <select (ngModel)=\"tenure\" name=\"tenure\" #tenure=\"ngModel\" class=\"form-control\" id=\"tenure\" name=\"tenure\">\r\n                        <option value=\"6\">6 Month</option>\r\n                        <option value=\"7\">7 Month</option>\r\n                        <option value=\"8\">8 Month</option>\r\n                        <option value=\"9\">9 Month</option>\r\n                        <option value=\"10\">10 Month</option>\r\n                        <option value=\"11\">11 Month</option>\r\n                        <option value=\"12\">12 Month</option>\r\n                        <option value=\"13\">13 Month</option>\r\n                        <option value=\"14\">14 Month</option>\r\n                        <option value=\"15\">15 Month</option>\r\n                        <option value=\"16\">16 Month</option>\r\n                        <option value=\"17\">17 Month</option>\r\n                        <option value=\"18\">18 Month</option>\r\n                        <option value=\"19\">19 Month</option>\r\n                        <option value=\"20\">20 Month</option>\r\n                        <option value=\"21\">21 Month</option>\r\n                        <option value=\"22\">22 Month</option>\r\n                        <option value=\"23\">23 Month</option>\r\n                        <option value=\"24\">24 Month</option>\r\n                    </select>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">EFFECTIVE START DATE</span>\r\n                        <span *ngIf=\"lang.mr\">प्रभावी प्रारंभ तारीख</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"date\" (ngModel)=\"effectiveDate\" #effectiveDate=\"ngModel\" class=\"form-control\" id=\"effectiveDate\" name=\"effectiveDate\" required maxlength=\"50\">\r\n                </div>\r\n                <div class=\"container-fluid\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-md-12 \">\r\n                            <button class=\"btn btn-primary\" style=\"margin-top:9px;\" type=\"button\" (click)=\"calculateRepayment(loanForm.value)\">CACLULATE REPAYMENT</button>\r\n                            <button class=\"btn btn-primary\" style=\"margin-top:9px;\" type=\"button\" (click)=\"calculateRepaymentPDF()\">PDF</button>\r\n\r\n                            <table class=\"table table-bordered\" cellspacing=\"0\" style=\"margin-top:8px;\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\"># INSTALLMENT</span>\r\n                                            <span *ngIf=\"lang.mr\"># हप्ता</span>\r\n                                        </th>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\">MONTH</span>\r\n                                            <span *ngIf=\"lang.mr\">महिना</span>\r\n                                        </th>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\">PRINCIPAL AMOUNT</span>\r\n                                            <span *ngIf=\"lang.mr\">मूळ रक्कम</span>\r\n                                        </th>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\">INTEREST AMOUNT</span>\r\n                                            <span *ngIf=\"lang.mr\">व्याजाची रक्कम</span>\r\n                                        </th>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\">TOTAL PAYABLE AMOUNT</span>\r\n                                            <span *ngIf=\"lang.mr\">एकूण देण्याची रक्कम</span>\r\n                                        </th>\r\n                                        <th>\r\n                                            <span *ngIf=\"lang.en\">OUTSTANDING AMOUNT</span>\r\n                                            <span *ngIf=\"lang.mr\">थकबाकी रक्कम</span>\r\n                                        </th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tr *ngFor=\"let memberLoanDetail of memLoanRepaymentDetails; let rowIndex=index\">\r\n                                    <td>{{rowIndex+1}}</td>\r\n                                    <td>{{memberLoanDetail.Date | date: 'dd-MMM-yyyy'}}</td>\r\n                                    <td>{{memberLoanDetail.FixedPayableAmt}}</td>\r\n                                    <td>{{memberLoanDetail.InterestAmt}}</td>\r\n                                    <td>{{memberLoanDetail.TotalPayableAmt}}</td>\r\n                                    <td>{{memberLoanDetail.OutstandingAmt}}</td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td>\r\n                                        <b>\r\n                                            <span *ngIf=\"lang.en\">TOTAL SUM</span>\r\n                                            <span *ngIf=\"lang.mr\">एकूण बेरीज</span>\r\n                                        </b>\r\n                                    </td>\r\n                                    <td>-</td>\r\n                                    <td>\r\n                                        <b>{{totalLoanAmt}}</b>\r\n                                    </td>\r\n                                    <td>\r\n                                        <b>{{totalPrinciple}}</b>\r\n                                    </td>\r\n                                    <td>\r\n                                        <b>{{totalPayable}}</b>\r\n                                    </td>\r\n                                </tr>\r\n                            </table>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">APPROVE</span>\r\n                        <span *ngIf=\"lang.mr\">मंजूर</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"radio\" name=\"Action\" (change)=\"setStatus(1)\" />\r\n                </div>\r\n                <div class=\"col-md-2 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">REJECT</span>\r\n                        <span *ngIf=\"lang.mr\">नकार</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"radio\" name=\"Action\" (change)=\"setStatus(4)\" />\r\n                </div>\r\n                <div class=\"col-md-4 form-group\" *ngIf=\"showComment\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">REJECT REASON</span>\r\n                        <span *ngIf=\"lang.mr\">नकाराचे कारण</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\"></span>\r\n                    </label>\r\n                    <textarea class=\"form-control\" (ngModel)=\"RejectReason\" name=\"RejectReason\" #RejectReason=\"ngModel\">\r\n                                       </textarea>\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">LOAN APPROVED DATE</span>\r\n                        <span *ngIf=\"lang.mr\">कर्जाची मंजूर तारीख</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <input type=\"date\" (ngModel)=\"ApprovedDate\" class=\"form-control\" id=\"ApprovedDate\" name=\"ApprovedDate\" required #ApprovedDate=\"ngModel\">\r\n                </div>\r\n                <div class=\"col-md-6 form-group\">\r\n                    <label class=\"control-label\" for=\"text\">\r\n                        <span *ngIf=\"lang.en\">SELECT PAYMENT MODE</span>\r\n                        <span *ngIf=\"lang.mr\">पेमेंट मोड निवडा</span>\r\n                        <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                    </label>\r\n                    <select class=\"form-control\" (ngModel)=\"selectedPaymentModeId\" required name=\"selectedPaymentModeId\" #selectedPaymentModeId=\"ngModel\">\r\n                        <option [value]=\"1\">CASH AT HAND</option>\r\n                        <option [value]=\"2\">CASH AT BANK</option>\r\n                    </select>\r\n                    <div *ngIf=\"selectedPaymentModeId.invalid && selectedPaymentModeId.touched\" class=\"alert-danger comman-error-mesage\">\r\n                        <div [hidden]=\"!selectedPaymentModeId.hasError('required')\">\r\n                            <span *ngIf=\"lang.en\">PLEASE SELECT PAYMENT MODE</span>\r\n                            <span *ngIf=\"lang.mr\">कृपया पेमेंट मोड निवडा !</span>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <div class=\"form-group\" style=\"margin-top:10px;\">\r\n                        <div class=\"col-md-4\" style=\"float:right;\" *ngIf=\"showSaveButton\">\r\n                            <input class=\"btn btn-primary\" type=\"button\" (click)=\"UpdateStatus(loanForm.value); loanForm.reset()\" data-dismiss=\"modal\"\r\n                                value=\"SAVE ACTION\" />\r\n                            <input class=\"btn btn-default\" type=\"button\" (click)=\"clear(); loanForm.reset()\" value=\"CANCEL\" data-dismiss=\"modal\" />\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -14971,8 +15508,8 @@ var SCLoanComponent = (function () {
     }
     SCLoanComponent.prototype.ngOnInit = function () {
         this._globalURL.isLoading = true;
-        this.selectedLoanStatus = 2;
-        this.loanSHGLoanData(2);
+        this.selectedLoanStatus = this.globalVariable.NEW_LOAN;
+        this.loanSHGLoanData(this.globalVariable.NEW_LOAN);
         this.getFund();
         this.showComment = false;
     };
@@ -16136,7 +16673,7 @@ var AttendanceComponent = (function () {
 /***/ "../../../../../src/app/components/vo/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<dashboard-selector></dashboard-selector>"
+module.exports = "<!-- Main content -->\r\n<section class=\"content\" style=\"padding-top:0px;\">\r\n  <!-- Info boxes -->\r\n\r\n  <div class=\"modal-backdrop in\" *ngIf=\"_globalURL.isLoading\">\r\n    <loading-selector>\r\n    </loading-selector>\r\n  </div>\r\n  <section class=\"content-header\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-12\" style=\"padding:3px;\">\r\n        <div class=\"col-md-4\">\r\n          <label class=\"heading-title\">\r\n            <span *ngIf=\"lang.en\">VO DASHBOARD DETAILS</span>\r\n            <span *ngIf=\"lang.mr\">व्हीओ डॅशबोर्ड तपशील </span>\r\n          </label>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n  <div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n      <div class=\"box-body vo-detail\">\r\n        <table class=\"table\" *ngIf=\"financeDetails != null && financeDetails != undefined\" style=\"width:100%\">\r\n          <thead>\r\n            <tr *ngFor=\"let count of SHGAndMembersCount\" style=\"border:1px solid #fff\">\r\n              <th class=\"finance-heading-name\">\r\n                <a *ngIf=\"count.Type == 'SHG'\" routerLink=\"/vo/shg_master\">\r\n                  <div class=\"dashboard-finance-details\">\r\n                    <h5>\r\n                      <b>\r\n                        <span *ngIf=\"lang.en\">TOTAL SHG</span>\r\n                        <span *ngIf=\"lang.mr\">एकूण एसएचजी</span>\r\n                      </b>\r\n                    </h5>\r\n                  </div>\r\n                </a>\r\n                <a *ngIf=\"count.Type == 'Member'\" routerLink=\"/vo/shg_master\">\r\n                  <div class=\"dashboard-finance-details\">\r\n                    <h5>\r\n                      <b>\r\n                        <span *ngIf=\"lang.en\">TOTAL MEMBERS</span>\r\n                        <span *ngIf=\"lang.mr\">एकूण सदस्य</span>\r\n                      </b>\r\n                    </h5>\r\n                  </div>\r\n                </a>\r\n              </th>\r\n              <th class=\"finance-heading-value\">\r\n                <a *ngIf=\"count.Type == 'SHG'\" routerLink=\"/vo/shg_master\">\r\n                  <div class=\"dashboard-finance-details\">\r\n                    <h5>\r\n                      <b>{{count.Count}}</b>\r\n                    </h5>\r\n                  </div>\r\n                </a>\r\n                <a *ngIf=\"count.Type == 'Member'\" routerLink=\"/vo/shg_master\">\r\n                  <div class=\"dashboard-finance-details\">\r\n                    <h5>\r\n                      <b>{{count.Count}}</b>\r\n                    </h5>\r\n                  </div>\r\n                </a>\r\n              </th>\r\n            </tr>\r\n            <tr>\r\n              <th class=\"finance-heading-name\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <b>\r\n                    <span *ngIf=\"lang.en\">CUMULATIVE CMRC FUND</span>\r\n                    <span *ngIf=\"lang.mr\">सीएमआरसी प्राप्त निधी</span>\r\n                  </b>\r\n                </h5>\r\n              </th>\r\n              <th class=\"finance-heading-value\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <B>{{financeDetails.TotalCumulativeFundAmt | currency: 'INR'}}</B>\r\n                </h5>\r\n              </th>\r\n            </tr>\r\n            <tr>\r\n              <th class=\"finance-heading-name\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  {{financeDetails.FundType | uppercase}}\r\n                  <span *ngIf=\"lang.en\">START DATE</span>\r\n                  <span *ngIf=\"lang.mr\">सीएमआरसी प्रारंभ दिनांक</span>\r\n                </h5>\r\n              </th>\r\n              <th class=\"finance-heading-value\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <B>{{financeDetails.VOStartDate | date: 'dd-MMM-yyyy'}}</B>\r\n                </h5>\r\n              </th>\r\n            </tr>\r\n            <tr>\r\n              <th class=\"finance-heading-name\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <b>\r\n                    <span *ngIf=\"lang.en\">TOTAL LOAN DISTRIBUTED</span>\r\n                    <span *ngIf=\"lang.mr\">एकूण कर्ज वितरण</span>\r\n                  </b>\r\n                </h5>\r\n              </th>\r\n              <th class=\"finance-heading-value\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <B>{{financeDetails.TotalLoanAmtSpent | currency: 'INR'}}</B>\r\n                </h5>\r\n              </th>\r\n            </tr>\r\n            <tr>\r\n              <th class=\"finance-heading-name\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <b>\r\n                    <span *ngIf=\"lang.en\">TOTAL REPAID PRINCIPAL AMOUNT</span>\r\n                    <span *ngIf=\"lang.mr\">परतफेड केलेली रक्कम</span>\r\n                  </b>\r\n                </h5>\r\n              </th>\r\n              <th class=\"finance-heading-value\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <B>{{financeDetails.TotalPaidPrincipalAmount | currency: 'INR'}}</B>\r\n                </h5>\r\n              </th>\r\n            </tr>\r\n            <tr>\r\n              <th class=\"finance-heading-name\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <b>\r\n                    <span *ngIf=\"lang.en\">TOTAL REPAID INTEREST AMOUNT</span>\r\n                    <span *ngIf=\"lang.mr\">परतफेड केलेली रक्कम</span>\r\n                  </b>\r\n                </h5>\r\n              </th>\r\n              <th class=\"finance-heading-value\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <B>{{financeDetails.TotalPaidInterestAmount | currency: 'INR'}}</B>\r\n                </h5>\r\n              </th>\r\n            </tr>\r\n            <tr>\r\n              <th class=\"finance-heading-name\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <b>\r\n                    <span *ngIf=\"lang.en\">TOTAL OUTSTANDING LOAN AMT</span>\r\n                    <span *ngIf=\"lang.mr\">थकबाकी कर्ज रक्कम</span>\r\n                  </b>\r\n                </h5>\r\n              </th>\r\n              <th class=\"finance-heading-value\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <B>{{financeDetails.TotalOutstandingRepaymentAmount | currency: 'INR'}}</B>\r\n                </h5>\r\n              </th>\r\n            </tr>\r\n            <tr>\r\n              <th class=\"finance-heading-name\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <b>\r\n                    <span *ngIf=\"lang.en\">NET INCOME/LOSS</span>\r\n                    <span *ngIf=\"lang.mr\">निव्वळ नफा /नुकसान</span>\r\n                  </b>\r\n                </h5>\r\n              </th>\r\n              <th class=\"finance-heading-value\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <B>{{financeDetails.TotalNetProfitOrLossOnLoans | currency: 'INR'}}</B>\r\n                </h5>\r\n              </th>\r\n            </tr>\r\n            <tr>\r\n              <th class=\"finance-heading-name\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <b>\r\n                    <span *ngIf=\"lang.en\">TOTAL AVAILABLE AMT</span>\r\n                    <span *ngIf=\"lang.mr\">एकूण उपलब्ध रक्कम</span>\r\n                  </b>\r\n                </h5>\r\n\r\n              </th>\r\n              <th class=\"finance-heading-value\">\r\n                <h5 class=\"dashboard-finance-details\">\r\n                  <B>{{financeDetails.TotalFundAmtAvailable | currency: 'INR'}}</B>\r\n                </h5>\r\n              </th>\r\n            </tr>\r\n          </thead>\r\n        </table>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-8\">\r\n      <div class=\"box-body box_section\">\r\n        <table class=\"table table-bordered common_table\">\r\n          <caption class=\"text-center btn-info\" style=\"color:#fff; background-color: cadetblue\">\r\n            <h5 style=\"text-align: center; margin:-3px 10px;\">\r\n              <span *ngIf=\"lang.en\">\r\n                <label class=\"table-head\">VILLAGE ORGANIZATION PROFILE</label>\r\n              </span>\r\n              <span *ngIf=\"lang.mr\">\r\n                <label class=\"table-head\"> ग्रामसंस्था प्रोफाइल </label>\r\n              </span>\r\n              <button class=\"btn btn-primary pdf-button\" (click)=\"voProfileDetails()\">\r\n                <span>\r\n                  <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n                </span> PDF\r\n              </button>\r\n            </h5>\r\n          </caption>\r\n          <thead>\r\n            <tr>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">VO NAME </span>\r\n                <span *ngIf=\"lang.mr\"> ग्रामसंस्थेचे नांव </span>\r\n              </th>\r\n              <td colspan=\"3\">{{voDetails.Name | uppercase}}</td>\r\n            </tr>\r\n            <br>\r\n          </thead>\r\n          <tbody style=\"margin-top:12px;\">\r\n            <tr>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">AREA </span>\r\n                <span *ngIf=\"lang.mr\">क्षेत्र </span>\r\n              </th>\r\n              <td>{{voDetails.Area| uppercase}}</td>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">PAN CARD NUMBER </span>\r\n                <span *ngIf=\"lang.mr\">पॅन कार्ड नंबर</span>\r\n              </th>\r\n              <td>{{voDetails.PanCardNumber}}</td>\r\n            </tr>\r\n            <tr>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">VILLAGE NAME </span>\r\n                <span *ngIf=\"lang.mr\">गावाचे नाव </span>\r\n              </th>\r\n              <td>{{voDetails.Village | uppercase}}</td>\r\n              <th>\r\n                <span *ngIf=\"lang.en\"> VO FORMATION DATE </span>\r\n                <span *ngIf=\"lang.mr\">ग्रामसंस्था स्थापना दिनांक </span>\r\n              </th>\r\n              <td>{{voDetails.FormationDate | date: 'dd-MMM-yyyy':'dd-MMM-yyyy'}}</td>\r\n            </tr>\r\n            <tr>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">ADDRESS </span>\r\n                <span *ngIf=\"lang.mr\">पत्ता </span>\r\n              </th>\r\n              <td>{{voDetails.Address | uppercase}}</td>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">BANK AC/NUMBER </span>\r\n                <span *ngIf=\"lang.mr\">बँक खाते क्रमांक </span>\r\n              </th>\r\n              <td>{{voDetails.BankAccountNumber}}</td>\r\n\r\n            </tr>\r\n            <tr>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">TALUKA </span>\r\n                <span *ngIf=\"lang.mr\">तालुका </span>\r\n              </th>\r\n              <td>{{voDetails.Taluka | uppercase}}</td>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">BANK NAME </span>\r\n                <span *ngIf=\"lang.mr\">बँकेचे नाव</span>\r\n              </th>\r\n              <td>{{voDetails.BankName | uppercase}}</td>\r\n            </tr>\r\n            <tr>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">DISTRICT </span>\r\n                <span *ngIf=\"lang.mr\">जिल्हा </span>\r\n              </th>\r\n              <td>{{voDetails.District | uppercase}}</td>\r\n              <th>\r\n                <span *ngIf=\"lang.en\"> BRANCH NAME</span>\r\n                <span *ngIf=\"lang.mr\">शाखेचे नाव </span>\r\n              </th>\r\n              <td>{{voDetails.BranchName | uppercase}}</td>\r\n            </tr>\r\n            <tr>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">PINCODE</span>\r\n                <span *ngIf=\"lang.mr\">पिन कोड </span>\r\n              </th>\r\n              <td>{{voDetails.PinCode}}</td>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">BANK ADDRESS</span>\r\n                <span *ngIf=\"lang.mr\">बँकेचा पत्ता </span>\r\n              </th>\r\n              <td>{{voDetails.BankAddress | uppercase}}</td>\r\n            </tr>\r\n            <tr>\r\n            </tr>\r\n            <tr>\r\n              <th></th>\r\n              <td></td>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">IFSC CODE</span>\r\n                <span *ngIf=\"lang.mr\">आयएफएससी कोड </span>\r\n              </th>\r\n              <td>{{voDetails.IFSCCode}}</td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <!-- end Scheme SHG Table -->\r\n\r\n  <!-- Start Scheme Scheme Table -->\r\n\r\n\r\n  <div class=\"row\" style=\"margin-top:20px;margin-left:0px;margin-right:0px;\">\r\n    <div class=\"box-body box_section\">\r\n      <table class=\"table table-bordered common_table\">\r\n        <caption class=\"text-center btn-info\" style=\"color:#fff; background-color: cadetblue\">\r\n          <h5 style=\"text-align: center; margin:-3px 10px;\">\r\n            <div *ngIf=\"isSchemLoading\" style=\"top:50%;float: left;z-index:99999;\">\r\n              <div>\r\n                <img src=\"/assets/pdf/loadwait.gif\" class=\"image-set\" style=\"height:50px;width:50px;\">\r\n              </div>\r\n            </div>\r\n            <span *ngIf=\"lang.en\">\r\n              <label class=\"table-head\">SCHEME & CASTE WISE SHG DATA</label>\r\n            </span>\r\n            <span *ngIf=\"lang.mr\">\r\n              <label class=\"table-head\"> योजनेनुसार व प्रवर्गानुसार बचतगटाची माहिती </label>\r\n            </span>\r\n            <button class=\"btn btn-primary pdf-button\" (click)=\"R38_SchemeAndCastWiseSHGDetailPDF()\">\r\n              <span>\r\n                <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n              </span> PDF\r\n            </button>\r\n          </h5>\r\n        </caption>\r\n        <thead>\r\n          <tr>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">SR. NO.</span>\r\n              <span *ngIf=\"lang.mr\"> अं.क्र. </span>\r\n            </th>\r\n\r\n            <th>\r\n              <span *ngIf=\"lang.en\">SCHEME NAME</span>\r\n              <span *ngIf=\"lang.mr\"> योजनेचे नाव </span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">TOTAL SHG</span>\r\n              <span *ngIf=\"lang.mr\">एकूण बचत गट </span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">SC</span>\r\n              <span *ngIf=\"lang.mr\">एससी</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">ST</span>\r\n              <span *ngIf=\"lang.mr\">एसटी</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">NT +</span>\r\n              <span *ngIf=\"lang.mr\">एनटी +</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">OBC</span>\r\n              <span *ngIf=\"lang.mr\">ओबीसी</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">MINORITY</span>\r\n              <span *ngIf=\"lang.mr\">अल्पसंख्यक </span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">OPEN</span>\r\n              <span *ngIf=\"lang.mr\">खुला </span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">TOTAL MEMBERS</span>\r\n              <span *ngIf=\"lang.mr\">एकूण सदस्य </span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">SCHEME WISE %</span>\r\n              <span *ngIf=\"lang.mr\">योजनेनुसार % </span>\r\n            </th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr *ngFor=\"let schemeWiseSHGCaste_ of schemeWiseSHGCasteData; let rowIndex=index\">\r\n            <td>{{rowIndex+1}}</td>\r\n            <td>{{schemeWiseSHGCaste_.SchemeName}}</td>\r\n            <td>{{schemeWiseSHGCaste_.TotalSHGCount}}</td>\r\n            <td *ngFor=\"let castData of schemeWiseSHGCaste_.Data\">{{castData.totalMem}}</td>\r\n            <td>{{schemeWiseSHGCaste_.TotalMembers}}</td>\r\n            <td>\r\n              <b>{{schemeWiseSHGCaste_.TotalMembersPercentage}} %</b>\r\n            </td>\r\n          </tr>\r\n          <tr>\r\n            <td>-</td>\r\n            <td>\r\n              <b>\r\n                <span *ngIf=\"lang.en\">TOTAL</span>\r\n                <span *ngIf=\"lang.mr\">एकूण </span>\r\n              </b>\r\n            </td>\r\n            <td>{{shgCount}}</td>\r\n            <td *ngFor=\"let castData_ of casteWiseData\">\r\n              <b>{{castData_.totalMem}}</b>\r\n            </td>\r\n            <td>\r\n              <b>{{memebrCount}}</b>\r\n            </td>\r\n            <td>\r\n              <b>100 %</b>\r\n            </td>\r\n          </tr>\r\n          <tr>\r\n            <td>-</td>\r\n            <td>-</td>\r\n            <td>\r\n              <b>\r\n                <span *ngIf=\"lang.en\">CASTE WISE (%)</span>\r\n                <span *ngIf=\"lang.mr\">प्रवर्गानुसार (%) </span>\r\n              </b>\r\n            </td>\r\n            <td *ngFor=\"let castData_ of casteWiseData\">\r\n              <b>{{castData_.percentage}} %</b>\r\n            </td>\r\n            <td>-</td>\r\n            <td>-</td>\r\n          </tr>\r\n          <!--          <tr>\r\n              <td colspan=\"3\">Caste Wise (%)</td>\r\n              <td *ngFor=\"let castData_ of schemeWiseSHGCaste_.Caste\">{{castData_.percentage}}</td>\r\n            </tr> -->\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- end Scheme SHG Table -->\r\n  <!-- Marital  and Status wise Member data  -->\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6\" style=\"margin-top:18px;\">\r\n      <div class=\"box-body box_section\">\r\n        <table class=\"table table-bordered common_table\">\r\n          <caption class=\"text-center btn-info\" style=\"color:#fff;  background-color: cadetblue\">\r\n            <h5 style=\"text-align: center; margin:-3px 10px;\">\r\n              <span *ngIf=\"lang.en\">\r\n                <label class=\"table-head\">MARITAL STATUS WISE MEMBER DATA\r\n                  <P>\r\n                    <small style=\"color:#fff;  background-color: cadetblue\">TOTAL MEMBERS - ({{totalMembers}})</small>\r\n                  </P>\r\n                </label>\r\n              </span>\r\n              <span *ngIf=\"lang.mr\">\r\n                <label class=\"table-head\">वैवाहिक स्थितीनुसार सदस्याची माहिती\r\n                  <P>\r\n                    <small style=\"color:#fff;  background-color: cadetblue\">एकूण सदस्य - ({{totalMembers}})</small>\r\n                  </P>\r\n                </label>\r\n              </span>\r\n              <button class=\"btn btn-primary pdf-button\" (click)=\"maritalStatusWiseDataForVo()\">\r\n                <span>\r\n                  <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n                </span>\r\n                PDF\r\n              </button>\r\n            </h5>\r\n          </caption>\r\n          <thead>\r\n            <tr>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">STATUS</span>\r\n                <span *ngIf=\"lang.mr\">स्थिती</span>\r\n              </th>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">TOTAL MEMBERS</span>\r\n                <span *ngIf=\"lang.mr\">एकूण सदस्य संख्या </span>\r\n              </th>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">TOTAL MEMBERS (%)</span>\r\n                <span *ngIf=\"lang.mr\">एकूण सदस्य(%)</span>\r\n              </th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngFor=\"let marritalStatusData of GetMarritalStatusData\">\r\n              <td>{{marritalStatusData.Status}}</td>\r\n              <td>{{marritalStatusData.TotalMembers}}</td>\r\n              <td>{{marritalStatusData.TotalMemberPer}} %</td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-6\" style=\"margin-top:18px;\">\r\n      <div class=\"box-body box_section\">\r\n        <table class=\"table table-bordered common_table\">\r\n          <caption class=\"text-center btn-info\" style=\"color:#fff;  background-color: cadetblue\">\r\n            <h5 style=\"margin:-3px 10px;\">\r\n              <span *ngIf=\"lang.en\">\r\n                <label class=\"table-head\">AGE WISE MEMBERS DATA\r\n                  <P>\r\n                    <small style=\"color:#fff;  background-color: cadetblue\">TOTAL MEMBERS - ({{totalMembers}})</small>\r\n                  </P>\r\n                </label>\r\n              </span>\r\n              <span *ngIf=\"lang.mr\">\r\n                <label class=\"table-head\">वयानुसार सदस्याची माहिती\r\n                  <P>\r\n                    <small style=\"color:#fff;  background-color: cadetblue\">एकूण सदस्य - ({{totalMembers}})</small>\r\n                  </P>\r\n                </label>\r\n              </span>\r\n              <button class=\"btn btn-primary pdf-button\" (click)=\"ageWiseDataForVo()\">\r\n                <span>\r\n                  <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n                </span>\r\n                PDF\r\n              </button>\r\n            </h5>\r\n          </caption>\r\n          <thead>\r\n            <tr>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">AGE GROUP</span>\r\n                <span *ngIf=\"lang.mr\">वयो मर्यादा </span>\r\n              </th>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">TOTAL MEMBERS</span>\r\n                <span *ngIf=\"lang.mr\">एकूण सदस्य संख्या </span>\r\n              </th>\r\n              <th>\r\n                <span *ngIf=\"lang.en\">TOTAL MEMBERS(%)</span>\r\n                <span *ngIf=\"lang.mr\">एकूण सदस्य(%)</span>\r\n              </th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngFor=\"let getAgeWiseData of GetAgeWiseData\">\r\n              <td>{{getAgeWiseData.AgeGroup}}</td>\r\n              <td>{{getAgeWiseData.TotalMember}}</td>\r\n              <td>{{getAgeWiseData.TotalMemberPer}} %</td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <!--  End Marital  and Status wise Member data  -->\r\n\r\n  <div class=\"row\" style=\"margin-top:18px;margin-left:0px;margin-right:0px;\">\r\n    <div class=\"box-body box_section\">\r\n      <table class=\"table table-bordered common_table\">\r\n        <caption class=\"text-center btn-info\" style=\"color:#fff;  background-color: cadetblue\">\r\n          <h5 style=\"text-align: center; margin:-3px 10px;\">\r\n            <span *ngIf=\"lang.en\" style=\"color:#fff;  background-color: cadetblue\">\r\n              <label class=\"table-head\">TOTAL PURPOSE WISE LOAN DISTRIBUTION DATA\r\n                <p>\r\n                  <small style=\"color:#fff;  background-color: cadetblue\">\r\n                    TOTAL LOAN CONSUMED MEMBERS - {{caste_total_loan_con_mem}} AND APPROVED LOAN AMOUNT {{totalLoanApprovedAmt | currency: 'INR'}}\r\n                  </small>\r\n                </p>\r\n              </label>\r\n            </span>\r\n            <span *ngIf=\"lang.mr\">\r\n              <label class=\"table-head\">उद्देशानुसार कर्जवाटपाची माहिती\r\n                <p>\r\n                  <small style=\"color:#fff;  background-color: cadetblue\">\r\n                    कर्ज घेतलेले एकूण सदस्य- {{caste_total_loan_con_mem}} आणि मंजूर केलेली कर्जाची रक्कम {{totalLoanApprovedAmt | currency: 'INR'}}\r\n                  </small>\r\n                </p>\r\n              </label>\r\n            </span>\r\n\r\n            <button class=\"btn btn-primary pdf-button\" (click)=\"R41PurposewiseLoanDistExportToPdf()\">\r\n              <span>\r\n                <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n              </span>\r\n              PDF\r\n            </button>\r\n          </h5>\r\n        </caption>\r\n        <thead>\r\n          <tr>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">TYPE</span>\r\n              <span *ngIf=\"lang.mr\">प्रकार</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">TOTAL MEMBERS</span>\r\n              <span *ngIf=\"lang.mr\">एकूण सदस्य संख्या </span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">TOTAL MEMBERS(%)</span>\r\n              <span *ngIf=\"lang.mr\">एकूण सदस्य (%)</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">TOTAL AMOUNT</span>\r\n              <span *ngIf=\"lang.mr\">एकूण रक्कम</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">TOTAL AMOUNT (%)</span>\r\n              <span *ngIf=\"lang.mr\">एकूण रक्कम(%)</span>\r\n            </th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr *ngFor=\"let getPurposeWiseData of GetPurposeWiseData\">\r\n            <td>{{getPurposeWiseData.LoanType}}</td>\r\n            <td>{{getPurposeWiseData.TotalMember}}</td>\r\n            <td>{{getPurposeWiseData.TotalMemberPer}} %</td>\r\n            <td>{{getPurposeWiseData.TotalAmount | currency: 'INR'}}</td>\r\n            <td>{{getPurposeWiseData.TotalAmountPer}} %</td>\r\n          </tr>\r\n          <tr>\r\n            <td>\r\n              <span *ngIf=\"lang.en\">TOTAL</span>\r\n              <span *ngIf=\"lang.mr\">एकूण </span>\r\n            </td>\r\n            <td>\r\n              <b>{{purpose_total_mem}}</b>\r\n            </td>\r\n            <td>\r\n              <b>{{purpose_total_mem_per}} %</b>\r\n            </td>\r\n            <td>\r\n              <b>{{purpose_total_amt | currency: 'INR'}}</b>\r\n            </td>\r\n            <td>\r\n              <b>{{purpose_total_amt_per}} %</b>\r\n            </td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\" style=\"margin-top:20px;margin-left:0px;margin-right:0px;\">\r\n    <div class=\"box-body  box_section\">\r\n      <table class=\"table table-bordered common_table\">\r\n        <caption class=\"text-center btn-info\" style=\"color:#fff;  background-color: cadetblue\">\r\n          <h5 style=\"text-align: center; margin:-3px 10px;\">\r\n            <span *ngIf=\"lang.en\" style=\"color:#fff;  background-color: cadetblue\">\r\n              <label class=\"table-head\">CAST WISE LOAN DISTRIBUTION DATA\r\n                <p>\r\n                  <small style=\"color:#fff;  background-color: cadetblue\">\r\n                    TOTAL LOAN CONSUMED MEMBERS - {{caste_total_loan_con_mem}} AND APPROVED LOAN AMOUNT - {{totalLoanApprovedAmt |currency: 'INR'}}\r\n                  </small>\r\n                </p>\r\n              </label>\r\n            </span>\r\n            <span *ngIf=\"lang.mr\" style=\"color:#fff;  background-color: cadetblue\">\r\n              <label class=\"table-head\">प्रवर्गानुसार कर्जवाटपाची माहिती\r\n                <p>\r\n                  <small style=\"color:#fff;  background-color: cadetblue\">\r\n                    एकूण सदस्य - {{totalMembers}} आणि मंजूर केलेली कर्जाची रक्कम - {{totalLoanApprovedAmt |currency: 'INR'}}\r\n                  </small>\r\n                </p>\r\n              </label>\r\n            </span>\r\n            <button class=\"btn btn-primary pdf-button\" (click)=\"castWiseLoanDistributionDataForVo()\">\r\n              <span>\r\n                <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n              </span>\r\n              PDF\r\n            </button>\r\n          </h5>\r\n        </caption>\r\n        <thead>\r\n          <tr>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">CASTE</span>\r\n              <span *ngIf=\"lang.mr\">प्रवर्ग </span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">TOTAL MEMBERS</span>\r\n              <span *ngIf=\"lang.mr\">एकूण सदस्य संख्या </span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">TOTAL MEMBERS(%)</span>\r\n              <span *ngIf=\"lang.mr\">एकूण सदस्य(%)</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">LOAN CONSUMED BY</span>\r\n              <span *ngIf=\"lang.mr\">कर्ज घेतलेले </span>\r\n              <br>\r\n              <span *ngIf=\"lang.en\">TOTAL MEMBERS</span>\r\n              <span *ngIf=\"lang.mr\">एकूण सदस्य संख्या </span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">LOAN CONSUMED BY</span>\r\n              <span *ngIf=\"lang.mr\">कर्ज घेतलेले </span>\r\n              <br>\r\n              <span *ngIf=\"lang.en\">TOTAL MEMBERS (%)</span>\r\n              <span *ngIf=\"lang.mr\">एकूण सदस्य (%)</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">LOAN NOT CONSUMED</span>\r\n              <span *ngIf=\"lang.mr\"> कर्ज न घेतलेले </span>\r\n              <br>\r\n              <span *ngIf=\"lang.en\">BY TOTAL MEMBERS </span>\r\n              <span *ngIf=\"lang.mr\">एकूण सदस्य संख्या</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">LOAN NOT CONSUMED </span>\r\n              <span *ngIf=\"lang.mr\"> कर्ज न घेतलेले </span>\r\n              <br>\r\n              <span *ngIf=\"lang.en\"> BY TOTAL MEMBERS (%)</span>\r\n              <span *ngIf=\"lang.mr\">एकूण सदस्य (%)</span>\r\n            </th>\r\n            <th>\r\n              <span *ngIf=\"lang.en\">TOTAL</span>\r\n              <span *ngIf=\"lang.mr\">एकूण</span>\r\n              <br>\r\n              <span *ngIf=\"lang.en\">CONSUMED LOAN</span>\r\n              <span *ngIf=\"lang.mr\">घेतलेले कर्ज </span>\r\n            </th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr *ngFor=\"let getCasteWiseData of GetCasteWiseData\">\r\n            <td>{{getCasteWiseData.CasteName}}</td>\r\n            <td>{{getCasteWiseData.TotalMember}}</td>\r\n            <td>{{getCasteWiseData.TotalMemberPer}} %</td>\r\n            <td>{{getCasteWiseData.TotalLoanConsumedMembers}}</td>\r\n            <td>{{getCasteWiseData.TotalLoanConsumedMembersPer}} %</td>\r\n            <td>{{getCasteWiseData.TotalLoanNotConsumedMembers}}</td>\r\n            <td>{{getCasteWiseData.TotalLoanNotConsumedMembersPer}} %</td>\r\n            <td>{{getCasteWiseData.TotalLoanConsumedLoanAmount | currency: 'INR'}}</td>\r\n          </tr>\r\n          <tr>\r\n            <td>\r\n              <span *ngIf=\"lang.en\">TOTAL</span>\r\n              <span *ngIf=\"lang.mr\">एकूण</span>\r\n            </td>\r\n            <td>\r\n              <b>{{caste_total_mem}}</b>\r\n            </td>\r\n            <td>\r\n              <b>{{caste_total_mem_per}} %</b>\r\n            </td>\r\n            <td>\r\n              <b>{{caste_total_loan_con_mem}}</b>\r\n            </td>\r\n            <td>\r\n              <b>{{caste_total_loan_con_mem_per}} %</b>\r\n            </td>\r\n            <td>\r\n              <b>{{caste_total_loan_not_con_mem}}</b>\r\n            </td>\r\n            <td>\r\n              <b>{{caste_total_loan_not_con_mem_per}} %</b>\r\n            </td>\r\n            <td>\r\n              <b>{{caste_total_loan_amt | currency: 'INR'}}</b>\r\n            </td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\" style=\"margin-left:0px;margin-right:0px;\">\r\n    <h5 class=\"btn-warning text-center\" style=\"background-color: cadetblue;padding: 6px;\">\r\n      <button type=\"button\" class=\"btn btn-primary\" (click)=\"getBalanceSheet()\">\r\n        REFRESH\r\n      </button>\r\n      BALANCESHEET\r\n      <small style=\"color: #fff\">( FROM -{{lastFinanceYearOrFromDt}} till - {{todaysOrToDt}} )</small>\r\n      <span>\r\n        <button class=\"btn btn-primary pdf-button\" (click)=\"ExportBalancesheetToPdf()\" value=\"Export PDF\" style=\"margin:-3px 10px;\">\r\n          <span>\r\n            <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n          </span>\r\n          PDF\r\n        </button>\r\n      </span>\r\n    </h5>\r\n  </div>\r\n\r\n  <div class=\"row\" style=\"margin-left:0px;margin-right:0px;\">\r\n    <div class=\"col-md-12 well well-lg \" style=\" padding: 10px;\">\r\n      <div class=\"col-md-5\">\r\n        <label>\r\n          SELECT FROM DATE\r\n        </label>\r\n        <ng-datepicker class=\"dt-picker-format\" [(ngModel)]=\"balanceSheetFromDt\" #frDt [options]=\"options\">\r\n        </ng-datepicker>\r\n        <!-- <input class=\"form-control\" type=\"date\" #balanceSheetFromDt> -->\r\n      </div>\r\n      <div class=\"col-md-7\">\r\n        <div class=\"col-md-9\">\r\n          <label>\r\n            SELECT TO DATE\r\n          </label>\r\n          <ng-datepicker class=\"dt-picker-format\" [(ngModel)]=\"balanceSheetToDt\" #toDt [options]=\"options\">\r\n          </ng-datepicker>\r\n          <!-- <input class=\"form-control\" type=\"date\" #balanceSheetToDt> -->\r\n        </div>\r\n        <div class=\"col-md-3\">\r\n          <button type=\"button\" class=\"btn btn-primary\" (click)=\"loanBalancesheet(frDt, toDt)\" style=\"margin-top:21px;\">\r\n            LOAD\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"col-md-12 box_section\">\r\n    <div class=\"col-md-6\" style=\"padding-right: 0px;\">\r\n      <div class=\"box-body\" style=\"padding-right: 0px;\">\r\n        <table class=\"table table-bordered common_table\">\r\n          <thead>\r\n            <tr>\r\n              <th>\r\n                LIABILITIES\r\n              </th>\r\n              <th>\r\n                AMOUNT\r\n              </th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr>\r\n              <td>\r\n                <a routerLink=\"#\" (click)=\"naviagateToAccTransaction(2)\">\r\n                  CURRENT LIABILITIES\r\n                </a>\r\n              </td>\r\n              <td>\r\n                <a routerLink=\"#\" (click)=\"naviagateToAccTransaction(2)\">\r\n                  {{balancesheet.LiabilityAmount | currency: 'INR'}}\r\n                </a>\r\n              </td>\r\n            </tr>\r\n            <tr>\r\n              <td>\r\n                <a routerLink=\"#\" (click)=\"naviagateToAccTransaction(3)\">\r\n                  NET INCOME/ LOSS\r\n                </a>\r\n              </td>\r\n              <td>\r\n                {{balancesheet.NetProfitOrLoss | currency: 'INR'}}\r\n              </td>\r\n            </tr>\r\n            <tr>\r\n              <th>\r\n                TOTAL\r\n              </th>\r\n              <td>{{balancesheet.TotalLiability | currency: 'INR'}}</td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-6\" style=\"padding-left: 0px;\">\r\n      <div class=\"box-body\" style=\"padding-left: 0px;\">\r\n        <table class=\"table table-bordered common_table\">\r\n          <thead>\r\n            <tr>\r\n              <th>\r\n                ASSETS </th>\r\n              <th>\r\n                AMOUNT\r\n              </th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr>\r\n              <td>\r\n                <a routerLink=\"#\" (click)=\"naviagateToAccTransaction(1)\">\r\n                  CURRENT ASSET\r\n                </a>\r\n              </td>\r\n              <td>\r\n                <a routerLink=\"#\" (click)=\"naviagateToAccTransaction(1)\">\r\n                  {{balancesheet.AssetAmount | currency: 'INR'}}\r\n                </a>\r\n              </td>\r\n            </tr>\r\n            <tr>\r\n              <td>\r\n                CASH IN HAND\r\n              </td>\r\n              <td>{{balancesheet.CashInHandAmount | currency: 'INR'}}</td>\r\n            </tr>\r\n            <tr>\r\n              <td>\r\n                CASH AT BANK\r\n              </td>\r\n              <td>{{balancesheet.cashAtBankAmount | currency:'INR'}}</td>\r\n            </tr>\r\n            <tr>\r\n              <th>\r\n                TOTAL\r\n              </th>\r\n              <td>{{balancesheet.TotalAsset | currency: 'INR'}}</td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6\" style=\"margin-top:18px;\">\r\n      <div class=\"box-body box_section\">\r\n        <table class=\"table table-bordered common_table\">\r\n          <thead>\r\n            <tr>\r\n              <th colspan=\"2\">\r\n                INCOME & EXPENDITURE\r\n\r\n              </th>\r\n            </tr>\r\n          </thead>\r\n          <thead>\r\n            <tr>\r\n              <td>INCOME</td>\r\n              <td>{{balancesheet.IncomeAmount | currency: 'INR'}}</td>\r\n            </tr>\r\n            <tr>\r\n              <td>EXPENSE</td>\r\n              <td>{{balancesheet.ExpenseAmount | currency: 'INR'}}</td>\r\n            </tr>\r\n            <tr>\r\n              <td>NET PROFIT/LOSS</td>\r\n              <td>{{balancesheet.IncomeAmount - balancesheet.ExpenseAmount | currency: 'INR'}}</td>\r\n            </tr>\r\n          </thead>\r\n        </table>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n\r\n</section>\r\n\r\n<!-- /.content -->"
 
 /***/ }),
 
@@ -16146,22 +16683,770 @@ module.exports = "<dashboard-selector></dashboard-selector>"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VoDashboardComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_vo_services__ = __webpack_require__("../../../../../src/app/services/vo.services.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_access_token__ = __webpack_require__("../../../../../src/app/environments/access_token.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_Global__ = __webpack_require__("../../../../../src/app/environments/Global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_CommanMssage__ = __webpack_require__("../../../../../src/app/environments/CommanMssage.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_GlobalVeriables__ = __webpack_require__("../../../../../src/app/environments/GlobalVeriables.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_common_service__ = __webpack_require__("../../../../../src/app/services/common.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_reports_exportpdf__ = __webpack_require__("../../../../../src/app/services/reports/exportpdf.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__environments_language_config__ = __webpack_require__("../../../../../src/app/environments/language.config.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_date_fns_locale_en__ = __webpack_require__("../../../../date-fns/locale/en/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_date_fns_locale_en___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_date_fns_locale_en__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
 
 var VoDashboardComponent = (function () {
-    function VoDashboardComponent() {
+    function VoDashboardComponent(_voservice, _access_token, _common_message, _globalURL, router, lang, globalvariable, commonService, exportToPDF) {
+        this._voservice = _voservice;
+        this._access_token = _access_token;
+        this._common_message = _common_message;
+        this._globalURL = _globalURL;
+        this.router = router;
+        this.lang = lang;
+        this.globalvariable = globalvariable;
+        this.commonService = commonService;
+        this.exportToPDF = exportToPDF;
+        this.balanceSheetToDt = new Date();
+        this.balanceSheetFromDt = new Date();
+        this.options = {
+            minYear: 2000,
+            maxYear: (new Date().getFullYear() + 1),
+            displayFormat: 'MMM D[,] YYYY',
+            barTitleFormat: 'MMMM YYYY',
+            dayNamesFormat: 'dd',
+            firstCalendarDay: 0,
+            locale: __WEBPACK_IMPORTED_MODULE_10_date_fns_locale_en__,
+            //minDate: new Date(Date.now()), // Minimal selectable date
+            //minDate: new Date("2016-03-03"),
+            // maxDate: new Date(Date.now()),  // Maximal selectable date
+            barTitleIfEmpty: 'Click to select a date'
+        };
+        this.isDataCountLoaded = true;
+        this.shgCount = 0;
+        this.memebrCount = 0;
+        this.totalshgCount = 0;
+        this.totalMemCount = 0;
+        this.totalCastCount = 0;
+        this.memebersDataCasteWise = new Array();
+        this.schemeWiseSHGCasteData = null;
+        this.casteWiseData = null;
+        this.isSchemLoading = false;
+        this.totalApprovedAmt = 0;
+        _globalURL.isLoading = false;
+        this.schemeWiseMemebers = null;
+        this.schemeWiseSHG = null;
+        this.CasteWiseMembers = null;
+        this.SHGAndMembersCount = 0;
+        this.shgCount = 0;
+        this.memebrCount = 0;
+        this.totalshgCount = 0;
+        this.totalMemCount = 0;
+        this.totalCastCount = 0;
+        this.schemeWiseSHGCasteData = null;
+        this.casteWiseData = null;
+        this.voDetails = null;
+        if (sessionStorage.getItem("access_token") == "")
+            router.navigate(['../login']);
     }
+    VoDashboardComponent.prototype.ngOnInit = function () {
+        //this.lastFinanceYearOrFromDt = "APR 1 " + (new Date().getFullYear());
+        this.balanceSheetFromDt = new Date("APR 1 " + (new Date().getFullYear()));
+        this.balanceSheetToDt = new Date();
+        this.getBalanceSheet();
+        this._globalURL.isLoading = true;
+        this.schemeWiseSHGCasteData = null;
+        this.casteWiseData = null;
+        this.loanDashboardData();
+        // this.getVODetail();
+        this.totalMembers = 0;
+        this.totalLoanApprovedAmt = 0;
+        this.purpose_total_mem = 0;
+        this.purpose_total_mem = 0;
+        this.purpose_total_mem_per = 0;
+        this.purpose_total_amt = 0;
+        this.purpose_total_amt_per = 0;
+        this.caste_total_mem = 0;
+        this.caste_total_mem_per = 0;
+        this.caste_total_loan_con_mem = 0;
+        this.caste_total_loan_con_mem_per = 0;
+        this.caste_total_loan_not_con_mem = 0;
+        this.caste_total_loan_not_con_mem_per = 0;
+        this.caste_total_loan_amt = 0;
+        this.getFund();
+        this.getVODetail();
+    };
+    VoDashboardComponent.prototype.loanDashboardData = function () {
+        var _this = this;
+        this._globalURL.isLoading = true;
+        this.isSchemLoading = true;
+        //this._globalURL.get_GET_SHEMEWISE_SHG = "";
+        this._voservice.get(this._globalURL.GET_SHEMEWISE_SHG, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this.isSchemLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                _this.schemeWiseSHGCasteData = res.Data;
+                _this.casteWiseData = _this.schemeWiseSHGCasteData[0].Caste;
+                _this.isSchemLoading = false;
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this.isSchemLoading = false;
+            }
+        })
+            .catch(function (err) {
+            _this.showErrorMessage = true;
+            console.log(err);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this.isSchemLoading = false;
+        });
+        //this._globalURL.get_TOTAL_SHGANDMEMBER_COUNT = "";
+        this._voservice.get(this._globalURL.TOTAL_SHGANDMEMBER_COUNT, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                for (var item in res.Data) {
+                    if (res.Data[item].Type == "SHG")
+                        _this.shgCount = _this.shgCount + res.Data[item].Count;
+                    else
+                        _this.memebrCount = _this.memebrCount + res.Data[item].Count;
+                }
+                for (var item in res.Data) {
+                    if (res.Data[item].Type == "Member")
+                        _this.totalMembers = _this.totalMembers + res.Data[item].Count;
+                }
+                _this.SHGAndMembersCount = res.Data;
+                _this.isDataCountLoaded = false;
+                _this._globalURL.isLoading = false;
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+            }
+        })
+            .catch(function (res) {
+            _this.showErrorMessage = true;
+            console.log(res.error);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this._globalURL.isLoading = false;
+        });
+        //this._globalURL.get_GET_MARRITAL_STATUS_WISE_DATA = "";
+        this._voservice.get(this._globalURL.GET_MARRITAL_STATUS_WISE_DATA, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == undefined) {
+                if (res.status == 200) {
+                    var data = JSON.parse(res._body);
+                    _this.GetMarritalStatusData = data.Data;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            }
+            else {
+                if (res.Status == true) {
+                    _this.GetMarritalStatusData = res.Data;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            }
+        }).catch(function (res) {
+            _this.showErrorMessage = true;
+            console.log(res.error);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this._globalURL.isLoading = false;
+        });
+        //this._globalURL.get_GET_AGE_WISE_DATA = "";
+        this._voservice.get(this._globalURL.GET_AGE_WISE_DATA, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == undefined) {
+                if (res.status == 200) {
+                    var data = JSON.parse(res._body);
+                    _this.GetAgeWiseData = data.Data;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            }
+            else {
+                if (res.Status == true) {
+                    _this.GetAgeWiseData = res.Data;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            }
+        }).catch(function (res) {
+            _this.showErrorMessage = true;
+            console.log(res.error);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this._globalURL.isLoading = false;
+        });
+        //  this._globalURL.get_GET_LOAN_PURPOSE_WISE_DATA = "";
+        this._voservice.get(this._globalURL.GET_LOAN_PURPOSE_WISE_DATA, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == undefined) {
+                if (res.status == 200) {
+                    var data = JSON.parse(res._body);
+                    _this.GetPurposeWiseData = data.Data;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            }
+            else {
+                if (res.Status == true) {
+                    _this.GetPurposeWiseData = res.Data;
+                    for (var item in res.Data) {
+                        _this.totalLoanApprovedAmt = _this.totalLoanApprovedAmt + res.Data[item].TotalAmount;
+                        _this.purpose_total_mem = _this.purpose_total_mem + res.Data[item].TotalMember;
+                        _this.purpose_total_mem_per = _this.purpose_total_mem_per + res.Data[item].TotalMemberPer;
+                        _this.purpose_total_amt = _this.purpose_total_amt + res.Data[item].TotalAmount;
+                        _this.purpose_total_amt_per = _this.purpose_total_amt_per + res.Data[item].TotalAmountPer;
+                    }
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            }
+        }).catch(function (res) {
+            _this.showErrorMessage = true;
+            console.log(res.error);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this._globalURL.isLoading = false;
+        });
+        //this._globalURL.get_GET_LOAN_CASTE_WISE_DATA = "";
+        this._voservice.get(this._globalURL.GET_LOAN_CASTE_WISE_DATA, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                _this.GetCasteWiseData = res.Data;
+                for (var item in res.Data) {
+                    _this.caste_total_mem = _this.caste_total_mem + res.Data[item].TotalMember;
+                    _this.caste_total_mem_per = _this.caste_total_mem_per + res.Data[item].TotalMemberPer;
+                    _this.caste_total_loan_con_mem = _this.caste_total_loan_con_mem + res.Data[item].TotalLoanConsumedMembers;
+                    _this.caste_total_loan_con_mem_per = _this.caste_total_loan_con_mem_per + res.Data[item].TotalLoanConsumedMembersPer;
+                    _this.caste_total_loan_not_con_mem = _this.caste_total_loan_not_con_mem + res.Data[item].TotalLoanNotConsumedMembers;
+                    _this.caste_total_loan_not_con_mem_per = _this.caste_total_loan_not_con_mem_per + res.Data[item].TotalLoanNotConsumedMembersPer;
+                    _this.caste_total_loan_amt = _this.caste_total_loan_amt + res.Data[item].TotalLoanConsumedLoanAmount;
+                }
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+            }
+        }).catch(function (res) {
+            _this.showErrorMessage = true;
+            console.log(res.error);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this._globalURL.isLoading = false;
+        });
+        //this._globalURL.get_GET_FINANCE_DETAILS = "";
+        this._voservice.get(this._globalURL.GET_FINANCE_DETAILS, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                _this.financeDetails = res.Data;
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+            }
+        }).catch(function (res) {
+            _this.showErrorMessage = true;
+            console.log(res.error);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this._globalURL.isLoading = false;
+        });
+    };
+    VoDashboardComponent.prototype.getBalanceSheet = function () {
+        var _this = this;
+        this.lastFinanceYearOrFromDt = "APR 1 " + (new Date().getFullYear());
+        this.todaysOrToDt = this.commonService.getTodaysDate();
+        this._globalURL.isLoading = true;
+        var balFinalUrl = "";
+        if (sessionStorage.getItem("roleId") == "3") {
+            this._globalURL.get_GET_BALANCESHEET = "";
+            balFinalUrl = this._globalURL.GET_BALANCESHEET + (sessionStorage.getItem("roleId") == null ? "3" : sessionStorage.getItem("roleId")) + "&frDt=" + this.lastFinanceYearOrFromDt + "&toDt=" + this.todaysOrToDt;
+        }
+        else
+            balFinalUrl = this._globalURL.GET_BALANCESHEET + "&frDt=null&toDt=null";
+        this._voservice.get(balFinalUrl, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == undefined)
+                if (res.status == 200) {
+                    _this.balancesheet = JSON.parse(res._body).Data;
+                    _this.globalvariable.CashInHand = _this.balancesheet.CashInHandAmount;
+                    _this.globalvariable.CashAtBank = _this.balancesheet.cashAtBankAmount;
+                    _this.globalvariable.TotalAvailableAmount = _this.balancesheet.CashInHandAmount + _this.balancesheet.cashAtBankAmount;
+                    _this._globalURL.isLoading = false;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            else {
+                if (res.Status == true) {
+                    _this.balancesheet = res.Data;
+                    _this.globalvariable.CashInHand = _this.balancesheet.CashInHandAmount;
+                    _this.globalvariable.CashAtBank = _this.balancesheet.cashAtBankAmount;
+                    _this.globalvariable.TotalAvailableAmount = _this.balancesheet.CashInHandAmount + _this.balancesheet.cashAtBankAmount;
+                    _this._globalURL.isLoading = false;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            }
+        }).catch(function (res) {
+            _this.showErrorMessage = true;
+            console.log(res.error);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this._globalURL.isLoading = false;
+        });
+    };
+    VoDashboardComponent.prototype.loanBalancesheet = function (frDt, toDt) {
+        var _this = this;
+        debugger;
+        this.lastFinanceYearOrFromDt = this.commonService.convertToDate(frDt);
+        this.todaysOrToDt = this.commonService.convertToDate(toDt);
+        var balFinalUrl = "";
+        //this._globalURL.get_GET_BALANCESHEET = "";
+        if (sessionStorage.getItem("roleId") == "3") {
+            this._globalURL.get_GET_BALANCESHEET = "";
+            balFinalUrl = this._globalURL.GET_BALANCESHEET + (sessionStorage.getItem("roleId") == null ? "3" : sessionStorage.getItem("roleId")) + "&frDt=" + this.lastFinanceYearOrFromDt + "&toDt=" + this.todaysOrToDt;
+        }
+        else
+            balFinalUrl = this._globalURL.GET_BALANCESHEET + "&frDt=null&toDt=null";
+        this._voservice.get(balFinalUrl, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == undefined)
+                if (res.status == 200) {
+                    _this.balancesheet = JSON.parse(res._body).Data;
+                    _this.globalvariable.CashInHand = _this.balancesheet.CashInHandAmount;
+                    _this.globalvariable.CashAtBank = _this.balancesheet.cashAtBankAmount;
+                    _this.globalvariable.TotalAvailableAmount = _this.balancesheet.CashInHandAmount + _this.balancesheet.cashAtBankAmount;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            else {
+                if (res.Status == true) {
+                    _this.balancesheet = res.Data;
+                    _this.globalvariable.CashInHand = _this.balancesheet.CashInHandAmount;
+                    _this.globalvariable.CashAtBank = _this.balancesheet.cashAtBankAmount;
+                    _this.globalvariable.TotalAvailableAmount = _this.balancesheet.CashInHandAmount + _this.balancesheet.cashAtBankAmount;
+                }
+                else {
+                    _this.showWarningMessage = true;
+                    _this.message = _this._common_message.WarningMsg;
+                    setInterval(function () {
+                        _this.showWarningMessage = false;
+                    }, 5000);
+                    _this._globalURL.isLoading = false;
+                }
+            }
+        }).catch(function (res) {
+            _this.showErrorMessage = true;
+            console.log(res.error);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this._globalURL.isLoading = false;
+        });
+    };
+    VoDashboardComponent.prototype.ExportBalancesheetToPdf = function () {
+        debugger;
+        this._globalURL.isLoading = true;
+        this.globalvariable.CashInHand = this.balancesheet.CashInHandAmount;
+        this.globalvariable.CashAtBank = this.balancesheet.cashAtBankAmount;
+        this.globalvariable.TotalAvailableAmount = this.balancesheet.CashInHandAmount + this.balancesheet.cashAtBankAmount;
+        var reportData = {
+            "balancesheet": this.balancesheet,
+            "CashInHand": this.globalvariable.CashInHand,
+            "CashAtBank": this.globalvariable.CashAtBank,
+            "TotalAvailableAmount": this.globalvariable.TotalAvailableAmount
+        };
+        var headerData = {
+            "CMRCName": this.globalvariable.CMRCName,
+            "CMRCCode": this.globalvariable.cmrcBaseCode,
+            "VOName": this.globalvariable.VOName,
+            "VoCode": this.globalvariable.cmrcBaseCode,
+            "frDt": this.lastFinanceYearOrFromDt,
+            "toDt": this.todaysOrToDt
+        };
+        this.exportToPDF.RExportBalancesheetToPdf(reportData, headerData);
+        this._globalURL.isLoading = false;
+    };
+    VoDashboardComponent.prototype.R38_SchemeAndCastWiseSHGDetailPDF = function () {
+        this._globalURL.isLoading = true;
+        var forVoName = {
+            "Name": this.voDetails.Name,
+            "Code": this.voDetails.Code,
+            "CMRCName": this.voDetails.CMRCName,
+            "ParentCode": this.voDetails.ParentCode,
+        };
+        //this.schemeWiseSHGCasteData
+        this.exportToPDF.R38_SchemeAndCastWiseSHGDetails(this.schemeWiseSHGCasteData, this.casteWiseData, this.shgCount, this.memebrCount, forVoName);
+        this._globalURL.isLoading = false;
+    };
+    VoDashboardComponent.prototype.getVODetail = function () {
+        var _this = this;
+        debugger;
+        var finalUrl = "";
+        if (sessionStorage.getItem("roleId") == "3") {
+            this._globalURL.get_GET_USER_PROFILE_DETAIL = "";
+            finalUrl = this._globalURL.GET_USER_PROFILE_DETAIL + (sessionStorage.getItem("roleId") == null ? "3" : sessionStorage.getItem("roleId"));
+        }
+        else
+            finalUrl = this._globalURL.GET_USER_PROFILE_DETAIL;
+        this._voservice.get(finalUrl, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                _this.voDetails = res.Data;
+                _this._globalURL.isLoading = false;
+                _this._common_message.Message;
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+            }
+        }).catch(function (res) {
+            _this.showErrorMessage = true;
+            console.log(res.error);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this._globalURL.isLoading = false;
+        });
+    };
+    VoDashboardComponent.prototype.getFund = function () {
+        var _this = this;
+        this._globalURL.isLoading = true;
+        this.totalApprovedAmt = 0;
+        this._voservice.get(this._globalURL.GET_ALL_VO_FUND_DETAILS, sessionStorage.getItem("access_token"))
+            .then(function (res) {
+            if (res.status === 401) {
+                sessionStorage.clear();
+                _this.showErrorMessage = true;
+                _this.message = _this._common_message.error401message;
+                setInterval(function () {
+                    _this.showErrorMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+                _this.router.navigate(['../login']);
+            }
+            if (res.Status == true) {
+                //this.reRenderDT();
+                for (var item in res.Data) {
+                    _this.totalApprovedAmt = _this.totalApprovedAmt + res.Data[item].ApproveAmount;
+                }
+                _this._globalURL.isLoading = false;
+            }
+            else {
+                _this.showWarningMessage = true;
+                _this.message = _this._common_message.WarningMsg;
+                setInterval(function () {
+                    _this.showWarningMessage = false;
+                }, 5000);
+                _this._globalURL.isLoading = false;
+            }
+        }).catch(function (res) {
+            _this.showErrorMessage = true;
+            console.log(res.error);
+            _this.message = _this._common_message.CatchBlockMsg;
+            setInterval(function () {
+                _this.showErrorMessage = false;
+            }, 5000);
+            _this._globalURL.isLoading = false;
+        });
+    };
+    VoDashboardComponent.prototype.naviagateToAccTransaction = function (glTypeId) {
+        this.globalvariable.selectedGLTypeId = glTypeId;
+        this.router.navigate(['/vo/AccTransaction']);
+    };
+    //Download PDF forAgeWiseGroupDetails
+    VoDashboardComponent.prototype.R148_AgeWiseGroupDetailPDF = function (data) {
+        this._globalURL.isLoading = true;
+        this.exportToPDF.R7_AgeWiseGroupDetails(data);
+        this._globalURL.isLoading = false;
+    };
+    VoDashboardComponent.prototype.R41PurposewiseLoanDistExportToPdf = function () {
+        this._globalURL.isLoading = true;
+        var totalData = {
+            "TotalMember": this.purpose_total_mem.toString(),
+            "TotalMemberPer": this.purpose_total_mem_per.toString(),
+            "TotalAmount": this.purpose_total_amt.toString(),
+            "TotalAmountPer": this.purpose_total_amt_per.toString()
+        };
+        var VoName = {
+            "Name": this.voDetails.Name,
+            "Code": this.voDetails.Code,
+        };
+        this.exportToPDF.R41PurposewiseLoanDistExportToPdf(this.GetPurposeWiseData, totalData, VoName);
+        this._globalURL.isLoading = false;
+    };
+    VoDashboardComponent.prototype.voProfileDetails = function () {
+        this._globalURL.isLoading = true;
+        var forVoName = {
+            "Name": this.voDetails.Name,
+        };
+        this.exportToPDF.voProfileDetails(this.voDetails, forVoName);
+        this._globalURL.isLoading = false;
+    };
+    VoDashboardComponent.prototype.maritalStatusWiseDataForVo = function () {
+        this._globalURL.isLoading = true;
+        var VoName = {
+            "Name": this.voDetails.Name,
+        };
+        this.exportToPDF.maritalStatusWiseDataForVo(this.GetMarritalStatusData, this.voDetails, VoName);
+        this._globalURL.isLoading = false;
+    };
+    VoDashboardComponent.prototype.ageWiseDataForVo = function () {
+        this._globalURL.isLoading = true;
+        var VoName = {
+            "Name": this.voDetails.Name,
+            "Code": this.voDetails.Code,
+        };
+        this.exportToPDF.ageWiseDataForVo(this.GetAgeWiseData, VoName);
+        this._globalURL.isLoading = false;
+    };
+    VoDashboardComponent.prototype.castWiseLoanDistributionDataForVo = function () {
+        this._globalURL.isLoading = true;
+        var total = {
+            "CastTotalMembers": this.caste_total_mem.toString(),
+            "CastTotalMemberPer": this.caste_total_mem_per.toString(),
+            "CastTotalLoanConsumedMem": this.caste_total_loan_con_mem.toString(),
+            "CastTotalLoanConsumedMemberPer": this.caste_total_loan_con_mem_per.toString(),
+            "CastTotalLoanNotConsumedMem": this.caste_total_loan_not_con_mem.toString(),
+            "CastTotalLoanNotConsumedMemPer": this.caste_total_loan_not_con_mem_per.toString(),
+            "CasteTotalLoanAmt": this.caste_total_loan_amt.toString()
+        };
+        var VoName = {
+            "Name": this.voDetails.Name,
+            "Code": this.voDetails.Code,
+        };
+        this.exportToPDF.castWiseLoanDistributionDataForVo(this.GetCasteWiseData, total, VoName);
+        this._globalURL.isLoading = false;
+    };
     VoDashboardComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'vo-dashboard',
             template: __webpack_require__("../../../../../src/app/components/vo/dashboard/dashboard.component.html"),
             styles: [__webpack_require__("../../../../../src/app/components/vo/dashboard/dashboard.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_vo_services__["a" /* VOService */],
+            __WEBPACK_IMPORTED_MODULE_2__environments_access_token__["a" /* AccessToken */],
+            __WEBPACK_IMPORTED_MODULE_5__environments_CommanMssage__["a" /* CommonMessageComponent */],
+            __WEBPACK_IMPORTED_MODULE_3__environments_Global__["a" /* GlobalAssets */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */],
+            __WEBPACK_IMPORTED_MODULE_9__environments_language_config__["a" /* LangulageConf */],
+            __WEBPACK_IMPORTED_MODULE_6__environments_GlobalVeriables__["a" /* GlobalVariable */],
+            __WEBPACK_IMPORTED_MODULE_7__services_common_service__["a" /* CommonService */],
+            __WEBPACK_IMPORTED_MODULE_8__services_reports_exportpdf__["a" /* ExportToPDF */]])
     ], VoDashboardComponent);
     return VoDashboardComponent;
 }());
@@ -18240,7 +19525,7 @@ var LoanComponent = (function () {
 /***/ "../../../../../src/app/components/vo/loan/loan.repayment.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"_globalURL.isLoading\">\r\n    <loading-selector>\r\n    </loading-selector>\r\n</div>\r\n<div *ngIf=\"showSuccessMessage\">\r\n    <message-selector [message]=\"message\">\r\n    </message-selector>\r\n</div>\r\n<div *ngIf=\"showErrorMessage\">\r\n    <error-message-selector [message]=\"message\">\r\n    </error-message-selector>\r\n</div>\r\n\r\n<section class=\"content repayment\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            <p class=\"member_loan_repayment_detail\">\r\n                <span *ngIf=\"lang.en\">MEMBER LOAN REPAYMENT DETAILS</span>\r\n                <span *ngIf=\"lang.mr\">सदस्य कर्ज परतफेड तपशील</span>\r\n            </p>\r\n            <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/vo/loan\" style=\"margin-bottom:10px;\">\r\n                <span *ngIf=\"lang.en\">BACK</span>\r\n                <span *ngIf=\"lang.mr\">परत जा</span>\r\n            </button>\r\n        </div>\r\n        <div class=\"col-md-3  col-md-offset-2\">\r\n            <button class=\"btn btn-primary refresh-button\" (click)=\"ngOnInit()\">\r\n                <i class=\"fa fa-refresh\" aria-hidden=\"true\"></i>\r\n            </button>\r\n        </div>\r\n        <div class=\"col-md-6 box box-default\" style=\"width: 50%;\">\r\n            <div class=\"box-body\">\r\n                <table class=\"table table-bordered\">\r\n                    <thead>\r\n                        <tr class=\"show_loan_detail\">\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">LOAN ID</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज आयडी</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाची मंजूर रक्कम</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">REMAINING LOAN AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">उरलेली कर्जाची रक्कम</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">MEMBER NAME</span>\r\n                                <span *ngIf=\"lang.mr\">सदस्याचे नाव</span>\r\n                            </th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr class=\"show_loan_detail\">\r\n                            <td>\r\n                                <b>{{memberLoanDetails.LoanId}}</b>\r\n                            </td>\r\n                            <td>\r\n                                <b>{{memberLoanDetails.LoanApprovedAmount}}</b>\r\n                            </td>\r\n                            <td>\r\n                                <span *ngIf=\"remainingLoamAmount == 0\">\r\n                                    <span *ngIf=\"lang.en\">ALL AMOUNT APPROVED</span>\r\n                                    <span *ngIf=\"lang.mr\">मंजूर झालेली सर्व रक्कम</span>\r\n                                </span>\r\n                                <span *ngIf=\"remainingLoamAmount != 0\">\r\n                                    <button class=\"btn btn-primary\" (click)=\"UpdateLoan(remainingLoamAmount, memberLoanDetails.LoanId)\">\r\n                                        <b>Rs. {{remainingLoamAmount}} /-</b>\r\n                                        <span *ngIf=\"lang.en\">ADD TO AMOUNT</span>\r\n                                        <span *ngIf=\"lang.mr\">रक्कमे मध्ये जोडा</span>\r\n                                    </button>\r\n                                </span>\r\n                            </td>\r\n                            <td>\r\n                                <b>{{memberLoanDetails.MemberFirstName}} {{memberLoanDetails.MemberLastName}}</b>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-2\">\r\n            <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#loanDetails\" style=\"margin-bottom:20px;\">\r\n                <span *ngIf=\"lang.en\">SHOW MORE DETAIL</span>\r\n                <span *ngIf=\"lang.mr\">आणखी माहिती दर्शवा</span>\r\n            </button>\r\n            <button class=\"btn btn-primary\" (click)=\"SHGLoanRepaymentExportToPdf()\" style=\"margin-left: 65px;\">\r\n                <span>\r\n                    <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n                </span>PDF</button>\r\n        </div>\r\n        <div class=\"clearfix\"></div>\r\n        <div class=\"col-md-12\">\r\n            <div class=\"box box-default\">\r\n                <div class=\"box-body\">\r\n                    <table class=\"col-md-12 table table-bordered repayment_loan_details_table\" cellspacing=\"0\" width=\"100%\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">INTL NO</span>\r\n                                    <span *ngIf=\"lang.mr\">हफ्त्याचा क्रमांक</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">MONTH</span>\r\n                                    <span *ngIf=\"lang.mr\">महिना</span>\r\n                                </th>\r\n                                <th colspan=\"3\" style=\"text-align: center;\">\r\n                                    <span *ngIf=\"lang.en\">EXPECTED REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">अपेक्षित परतफेड</span>\r\n                                </th>\r\n                                <th colspan=\"5\" style=\"text-align: center\">\r\n                                    <span *ngIf=\"lang.en\">ACTUAL REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">वास्तविक परतफेड</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">OUTSTANDING AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">उर्वरित रक्कम</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">DUE/ PENAULTY AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">दंडाची रक्कम</span>\r\n                                </th>\r\n                                <th rowspan=\"2\" style=\"width:218px;\">\r\n                                    <span *ngIf=\"lang.en\">MARK REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">परतफेड दर्शवा</span>\r\n                                </th>\r\n                            </tr>\r\n                            <tr class=\"pad_zero\">\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PRINCIPAL AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">मूळ रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">INTEREST AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">व्याजाची रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">TOTAL PAYABLE AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">भरण्यासाठीची संपूर्ण रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PRINCIPAL AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली मूळ रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">INTEREST AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली व्याजाची रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">TOTAL AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली पूर्ण रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">% AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">देय रक्कम %</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PAID DATE</span>\r\n                                    <span *ngIf=\"lang.mr\">देय दिनांक</span>\r\n                                </th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr>\r\n                                <td colspan=\"10\"></td>\r\n                                <td>{{memberLoanDetails.LoanApprovedAmount | currency: 'INR'}}</td>\r\n                                <td colspan=\"2\"></td>\r\n                            </tr>\r\n                            <tr *ngFor=\"let memberLoanDetail of memLoanRepaymentDetails; let rowIndex=index\">\r\n                                <td># {{rowIndex+1}}</td>\r\n                                <td style=\"width:17%\">{{memberLoanDetail.Date | date: 'dd-MMM-yyyy'}}</td>\r\n                                <td>{{memberLoanDetail.FixedPayableAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.InterestAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.TotalPayableAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidTotalAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidIntrestAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidTotalAmt + memberLoanDetail.PaidIntrestAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PerTotalAmountPaid}}</td>\r\n                                <td style=\"width:8%\">{{memberLoanDetail.PaidDate | date: 'dd-MMM-yyyy'}}</td>\r\n                                <td>{{memberLoanDetail.OutstandingAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.FineAmount | currency: 'INR'}}</td>\r\n                                <td class=\"col-md-12\" style=\"width:22%;text-align:center;\">\r\n                                    <span class=\"col-md-12\" *ngIf=\"memberLoanDetail.RepaymentDone\" style=\"display:inline-flex\">\r\n                                        <span *ngIf=\"memberLoanDetail.Photo == null\">\r\n                                            <b>NO FILE</b>\r\n                                        </span>\r\n                                        <a *ngIf=\"memberLoanDetail.Photo != null\" href={{memberLoanDetail.Photo}} target=\"_blank\" class=\"btn btn-primary\">\r\n                                            <span class=\"glyphicon glyphicon-save\"></span>\r\n                                            <span *ngIf=\"lang.en\">RECEIPT</span>\r\n                                            <span *ngIf=\"lang.mr\">रसीद पहा</span>\r\n                                        </a>\r\n                                        <button type=\"button\" [disabled]=\"memberLoanDetail.RepaymentDone\" class=\"btn btn-primary\" style=\"margin-left:2px;\">\r\n                                            <span style=\"color: white\" class=\"glyphicon glyphicon-ok\"></span>&nbsp;DONE</button>   \r\n                                        </span>\r\n                                        <span data-toggle=\"modal\"  *ngIf=\"memberLoanDetail.RepaymentDone\" data-target=\"#changePhoto\" (click)=\"forchange(memberLoanDetail)\">\r\n                                            <i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i>\r\n                                        </span>\r\n                                    <span *ngIf=\"this.repaymentId == memberLoanDetail.RepaymentId\" class=\"\">\r\n                                        <button type=\"button\" (click)=\"setRepaymentData(memberLoanDetail, rowIndex)\" class=\"btn btn-primary\" data-toggle=\"modal\"\r\n                                            data-target=\"#repaymentEntry\">MARK REPAYMENT</button>\r\n                                    </span>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    <b>\r\n                                        <span *ngIf=\"lang.en\">TOTAL SUM</span>\r\n                                        <span *ngIf=\"lang.mr\">एकूण बेरीज</span>\r\n                                    </b>\r\n                                </td>\r\n                                <td>-</td>\r\n                                <td>\r\n                                    <b>{{totalLoanAmt | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td>\r\n                                    <b>{{totalPrinciple | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td>\r\n                                    <b>{{totalPayable | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td colspan=\"2\">-</td>\r\n                                <td>{{totalAmtPaid | currency: 'INR'}}</td>\r\n                                <td colspan=\"3\">-</td>\r\n                                <td>{{totalFineAmt | currency: 'INR'}}</td>\r\n                                <td>-</td>\r\n                            </tr>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- data table end -->\r\n    </div>\r\n</section>\r\n\r\n \r\n<!-- Modal -->\r\n<div id=\"repaymentEntry\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog modal-lg\" style=\"width: 80%\">\r\n        <div class=\"modal-content\">\r\n            <form #repaymentForm=\"ngForm\" class=\"input-group\">\r\n                <div class=\"modal-header\">\r\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                    <h4 class=\"modal-title\">\r\n                        <span *ngIf=\"lang.en\">REPAYMENT ENTRY FORM</span>\r\n                        <span *ngIf=\"lang.mr\">परतफेड भरणा फॉर्म</span>\r\n                    </h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    <div class=\"col-md-6\">\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EXPECTED PRINCIPAL AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">अपेक्षित मूळ रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" disabled value=\"{{loanRepaymentdata.FixedPayableAmt}}\" class=\"form-control\" id=\"principleAmt\" name=\"principleAmt\"\r\n                                required maxlength=\"50\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EXPECTED INTEREST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">अपेक्षित व्याजाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" class=\"form-control custom_btn\" disabled value=\"{{loanRepaymentdata.InterestAmt}}\" id=\"InterestAmt\"\r\n                                name=\"InterestAmt\" maxlength=\"50\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL PRINCIPAL AMOUNT #</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक मूळ रक्कम</span>\r\n                            </label>\r\n                            <input type=\"nmuber\" (ngModel)=\"actualPrincipleAmt\" name=\"actualPrincipleAmt\" (input)=\"convertToWords($event.target.value)\"\r\n                                class=\"form-control\" required maxlength=\"12\" #actualPrincipleAmt=\"ngModel\">\r\n                            <div *ngIf=\"actualPrincipleAmt.invalid && actualPrincipleAmt.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!actualPrincipleAmt.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Principal Amount is required !</span>\r\n                                    <span *ngIf=\"lang.mr\">मूळ रक्कम गरजेची !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL INTEREST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक व्याजाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" class=\"form-control\" (ngModel)=\"actualIntrestAmt\" (input)=\"convertToWordsForIntrest($event.target.value)\"\r\n                                name=\"actualIntrestAmt\" required maxlength=\"2\" #actualIntrestAmt=\"ngModel\">\r\n                            <div *ngIf=\"actualIntrestAmt.invalid && actualIntrestAmt.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!actualIntrestAmt.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Intrest Amount is required !</span>\r\n                                    <span *ngIf=\"lang.mr\">व्याजाची रक्कम गरजेची !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">DUE/ PENAULTY AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">दंडाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" (ngModel)=\"fineAmt\" name=\"fineAmt\" class=\"form-control\" required maxlength=\"7\" pattern=\"[0-9]*\" #fineAmt=\"ngModel\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">AMOUNT PAID DATE</span>\r\n                                <span *ngIf=\"lang.mr\">रक्कम दिलेला दिनांक</span>\r\n                            </label>\r\n                            <ng-datepicker class=\"dt-picker-format\" [(ngModel)]=\"amtPaidDate\" #frDt [options]=\"options\" name=\"amtPaidDate\">\r\n                            </ng-datepicker>\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">ATTACH PAYMENT RECEIPT\r\n                            </label>\r\n                            <input class=\"custom_btn\" type=\"file\" ng-bind=\"fileData\" placeholder=\"Upload file\" accept=\".png,.jpeg,.jpg,.doc\">\r\n                        </div>\r\n                        <div class=\"col-md-12 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">PAYMENT MODE</span>\r\n                                <span *ngIf=\"lang.mr\">रक्कम भरणा मार्ग</span>\r\n                            </label>\r\n                            <select class=\"form-control\" (ngModel)=\"selectedPaymentModeId\" id=\"selectedPaymentModeId\" required name=\"selectedPaymentModeId\"\r\n                                #selectedPaymentModeId=\"ngModel\">\r\n                                <option [value]=\"1\">CASH AT HAND</option>\r\n                                <option [value]=\"2\">CASH AT BANK</option>\r\n                            </select>\r\n                            <div *ngIf=\"selectedPaymentModeId.invalid && selectedPaymentModeId.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!selectedPaymentModeId.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Please select payment mode !</span>\r\n                                    <span *ngIf=\"lang.mr\">कृपया रक्कम भरणा मार्ग निवडा !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-3\">\r\n                        <div class=\"card\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL PRINCIPAL AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक मूळ रक्कम</span>\r\n                            </label>\r\n                            <div class=\"card-header\">\r\n                                IN ENGLISH\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInEnglish}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                मराठी मधे\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInMarathi}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                हिंदी में\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInHindi}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-3\">\r\n                        <div class=\"card\">\r\n                            <label for=\"text\">ACTUAL INTEREST AMOUNT PAID</label>\r\n                            <div class=\"card-header\">\r\n                                IN ENGLISH\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInEnglishForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                मराठी मधे\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInMarathiForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                हिंदी में\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInHindiForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <div class=\"col-md-12\">\r\n                        <button class=\"btn btn-primary pull-right\" type=\"submit\" [disabled]=\"repaymentForm.invalid\" (click)=\"MarkRepayment(repaymentForm, $event.target.form[7].files[0])\"\r\n                            data-dismiss=\"modal\" style=\"margin-left: 150px; margin-top: 2px;\">SAVE REPAYMENT ENTRY</button>\r\n                        <button type=\"button\" id=\"click-button1\" data-dismiss=\"modal\" class=\"btn btn-primary pull-right\">CANCEL</button>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"loanDetails\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\">\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\" style=\"padding:5px;width: 730px;\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">\r\n                    <span *ngIf=\"lang.en\">MEMBER LOAN DETAILS -\r\n                        <b>LOAN ID - {{memberLoanDetails.LoanId}}</b>\r\n                    </span>\r\n                    <span *ngIf=\"lang.mr\">सदस्याच्या कर्जाची माहिती -\r\n                        <b>कर्जाचा आयडी - {{memberLoanDetails.LoanId}}</b>\r\n                    </span>\r\n                </h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">MEMBER FULL NAME</span>\r\n                                <span *ngIf=\"lang.mr\">सदस्याचे पूर्ण नाव</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <label for=\"text\">{{memberLoanDetails.MemberFirstName}} {{memberLoanDetails.MemberLastName}}\r\n                        </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">SHG NAME</span>\r\n                                <span *ngIf=\"lang.mr\">एसएचजी चे नाव</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.SHGName}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">SHG CODE</span>\r\n                                <span *ngIf=\"lang.mr\">एसएचजी क्रमांक</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.SHGCode}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN REQUEST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">विनंती केलेली कर्जाची रक्कम</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanAmount}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाची स्वीकृत रक्कम</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanApprovedAmount}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED DATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज मान्य केलेली तारीख</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.ApprovedDate | date: 'dd-MMM-yyyy'}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">INTEREST RATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाचा दर</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.IntrestRate}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">TENURE (NO. OF. INSTALLMENT)</span>\r\n                                <span *ngIf=\"lang.mr\">कालावधी (एकूण हफ्ते)</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.Tenure}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EFFECTIVE LOAN START DATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज भरणीची सुरवातीची तारीख</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.EffectiveStartDate}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN REASON</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाचे कारण</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanReason}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <!--<button class=\"btn btn-danger\" type=\"submit\" style=\"margin-top:10px;\" data-dismiss=\"modal\">CLOSE</button>-->\r\n\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" id=\"click-button1\" data-dismiss=\"modal\" class=\"pull-right\">\r\n                    <span *ngIf=\"lang.en\">CLOSE</span>\r\n                    <span *ngIf=\"lang.mr\">बंद करा</span>\r\n                </button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"changePhoto\" class=\"modal\" role=\"dialog\">\r\n    <div class=\"modal-dialog\" style=\"width: 30%; margin-top:150px\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">Change Photo</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <form>\r\n                    <div>\r\n                        <input class=\"form-control\" type=\"file\" ng-bind=\"fileData\" placeholder=\"Upload file\" accept=\".png,.jpeg,.jpg\" style=\"width:222px;\">\r\n                        <button class=\"form-control btn btn-primary\" (click)=\"chnagePhoto($event.target.form[0].files[0],changePhotoDetail.RepaymentId, changePhotoDetail.PhotoId)\" data-dismiss=\"modal\">CHANGE</button>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
+module.exports = "<div *ngIf=\"_globalURL.isLoading\">\r\n    <loading-selector>\r\n    </loading-selector>\r\n</div>\r\n<div *ngIf=\"showSuccessMessage\">\r\n    <message-selector [message]=\"message\">\r\n    </message-selector>\r\n</div>\r\n<div *ngIf=\"showErrorMessage\">\r\n    <error-message-selector [message]=\"message\">\r\n    </error-message-selector>\r\n</div>\r\n\r\n<section class=\"content repayment\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            <p class=\"member_loan_repayment_detail\">\r\n                <span *ngIf=\"lang.en\">MEMBER LOAN REPAYMENT DETAILS</span>\r\n                <span *ngIf=\"lang.mr\">सदस्य कर्ज परतफेड तपशील</span>\r\n            </p>\r\n            <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/vo/loan\" style=\"margin-bottom:10px;\">\r\n                <span *ngIf=\"lang.en\">BACK</span>\r\n                <span *ngIf=\"lang.mr\">परत जा</span>\r\n            </button>\r\n        </div>\r\n        <div class=\"col-md-3  col-md-offset-2\">\r\n            <button class=\"btn btn-primary refresh-button\" (click)=\"ngOnInit()\">\r\n                <i class=\"fa fa-refresh\" aria-hidden=\"true\"></i>\r\n            </button>\r\n        </div>\r\n        <div class=\"col-md-6 box box-default\" style=\"width: 50%;\">\r\n            <div class=\"box-body\">\r\n                <table class=\"table table-bordered\">\r\n                    <thead>\r\n                        <tr class=\"show_loan_detail\">\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">LOAN ID</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज आयडी</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाची मंजूर रक्कम</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">REMAINING LOAN AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">उरलेली कर्जाची रक्कम</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">MEMBER NAME</span>\r\n                                <span *ngIf=\"lang.mr\">सदस्याचे नाव</span>\r\n                            </th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr class=\"show_loan_detail\">\r\n                            <td>\r\n                                <b>{{memberLoanDetails.LoanId}}</b>\r\n                            </td>\r\n                            <td>\r\n                                <b>{{memberLoanDetails.LoanApprovedAmount}}</b>\r\n                            </td>\r\n                            <td>\r\n                                <span *ngIf=\"remainingLoamAmount == 0\">\r\n                                    <span *ngIf=\"lang.en\">ALL AMOUNT APPROVED</span>\r\n                                    <span *ngIf=\"lang.mr\">मंजूर झालेली सर्व रक्कम</span>\r\n                                </span>\r\n                                <span *ngIf=\"remainingLoamAmount != 0\">\r\n                                    <button class=\"btn btn-primary\" (click)=\"UpdateLoan(remainingLoamAmount, memberLoanDetails.LoanId)\">\r\n                                        <b>Rs. {{remainingLoamAmount}} /-</b>\r\n                                        <span *ngIf=\"lang.en\">ADD TO AMOUNT</span>\r\n                                        <span *ngIf=\"lang.mr\">रक्कमे मध्ये जोडा</span>\r\n                                    </button>\r\n                                </span>\r\n                            </td>\r\n                            <td>\r\n                                <b>{{memberLoanDetails.MemberFirstName}} {{memberLoanDetails.MemberLastName}}</b>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-2\">\r\n            <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#loanDetails\" style=\"margin-bottom:20px;\">\r\n                <span *ngIf=\"lang.en\">SHOW MORE DETAIL</span>\r\n                <span *ngIf=\"lang.mr\">आणखी माहिती दर्शवा</span>\r\n            </button>\r\n            <button class=\"btn btn-primary\" (click)=\"SHGLoanRepaymentExportToPdf()\" style=\"margin-left: 65px;\">\r\n                <span>\r\n                    <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n                </span>PDF</button>\r\n        </div>\r\n        <div class=\"clearfix\"></div>\r\n        <div class=\"col-md-12\">\r\n            <div class=\"box box-default\">\r\n                <div class=\"box-body\">\r\n                    <table class=\"col-md-12 table table-bordered repayment_loan_details_table\" cellspacing=\"0\" width=\"100%\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">INTL NO</span>\r\n                                    <span *ngIf=\"lang.mr\">हफ्त्याचा क्रमांक</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">MONTH</span>\r\n                                    <span *ngIf=\"lang.mr\">महिना</span>\r\n                                </th>\r\n                                <th colspan=\"3\" style=\"text-align: center;\">\r\n                                    <span *ngIf=\"lang.en\">EXPECTED REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">अपेक्षित परतफेड</span>\r\n                                </th>\r\n                                <th colspan=\"5\" style=\"text-align: center\">\r\n                                    <span *ngIf=\"lang.en\">ACTUAL REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">वास्तविक परतफेड</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">OUTSTANDING AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">उर्वरित रक्कम</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">DUE/ PENAULTY AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">दंडाची रक्कम</span>\r\n                                </th>\r\n                                <th rowspan=\"2\" style=\"width:218px;\">\r\n                                    <span *ngIf=\"lang.en\">MARK REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">परतफेड दर्शवा</span>\r\n                                </th>\r\n                            </tr>\r\n                            <tr class=\"pad_zero\">\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PRINCIPAL AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">मूळ रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">INTEREST AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">व्याजाची रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">TOTAL PAYABLE AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">भरण्यासाठीची संपूर्ण रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PRINCIPAL AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली मूळ रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">INTEREST AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली व्याजाची रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">TOTAL AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली पूर्ण रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">% AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">देय रक्कम %</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PAID DATE</span>\r\n                                    <span *ngIf=\"lang.mr\">देय दिनांक</span>\r\n                                </th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr>\r\n                                <td colspan=\"10\"></td>\r\n                                <td>{{memberLoanDetails.LoanApprovedAmount | currency: 'INR'}}</td>\r\n                                <td colspan=\"2\"></td>\r\n                            </tr>\r\n                            <tr *ngFor=\"let memberLoanDetail of memLoanRepaymentDetails; let rowIndex=index\">\r\n                                <td># {{rowIndex+1}}</td>\r\n                                <td style=\"width:17%\">{{memberLoanDetail.Date | date: 'dd-MMM-yyyy'}}</td>\r\n                                <td>{{memberLoanDetail.FixedPayableAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.InterestAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.TotalPayableAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidTotalAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidIntrestAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidTotalAmt + memberLoanDetail.PaidIntrestAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PerTotalAmountPaid}}</td>\r\n                                <td style=\"width:8%\">{{memberLoanDetail.PaidDate | date: 'dd-MMM-yyyy'}}</td>\r\n                                <td>{{memberLoanDetail.OutstandingAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.FineAmount | currency: 'INR'}}</td>\r\n                                <td class=\"col-md-12\" style=\"width:22%;text-align:center;\">\r\n                                    <span class=\"col-md-12\" *ngIf=\"memberLoanDetail.RepaymentDone\" style=\"display:inline-flex\">\r\n                                        <span *ngIf=\"memberLoanDetail.Photo == null\">\r\n                                            <b>NO FILE</b>\r\n                                        </span>\r\n                                        <a *ngIf=\"memberLoanDetail.Photo != null\" href={{memberLoanDetail.Photo}} target=\"_blank\" class=\"btn btn-primary\">\r\n                                            <span class=\"glyphicon glyphicon-save\"></span>\r\n                                            <span *ngIf=\"lang.en\">RECEIPT</span>\r\n                                            <span *ngIf=\"lang.mr\">रसीद पहा</span>\r\n                                        </a>\r\n                                        <button type=\"button\" [disabled]=\"memberLoanDetail.RepaymentDone\" class=\"btn btn-primary\" style=\"margin-left:2px;\">\r\n                                            <span style=\"color: white\" class=\"glyphicon glyphicon-ok\"></span>&nbsp;DONE</button>   \r\n                                        </span>\r\n                                        <span data-toggle=\"modal\"  *ngIf=\"memberLoanDetail.RepaymentDone\" data-target=\"#changePhoto\" (click)=\"forchange(memberLoanDetail)\">\r\n                                            <i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i>\r\n                                        </span>\r\n                                    <span *ngIf=\"this.repaymentId == memberLoanDetail.RepaymentId\" class=\"\">\r\n                                        <button type=\"button\" (click)=\"setRepaymentData(memberLoanDetail, rowIndex)\" class=\"btn btn-primary\" data-toggle=\"modal\"\r\n                                            data-target=\"#repaymentEntry\">MARK REPAYMENT</button>\r\n                                    </span>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    <b>\r\n                                        <span *ngIf=\"lang.en\">TOTAL SUM</span>\r\n                                        <span *ngIf=\"lang.mr\">एकूण बेरीज</span>\r\n                                    </b>\r\n                                </td>\r\n                                <td>-</td>\r\n                                <td>\r\n                                    <b>{{totalLoanAmt | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td>\r\n                                    <b>{{totalPrinciple | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td>\r\n                                    <b>{{totalPayable | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td colspan=\"2\">-</td>\r\n                                <td>{{totalAmtPaid | currency: 'INR'}}</td>\r\n                                <td colspan=\"3\">-</td>\r\n                                <td>{{totalFineAmt | currency: 'INR'}}</td>\r\n                                <td>-</td>\r\n                            </tr>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- data table end -->\r\n    </div>\r\n</section>\r\n\r\n \r\n<!-- Modal -->\r\n<div id=\"repaymentEntry\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog modal-lg\" style=\"width: 80%\">\r\n        <div class=\"modal-content\">\r\n            <form #repaymentForm=\"ngForm\" class=\"input-group\">\r\n                <div class=\"modal-header\">\r\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                    <h4 class=\"modal-title\">\r\n                        <span *ngIf=\"lang.en\">REPAYMENT ENTRY FORM</span>\r\n                        <span *ngIf=\"lang.mr\">परतफेड भरणा फॉर्म</span>\r\n                    </h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    <div class=\"col-md-6\">\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EXPECTED PRINCIPAL AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">अपेक्षित मूळ रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" disabled value=\"{{loanRepaymentdata.FixedPayableAmt}}\" class=\"form-control\" id=\"principleAmt\" name=\"principleAmt\"\r\n                                required maxlength=\"50\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EXPECTED INTEREST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">अपेक्षित व्याजाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" class=\"form-control custom_btn\" disabled value=\"{{loanRepaymentdata.InterestAmt}}\" id=\"InterestAmt\"\r\n                                name=\"InterestAmt\" maxlength=\"50\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL PRINCIPAL AMOUNT #</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक मूळ रक्कम</span>\r\n                            </label>\r\n                            <input type=\"nmuber\" (ngModel)=\"actualPrincipleAmt\" name=\"actualPrincipleAmt\" (input)=\"convertToWords($event.target.value)\"\r\n                                class=\"form-control\" required maxlength=\"12\" #actualPrincipleAmt=\"ngModel\">\r\n                            <div *ngIf=\"actualPrincipleAmt.invalid && actualPrincipleAmt.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!actualPrincipleAmt.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Principal Amount is required !</span>\r\n                                    <span *ngIf=\"lang.mr\">मूळ रक्कम गरजेची !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL INTEREST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक व्याजाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" class=\"form-control\" (ngModel)=\"actualIntrestAmt\" (input)=\"convertToWordsForIntrest($event.target.value)\"\r\n                                name=\"actualIntrestAmt\" required maxlength=\"2\" #actualIntrestAmt=\"ngModel\">\r\n                            <div *ngIf=\"actualIntrestAmt.invalid && actualIntrestAmt.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!actualIntrestAmt.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Intrest Amount is required !</span>\r\n                                    <span *ngIf=\"lang.mr\">व्याजाची रक्कम गरजेची !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">DUE/ PENAULTY AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">दंडाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" (ngModel)=\"fineAmt\" name=\"fineAmt\" class=\"form-control\" required maxlength=\"7\" pattern=\"[0-9]*\" #fineAmt=\"ngModel\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">AMOUNT PAID DATE</span>\r\n                                <span *ngIf=\"lang.mr\">रक्कम दिलेला दिनांक</span>\r\n                            </label>\r\n                            <input type=\"date\" class=\"form-control\" name=\"amtPaidDate\" (ngModel)=\"amtPaidDate\" #amtPaidDate=\"ngModel\">\r\n                            <!-- <ng-datepicker class=\"dt-picker-format\" [(ngModel)]=\"amtPaidDate\" #frDt [options]=\"options\" name=\"amtPaidDate\">\r\n                            </ng-datepicker> -->\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">ATTACH PAYMENT RECEIPT\r\n                            </label>\r\n                            <input class=\"custom_btn\" type=\"file\" ng-bind=\"fileData\" placeholder=\"Upload file\" accept=\".png,.jpeg,.jpg,.doc\">\r\n                        </div>\r\n                        <div class=\"col-md-12 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">PAYMENT MODE</span>\r\n                                <span *ngIf=\"lang.mr\">रक्कम भरणा मार्ग</span>\r\n                            </label>\r\n                            <select class=\"form-control\" (ngModel)=\"selectedPaymentModeId\" id=\"selectedPaymentModeId\" required name=\"selectedPaymentModeId\"\r\n                                #selectedPaymentModeId=\"ngModel\">\r\n                                <option [value]=\"1\">CASH AT HAND</option>\r\n                                <option [value]=\"2\">CASH AT BANK</option>\r\n                            </select>\r\n                            <div *ngIf=\"selectedPaymentModeId.invalid && selectedPaymentModeId.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!selectedPaymentModeId.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Please select payment mode !</span>\r\n                                    <span *ngIf=\"lang.mr\">कृपया रक्कम भरणा मार्ग निवडा !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-3\">\r\n                        <div class=\"card\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL PRINCIPAL AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक मूळ रक्कम</span>\r\n                            </label>\r\n                            <div class=\"card-header\">\r\n                                IN ENGLISH\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInEnglish}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                मराठी मधे\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInMarathi}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                हिंदी में\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInHindi}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-3\">\r\n                        <div class=\"card\">\r\n                            <label for=\"text\">ACTUAL INTEREST AMOUNT PAID</label>\r\n                            <div class=\"card-header\">\r\n                                IN ENGLISH\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInEnglishForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                मराठी मधे\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInMarathiForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                हिंदी में\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInHindiForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <div class=\"col-md-12\">\r\n                        <button class=\"btn btn-primary pull-right\" type=\"submit\" [disabled]=\"repaymentForm.invalid\" (click)=\"MarkRepayment(repaymentForm, $event.target.form[7].files[0])\"\r\n                            data-dismiss=\"modal\" style=\"margin-left: 150px; margin-top: 2px;\">SAVE REPAYMENT ENTRY</button>\r\n                        <button type=\"button\" id=\"click-button1\" data-dismiss=\"modal\" class=\"btn btn-primary pull-right\">CANCEL</button>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"loanDetails\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\">\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\" style=\"padding:5px;width: 730px;\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">\r\n                    <span *ngIf=\"lang.en\">MEMBER LOAN DETAILS -\r\n                        <b>LOAN ID - {{memberLoanDetails.LoanId}}</b>\r\n                    </span>\r\n                    <span *ngIf=\"lang.mr\">सदस्याच्या कर्जाची माहिती -\r\n                        <b>कर्जाचा आयडी - {{memberLoanDetails.LoanId}}</b>\r\n                    </span>\r\n                </h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">MEMBER FULL NAME</span>\r\n                                <span *ngIf=\"lang.mr\">सदस्याचे पूर्ण नाव</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <label for=\"text\">{{memberLoanDetails.MemberFirstName}} {{memberLoanDetails.MemberLastName}}\r\n                        </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">SHG NAME</span>\r\n                                <span *ngIf=\"lang.mr\">एसएचजी चे नाव</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.SHGName}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">SHG CODE</span>\r\n                                <span *ngIf=\"lang.mr\">एसएचजी क्रमांक</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.SHGCode}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN REQUEST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">विनंती केलेली कर्जाची रक्कम</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanAmount}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाची स्वीकृत रक्कम</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanApprovedAmount}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED DATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज मान्य केलेली तारीख</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.ApprovedDate | date: 'dd-MMM-yyyy'}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">INTEREST RATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाचा दर</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.IntrestRate}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">TENURE (NO. OF. INSTALLMENT)</span>\r\n                                <span *ngIf=\"lang.mr\">कालावधी (एकूण हफ्ते)</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.Tenure}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EFFECTIVE LOAN START DATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज भरणीची सुरवातीची तारीख</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.EffectiveStartDate}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN REASON</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाचे कारण</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanReason}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <!--<button class=\"btn btn-danger\" type=\"submit\" style=\"margin-top:10px;\" data-dismiss=\"modal\">CLOSE</button>-->\r\n\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" id=\"click-button1\" data-dismiss=\"modal\" class=\"pull-right\">\r\n                    <span *ngIf=\"lang.en\">CLOSE</span>\r\n                    <span *ngIf=\"lang.mr\">बंद करा</span>\r\n                </button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"changePhoto\" class=\"modal\" role=\"dialog\">\r\n    <div class=\"modal-dialog\" style=\"width: 30%; margin-top:150px\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">Change Photo</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <form>\r\n                    <div>\r\n                        <input class=\"form-control\" type=\"file\" ng-bind=\"fileData\" placeholder=\"Upload file\" accept=\".png,.jpeg,.jpg\" style=\"width:222px;\">\r\n                        <button class=\"form-control btn btn-primary\" (click)=\"chnagePhoto($event.target.form[0].files[0],changePhotoDetail.RepaymentId, changePhotoDetail.PhotoId)\" data-dismiss=\"modal\">CHANGE</button>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -21418,14 +22703,15 @@ var GlobalAssets = (function () {
     function GlobalAssets() {
         this.environment = "azureProd";
         this.environment = "azureProd";
+        //this.environment = "uat";
         //this.environment = "local"
         if (this.environment === "local") {
             this.BASE_URL = "http://localhost:59611/api";
             this.TOKEN = "http://localhost:59611/Token";
         }
         if (this.environment === "uat") {
-            this.BASE_URL = "http://cmrcuatapi.maibasoft.com/api";
-            this.TOKEN = "http://cmrcuatapi.maibasoft.com/Token";
+            this.BASE_URL = "https://csgapiuat.azurewebsites.net/api";
+            this.TOKEN = "https://csgapiuat.azurewebsites.net/Token";
         }
         if (this.environment === "prod") {
             this.BASE_URL = "https://pragaticrmcapi.maibasoft.com/api";
