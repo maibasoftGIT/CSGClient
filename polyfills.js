@@ -3250,10 +3250,10 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                 var _a;
             });
             function onResolve(value) {
-                promise && (promise = null || resolve(value));
+                promise && (promise =  false || resolve(value));
             }
             function onReject(error) {
-                promise && (promise = null || reject(error));
+                promise && (promise =  false || reject(error));
             }
             try {
                 for (var values_1 = __values(values), values_1_1 = values_1.next(); !values_1_1.done; values_1_1 = values_1.next()) {
@@ -5415,7 +5415,6 @@ __webpack_require__.r(__webpack_exports__);
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 /** IE10 and IE11 requires the following for the Reflect API. */
-// import 'core-js/es6/reflect';
 /** Evergreen browsers require these. **/
 // Used for reflect-metadata in JIT. If you use AOT (and only Angular decorators), you can remove.
 /**
@@ -5450,8 +5449,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\MyData\Maibasoft\Projects\CSG_Others\TFS\api\DEV_CLIENT\src\polyfills.ts */"./src/polyfills.ts");
-module.exports = __webpack_require__(/*! C:\MyData\Maibasoft\Projects\CSG_Others\TFS\api\DEV_CLIENT\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
+__webpack_require__(/*! C:\MyData\Maibasoft\Projects\CSG_Others\Repository\V54_API_CLIENT_Deployed code_30 juily\client\src\polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! C:\MyData\Maibasoft\Projects\CSG_Others\Repository\V54_API_CLIENT_Deployed code_30 juily\client\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
 
 
 /***/ })
