@@ -200,21 +200,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_dashboard_selector__WEBPACK_IMPORTED_MODULE_132__ = __webpack_require__(/*! ./utils/dashboard-selector */ "./src/app/utils/dashboard-selector.ts");
 /* harmony import */ var _components_district_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_133__ = __webpack_require__(/*! ./components/district/loan/loanrepayment.component */ "./src/app/components/district/loan/loanrepayment.component.ts");
 /* harmony import */ var _components_district_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_134__ = __webpack_require__(/*! ./components/district/fund/fundrepayment.component */ "./src/app/components/district/fund/fundrepayment.component.ts");
-/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_135__ = __webpack_require__(/*! ./components/district/cmrcSL/cmrcSLDetails.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts");
-/* harmony import */ var _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_136__ = __webpack_require__(/*! ./components/district/voSL/voSLDetails.Component */ "./src/app/components/district/voSL/voSLDetails.Component.ts");
-/* harmony import */ var _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_137__ = __webpack_require__(/*! ./components/cmrc/bifurcation/bifurcation.component */ "./src/app/components/cmrc/bifurcation/bifurcation.component.ts");
-/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_138__ = __webpack_require__(/*! ./components/district/cmrcSL/cmrcSLDetails.model.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.model.component.ts");
-/* harmony import */ var _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_139__ = __webpack_require__(/*! ./services/reports/reportConstants */ "./src/app/services/reports/reportConstants.ts");
-/* harmony import */ var _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_140__ = __webpack_require__(/*! ./components/cmrc/loan/loan */ "./src/app/components/cmrc/loan/loan.ts");
-/* harmony import */ var _components_district_voSL_voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_141__ = __webpack_require__(/*! ./components/district/voSL/voSLDetails.model.component */ "./src/app/components/district/voSL/voSLDetails.model.component.ts");
-/* harmony import */ var _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_142__ = __webpack_require__(/*! ./components/vo/member_share/membershare.component */ "./src/app/components/vo/member_share/membershare.component.ts");
-/* harmony import */ var _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_143__ = __webpack_require__(/*! ./environments/loaderMessage */ "./src/app/environments/loaderMessage.ts");
-/* harmony import */ var _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_144__ = __webpack_require__(/*! ./utils/available-amt.model */ "./src/app/utils/available-amt.model.ts");
-/* harmony import */ var _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_145__ = __webpack_require__(/*! ./components/public/products/cmrc-product.component */ "./src/app/components/public/products/cmrc-product.component.ts");
-/* harmony import */ var _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_146__ = __webpack_require__(/*! ./components/cmrc/public-page/products/product.component */ "./src/app/components/cmrc/public-page/products/product.component.ts");
-/* harmony import */ var _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_147__ = __webpack_require__(/*! ./components/district/mavimdetail/mavimlinks.component */ "./src/app/components/district/mavimdetail/mavimlinks.component.ts");
-/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_148__ = __webpack_require__(/*! angular2-lightbox */ "./node_modules/angular2-lightbox/index.js");
-/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_148___default = /*#__PURE__*/__webpack_require__.n(angular2_lightbox__WEBPACK_IMPORTED_MODULE_148__);
+/* harmony import */ var _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_135__ = __webpack_require__(/*! ./components/cmrc/bifurcation/bifurcation.component */ "./src/app/components/cmrc/bifurcation/bifurcation.component.ts");
+/* harmony import */ var _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_136__ = __webpack_require__(/*! ./services/reports/reportConstants */ "./src/app/services/reports/reportConstants.ts");
+/* harmony import */ var _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_137__ = __webpack_require__(/*! ./components/cmrc/loan/loan */ "./src/app/components/cmrc/loan/loan.ts");
+/* harmony import */ var _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_138__ = __webpack_require__(/*! ./components/vo/member_share/membershare.component */ "./src/app/components/vo/member_share/membershare.component.ts");
+/* harmony import */ var _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_139__ = __webpack_require__(/*! ./environments/loaderMessage */ "./src/app/environments/loaderMessage.ts");
+/* harmony import */ var _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_140__ = __webpack_require__(/*! ./utils/available-amt.model */ "./src/app/utils/available-amt.model.ts");
+/* harmony import */ var _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_141__ = __webpack_require__(/*! ./components/public/products/cmrc-product.component */ "./src/app/components/public/products/cmrc-product.component.ts");
+/* harmony import */ var _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_142__ = __webpack_require__(/*! ./components/cmrc/public-page/products/product.component */ "./src/app/components/cmrc/public-page/products/product.component.ts");
+/* harmony import */ var _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_143__ = __webpack_require__(/*! ./components/district/mavimdetail/mavimlinks.component */ "./src/app/components/district/mavimdetail/mavimlinks.component.ts");
+/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_144__ = __webpack_require__(/*! angular2-lightbox */ "./node_modules/angular2-lightbox/index.js");
+/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_144___default = /*#__PURE__*/__webpack_require__.n(angular2_lightbox__WEBPACK_IMPORTED_MODULE_144__);
 
 
 
@@ -355,12 +351,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// import { cmrcSLDetailsComponent } from './components/district/cmrcSL/cmrcSLDetails.component';
+// import { voSLDetailsComponent } from './components/district/voSL/voSLDetails.Component';
 
-
-
-
+// import { CmrcSlDetailsModel } from './components/district/cmrcSL/cmrcSLDetails.model.component';
 // import { voSLDetailsModel } from './components/district/voSL/voSLDetails.model.component';
-
 
 
 
@@ -393,7 +388,7 @@ var AppModule = (function () {
                 _components_vo_fix_deposite_fixdeposite_component__WEBPACK_IMPORTED_MODULE_9__["FixDepositeComponent"],
                 _components_vo_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["VoDashboardComponent"],
                 _components_vo_loan_loan_component__WEBPACK_IMPORTED_MODULE_12__["LoanComponent"],
-                _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_140__["CmrcLoanComponent"],
+                _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_137__["CmrcLoanComponent"],
                 _components_vo_shg_master_shg_master_component__WEBPACK_IMPORTED_MODULE_18__["ShgMasterComponent"],
                 _components_common_component__WEBPACK_IMPORTED_MODULE_16__["LoadingComponent"],
                 _components_common_component__WEBPACK_IMPORTED_MODULE_16__["MessageComponent"],
@@ -463,7 +458,7 @@ var AppModule = (function () {
                 _components_district_member_member_component__WEBPACK_IMPORTED_MODULE_100__["DistrictMemberComponent"],
                 _components_cmrc_reports_memberreport_memberreport__WEBPACK_IMPORTED_MODULE_103__["MembeReports"],
                 _components_cmrc_reports_shg_Active_withdrawal_shg_Active_withdrawal_component__WEBPACK_IMPORTED_MODULE_104__["ActiveAndWithdrawlShgComponent"],
-                _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_137__["BifurCationComponent"],
+                _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_135__["BifurCationComponent"],
                 _components_cmrc_public_page_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_120__["PublicCMRCBifurCationComponent"],
                 _components_cmrc_public_page_news_news_component__WEBPACK_IMPORTED_MODULE_121__["NewsComponent"],
                 _components_cmrc_public_page_news_news_update_component__WEBPACK_IMPORTED_MODULE_122__["NewsUpdateComponent"],
@@ -482,12 +477,12 @@ var AppModule = (function () {
                 _components_district_PercentageIncome_PercentageIncome_Component__WEBPACK_IMPORTED_MODULE_128__["PercentageOnIncome"],
                 _components_district_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_133__["LoanUpdateRepaymentComponent"],
                 _components_district_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_134__["VOFundUpdateRepaymentComponent"],
-                _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_135__["cmrcSLDetailsComponent"],
-                _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_136__["voSLDetailsComponent"],
-                _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_142__["MemberShareComponent"],
-                _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_145__["CMRCProductComponent"],
-                _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_146__["ProductComponent"],
-                _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_147__["MavimLinksComponent"]
+                // cmrcSLDetailsComponent,
+                // voSLDetailsComponent,
+                _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_138__["MemberShareComponent"],
+                _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_141__["CMRCProductComponent"],
+                _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_142__["ProductComponent"],
+                _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_143__["MavimLinksComponent"]
             ],
             imports: [_angular_common__WEBPACK_IMPORTED_MODULE_22__["CommonModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["BrowserModule"],
@@ -496,21 +491,21 @@ var AppModule = (function () {
                 _routing_CSGRoutes__WEBPACK_IMPORTED_MODULE_15__["PublicRoutes"],
                 angular_datatables__WEBPACK_IMPORTED_MODULE_6__["DataTablesModule"],
                 ng2_datepicker__WEBPACK_IMPORTED_MODULE_76__["NgDatepickerModule"],
-                angular2_lightbox__WEBPACK_IMPORTED_MODULE_148__["LightboxModule"]
+                angular2_lightbox__WEBPACK_IMPORTED_MODULE_144__["LightboxModule"]
                 //Angular2ImageGalleryModule
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["App"]],
             providers: [_services_vo_services__WEBPACK_IMPORTED_MODULE_10__["VOService"],
-                _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_144__["AvailableAmountModel"],
+                _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_140__["AvailableAmountModel"],
                 _services_common_service__WEBPACK_IMPORTED_MODULE_27__["CommonService"],
                 _services_public_service__WEBPACK_IMPORTED_MODULE_109__["PublicService"],
                 _services_cmrc_services__WEBPACK_IMPORTED_MODULE_25__["CMRCService"],
                 _components_district_cmrc_cmrcdetails_model_component__WEBPACK_IMPORTED_MODULE_105__["CmrcDetailsModel"],
-                _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_139__["ReportConstant"],
+                _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_136__["ReportConstant"],
                 _environments_access_token__WEBPACK_IMPORTED_MODULE_5__["AccessToken"],
                 _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_31__["GlobalVariable"],
                 _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_50__["CommonMessageComponent"],
-                _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_143__["LoaderMessageComponent"],
+                _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_139__["LoaderMessageComponent"],
                 _services_reports_exportpdf__WEBPACK_IMPORTED_MODULE_68__["ExportToPDF"],
                 _environments_language_config__WEBPACK_IMPORTED_MODULE_72__["LangulageConf"],
                 //   ExportToExcel,
@@ -535,8 +530,6 @@ var AppModule = (function () {
                 _components_district_member_member_model_component__WEBPACK_IMPORTED_MODULE_101__["DistrictMemberModel"],
                 _utils_dashboard_url_util__WEBPACK_IMPORTED_MODULE_131__["DashboardURLs"],
                 _utils_dashboard_selector__WEBPACK_IMPORTED_MODULE_132__["DashboardDataChoiceSelector"],
-                _components_district_cmrcSL_cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_138__["CmrcSlDetailsModel"],
-                _components_district_voSL_voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_141__["voSLDetailsModel"]
             ]
         })
     ], AppModule);
@@ -14499,359 +14492,6 @@ var CmrcDetailsModel = (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts":
-/*!***********************************************************************!*\
-  !*** ./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts ***!
-  \***********************************************************************/
-/*! exports provided: cmrcSLDetailsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cmrcSLDetailsComponent", function() { return cmrcSLDetailsComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/@angular/core */ "./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var _services_district_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/district.services */ "./src/app/services/district.services.ts");
-/* harmony import */ var _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/@angular/router */ "./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var _environments_language_config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../environments/language.config */ "./src/app/environments/language.config.ts");
-/* harmony import */ var _environments_access_token__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../environments/access_token */ "./src/app/environments/access_token.ts");
-/* harmony import */ var _environments_Global__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../environments/Global */ "./src/app/environments/Global.ts");
-/* harmony import */ var _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../environments/GlobalVeriables */ "./src/app/environments/GlobalVeriables.ts");
-/* harmony import */ var _services_common_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../services/common.service */ "./src/app/services/common.service.ts");
-/* harmony import */ var _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../environments/CommanMssage */ "./src/app/environments/CommanMssage.ts");
-/* harmony import */ var _node_modules_angular_datatables_src_angular_datatables_directive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../../node_modules/angular-datatables/src/angular-datatables.directive */ "./node_modules/angular-datatables/src/angular-datatables.directive.js");
-/* harmony import */ var date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! date-fns/locale/en */ "./node_modules/date-fns/locale/en/index.js");
-/* harmony import */ var date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./cmrcSLDetails.model.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.model.component.ts");
-/* harmony import */ var _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../../node_modules/rxjs */ "./node_modules/rxjs/Rx.js");
-/* harmony import */ var _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _node_modules_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../../node_modules/@angular/platform-browser */ "./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-/* harmony import */ var _utils_constants_title_constants__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../utils/constants/title-constants */ "./src/app/utils/constants/title-constants.ts");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var cmrcSLDetailsComponent = (function () {
-    function cmrcSLDetailsComponent(districtService, _router, lang, _access_token, _globalURL, _globalVariable, _commonService, _commonMessage, _cmrcSLDetails, titleService) {
-        this.districtService = districtService;
-        this._router = _router;
-        this.lang = lang;
-        this._access_token = _access_token;
-        this._globalURL = _globalURL;
-        this._globalVariable = _globalVariable;
-        this._commonService = _commonService;
-        this._commonMessage = _commonMessage;
-        this._cmrcSLDetails = _cmrcSLDetails;
-        this.titleService = titleService;
-        this.showErrorMessage = false;
-        this.dtTrigger = new _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__["Subject"]();
-        this.toDt = new Date();
-        this.frDt = new Date();
-        this.options = {
-            minYear: 2000,
-            maxYear: (new Date().getFullYear() + 1),
-            displayFormat: 'MMM D[,] YYYY',
-            barTitleFormat: 'MMMM YYYY',
-            dayNamesFormat: 'dd',
-            firstCalendarDay: 0,
-            locale: date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__,
-            barTitleIfEmpty: 'Click to select a date'
-        };
-        this.setTitle(_utils_constants_title_constants__WEBPACK_IMPORTED_MODULE_15__["TitleConstants"].DISTRICT_CMRC_SL_DETAILS);
-    }
-    cmrcSLDetailsComponent.prototype.ngOnInit = function () {
-        this.getCMRCsKVP();
-    };
-    cmrcSLDetailsComponent.prototype.ngAfterViewInit = function () {
-        this.dtTrigger.next();
-    };
-    cmrcSLDetailsComponent.prototype.setTitle = function (newTitle) {
-        this.titleService.setTitle(newTitle);
-    };
-    cmrcSLDetailsComponent.prototype.getCMRCsKVP = function () {
-        var _this = this;
-        debugger;
-        this._globalURL.isLoading = true;
-        this.districtService.get(this._globalURL.GET_KVP_DISTRICT_CMRC_DASHBOARD, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.Cmrcs = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    cmrcSLDetailsComponent.prototype.getSLDetails = function (cmrcId) {
-        var _this = this;
-        debugger;
-        this.selectedCMRCId = cmrcId;
-        this.districtService.get((this._globalURL.GET_CMRCS_SL_DETAILS + "?roleId=2" + "&id=" + cmrcId), sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.cmrcSLDetails = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-            _this.reRenderDT();
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    cmrcSLDetailsComponent.prototype.saveRecord = function (selectedId) {
-        this.selectedCMRCId = selectedId;
-    };
-    cmrcSLDetailsComponent.prototype.loadSLDetails = function (frDt, toDt) {
-        var _this = this;
-        debugger;
-        this.lastFinanceYearOrFromDt = this._commonService.convertToDate(frDt);
-        this.todaysOrToDt = this._commonService.convertToDate(toDt);
-        var urls = this._globalURL.GET_SL_ENTRIES_DETAILS + this._globalVariable.CMRCRoleId + "&loginId=" + this.selectedCMRCId + "&fromdt=" + this.lastFinanceYearOrFromDt + "&todt=" + this.todaysOrToDt;
-        this.districtService.get(urls, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.status === 401) {
-                sessionStorage.clear();
-                _this.showErrorMessage = true;
-                _this.message = _this._commonMessage.error401message;
-                setInterval(function () {
-                    _this.showErrorMessage = false;
-                }, 5000);
-                _this._globalURL.isLoading = false;
-                _this._router.navigate(['../login']);
-            }
-            if (res.Status == undefined)
-                if (res.status == 200) {
-                    if ((JSON.parse(res._body).Data.Status == 200))
-                        _this.slEntriesDetails = JSON.parse(res._body).Data;
-                    else {
-                        _this.showWarningMessage = true;
-                        _this.message = _this._commonMessage.WarningMsg;
-                        setInterval(function () {
-                            _this.showWarningMessage = false;
-                        }, 5000);
-                        _this._globalURL.isLoading = false;
-                    }
-                }
-                else {
-                    _this.showWarningMessage = true;
-                    _this.message = _this._commonMessage.WarningMsg;
-                    setInterval(function () {
-                        _this.showWarningMessage = false;
-                    }, 5000);
-                    _this._globalURL.isLoading = false;
-                }
-            else {
-                if (res.Status == true) {
-                    _this.slEntriesDetails = res.Data;
-                    _this._globalURL.isLoading = false;
-                }
-                else {
-                    _this.showWarningMessage = true;
-                    _this.message = _this._commonMessage.WarningMsg;
-                    setInterval(function () {
-                        _this.showWarningMessage = false;
-                    }, 5000);
-                    _this._globalURL.isLoading = false;
-                }
-            }
-            _this.reRenderDT();
-        }).catch(function (res) {
-            _this.showErrorMessage = true;
-            console.log(res.error);
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-            _this._globalURL.isLoading = false;
-        });
-    };
-    cmrcSLDetailsComponent.prototype.getSLEntriesDetails = function (isAllEntries) {
-        var _this = this;
-        debugger;
-        this.districtService.get(this._globalURL.GET_SL_ENTRIES_DETAILS + this._globalVariable.CMRCRoleId + "&loginId=" + this.selectedCMRCId + "&isAllEntries=" + isAllEntries, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.status === 401) {
-                sessionStorage.clear();
-                _this.showErrorMessage = true;
-                _this.message = _this._commonMessage.error401message;
-                setInterval(function () {
-                    _this.showErrorMessage = false;
-                }, 5000);
-                _this._globalURL.isLoading = false;
-                _this._router.navigate(['../login']);
-            }
-            if (res.Status == true) {
-                _this.slEntriesDetails = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-            _this.reRenderDT();
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    cmrcSLDetailsComponent.prototype.setUpdatedValues = function (cmrcSLDetail) {
-        this.convertToWords(cmrcSLDetail.Amount);
-        this._cmrcSLDetails = cmrcSLDetail;
-        this.slId = cmrcSLDetail.Id;
-    };
-    cmrcSLDetailsComponent.prototype.confirmUpdate = function (data) {
-        var _this = this;
-        debugger;
-        var shareDetails = this._globalURL.UPDATE_SL_DETAILS + "?roleId=" + this._globalVariable.CMRCRoleId + "&id=" + this.slId + "&transactionTypeId=23" + "&amount=" + data.Amount + "&t_date=" + data.TransactionDate;
-        this.districtService.post(shareDetails, null, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if ((res.Status) == undefined) {
-                if (res.status === 200) {
-                    _this.getSLDetails(_this.selectedCMRCId);
-                    _this._globalURL.isLoading = false;
-                    _this.showMessage = true;
-                    _this.message = _this._commonMessage.UpdateMsg;
-                    setInterval(function () {
-                        _this.showMessage = false;
-                    }, 5000);
-                }
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    cmrcSLDetailsComponent.prototype.reRenderDT = function () {
-        var _this = this;
-        this.dtElement.dtInstance.then(function (dtInstance) {
-            dtInstance.destroy();
-            _this.dtTrigger.next();
-        });
-    };
-    cmrcSLDetailsComponent.prototype.convertToWords = function (num) {
-        debugger;
-        this.convertedWordsInEnglish = this._commonService.convertDigitToWordsInEnglish(num);
-        this.convertedWordsInHindi = this._commonService.convertDigitToWordsInHindi(num);
-        this.convertedWordsInMarathi = this._commonService.convertDigitToWordsInMarathi(num);
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_node_modules_angular_datatables_src_angular_datatables_directive__WEBPACK_IMPORTED_MODULE_10__["DataTableDirective"]),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _node_modules_angular_datatables_src_angular_datatables_directive__WEBPACK_IMPORTED_MODULE_10__["DataTableDirective"])
-    ], cmrcSLDetailsComponent.prototype, "dtElement", void 0);
-    cmrcSLDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            templateUrl: '../cmrcSL/cmrcSLDetails.component.html',
-            styleUrls: ['../../../components/app.css']
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_district_services__WEBPACK_IMPORTED_MODULE_2__["DISTRICTService"],
-            _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-            _environments_language_config__WEBPACK_IMPORTED_MODULE_4__["LangulageConf"],
-            _environments_access_token__WEBPACK_IMPORTED_MODULE_5__["AccessToken"],
-            _environments_Global__WEBPACK_IMPORTED_MODULE_6__["GlobalAssets"],
-            _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_7__["GlobalVariable"],
-            _services_common_service__WEBPACK_IMPORTED_MODULE_8__["CommonService"],
-            _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_9__["CommonMessageComponent"],
-            _cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_12__["CmrcSlDetailsModel"],
-            _node_modules_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__["Title"]])
-    ], cmrcSLDetailsComponent);
-    return cmrcSLDetailsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/district/cmrcSL/cmrcSLDetails.model.component.ts":
-/*!*****************************************************************************!*\
-  !*** ./src/app/components/district/cmrcSL/cmrcSLDetails.model.component.ts ***!
-  \*****************************************************************************/
-/*! exports provided: CmrcSlDetailsModel */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CmrcSlDetailsModel", function() { return CmrcSlDetailsModel; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/@angular/core */ "./node_modules/@angular/core/esm5/core.js");
-
-
-var CmrcSlDetailsModel = (function () {
-    function CmrcSlDetailsModel() {
-        this.PaymentMode = 0;
-        this.Amount = 0;
-        this.TransactionDate = '';
-        this.FromName = '';
-        this.ToName = '';
-        this.SLTypeName = '';
-    }
-    CmrcSlDetailsModel = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], CmrcSlDetailsModel);
-    return CmrcSlDetailsModel;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/components/district/dashboard/dashboard.component.html":
 /*!************************************************************************!*\
   !*** ./src/app/components/district/dashboard/dashboard.component.html ***!
@@ -19634,388 +19274,6 @@ var DistrictShgMasterModel = (function () {
         this.DesignationName = '';
     }
     return DistrictShgMasterModel;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/district/voSL/voSLDetails.Component.ts":
-/*!*******************************************************************!*\
-  !*** ./src/app/components/district/voSL/voSLDetails.Component.ts ***!
-  \*******************************************************************/
-/*! exports provided: voSLDetailsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "voSLDetailsComponent", function() { return voSLDetailsComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/@angular/core */ "./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var _services_district_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/district.services */ "./src/app/services/district.services.ts");
-/* harmony import */ var _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/@angular/router */ "./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var _environments_language_config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../environments/language.config */ "./src/app/environments/language.config.ts");
-/* harmony import */ var _environments_access_token__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../environments/access_token */ "./src/app/environments/access_token.ts");
-/* harmony import */ var _environments_Global__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../environments/Global */ "./src/app/environments/Global.ts");
-/* harmony import */ var _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../environments/GlobalVeriables */ "./src/app/environments/GlobalVeriables.ts");
-/* harmony import */ var _services_common_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../services/common.service */ "./src/app/services/common.service.ts");
-/* harmony import */ var _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../environments/CommanMssage */ "./src/app/environments/CommanMssage.ts");
-/* harmony import */ var _node_modules_angular_datatables__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../../node_modules/angular-datatables */ "./node_modules/angular-datatables/index.js");
-/* harmony import */ var date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! date-fns/locale/en */ "./node_modules/date-fns/locale/en/index.js");
-/* harmony import */ var date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./voSLDetails.model.component */ "./src/app/components/district/voSL/voSLDetails.model.component.ts");
-/* harmony import */ var _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../../node_modules/rxjs */ "./node_modules/rxjs/Rx.js");
-/* harmony import */ var _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _node_modules_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../../node_modules/@angular/platform-browser */ "./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-/* harmony import */ var _utils_constants_title_constants__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../utils/constants/title-constants */ "./src/app/utils/constants/title-constants.ts");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var voSLDetailsComponent = (function () {
-    function voSLDetailsComponent(districtService, _router, lang, _access_token, _globalURL, _globalVariable, _commonService, _commonMessage, _voSLDetailsModel, titleService) {
-        this.districtService = districtService;
-        this._router = _router;
-        this.lang = lang;
-        this._access_token = _access_token;
-        this._globalURL = _globalURL;
-        this._globalVariable = _globalVariable;
-        this._commonService = _commonService;
-        this._commonMessage = _commonMessage;
-        this._voSLDetailsModel = _voSLDetailsModel;
-        this.titleService = titleService;
-        this.showSuccMessage = false;
-        this.showErrorMessage = false;
-        this.toDt = new Date();
-        this.frDt = new Date();
-        this.dtTrigger = new _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__["Subject"]();
-        this.ToDt = new Date();
-        this.FromDt = new Date();
-        this.options = {
-            minYear: 2000,
-            maxYear: (new Date().getFullYear() + 1),
-            displayFormat: 'MMM D[,] YYYY',
-            barTitleFormat: 'MMMM YYYY',
-            dayNamesFormat: 'dd',
-            firstCalendarDay: 0,
-            locale: date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__,
-            barTitleIfEmpty: 'Click to select a date'
-        };
-        this.setTitle(_utils_constants_title_constants__WEBPACK_IMPORTED_MODULE_15__["TitleConstants"].DISTRICT_VO_SL_DETAILS);
-    }
-    voSLDetailsComponent.prototype.ngOnInit = function () {
-        this.getCMRCsKVP();
-    };
-    voSLDetailsComponent.prototype.ngAfterViewInit = function () {
-        this.dtTrigger.next();
-    };
-    voSLDetailsComponent.prototype.setTitle = function (newTitle) {
-        this.titleService.setTitle(newTitle);
-    };
-    voSLDetailsComponent.prototype.getCMRCsKVP = function () {
-        var _this = this;
-        debugger;
-        this._globalURL.isLoading = true;
-        this.districtService.get(this._globalURL.GET_KVP_DISTRICT_CMRC_DASHBOARD, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.Cmrcs = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.showErrorMessage = true;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            setInterval(function () {
-                _this.showWarningMessage = false;
-            }, 5000);
-        });
-    };
-    voSLDetailsComponent.prototype.getVoByCmrcId = function (selectCmrc) {
-        var _this = this;
-        debugger;
-        this._globalURL.isLoading = true;
-        this.districtService.get((this._globalURL.GET_VO_BY_CMRC_ID + "?cmrcId=" + selectCmrc), sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.Vos = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.showErrorMessage = true;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            setInterval(function () {
-                _this.showWarningMessage = false;
-            }, 5000);
-        });
-    };
-    voSLDetailsComponent.prototype.getSLDetails = function (voId) {
-        var _this = this;
-        debugger;
-        this.districtService.get((this._globalURL.GET_CMRCS_SL_DETAILS + "?roleId=3" + "&id=" + voId), sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.cmrcSLDetails = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.showErrorMessage = true;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            setInterval(function () {
-                _this.showWarningMessage = false;
-            }, 5000);
-        });
-    };
-    voSLDetailsComponent.prototype.saveRecord = function (selectedId) {
-        this.selectedVOId = selectedId;
-    };
-    voSLDetailsComponent.prototype.loadSLDetails = function (frDt, toDt) {
-        var _this = this;
-        debugger;
-        this.lastFinanceYearOrFromDt = this._commonService.convertToDate(frDt);
-        this.todaysOrToDt = this._commonService.convertToDate(toDt);
-        var urls = this._globalURL.GET_SL_ENTRIES_DETAILS + this._globalVariable.VORoleId + "&loginId=" + this.selectedVOId + "&fromdt=" + this.lastFinanceYearOrFromDt + "&todt=" + this.todaysOrToDt;
-        this.districtService.get(urls, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.status === 401) {
-                sessionStorage.clear();
-                _this.showErrorMessage = true;
-                _this.message = _this._commonMessage.error401message;
-                setInterval(function () {
-                    _this.showErrorMessage = false;
-                }, 5000);
-                _this._globalURL.isLoading = false;
-                _this._router.navigate(['../login']);
-            }
-            if (res.Status == undefined)
-                if (res.status == 200) {
-                    if ((JSON.parse(res._body).Data.Status == 200))
-                        _this.slEntriesDetails = JSON.parse(res._body).Data;
-                    else {
-                        _this.showWarningMessage = true;
-                        _this.message = _this._commonMessage.WarningMsg;
-                        setInterval(function () {
-                            _this.showWarningMessage = false;
-                        }, 5000);
-                        _this._globalURL.isLoading = false;
-                    }
-                }
-                else {
-                    _this.showWarningMessage = true;
-                    _this.message = _this._commonMessage.WarningMsg;
-                    setInterval(function () {
-                        _this.showWarningMessage = false;
-                    }, 5000);
-                    _this._globalURL.isLoading = false;
-                }
-            else {
-                if (res.Status == true) {
-                    _this.slEntriesDetails = res.Data;
-                    _this._globalURL.isLoading = false;
-                }
-                else {
-                    _this.showWarningMessage = true;
-                    _this.message = _this._commonMessage.WarningMsg;
-                    setInterval(function () {
-                        _this.showWarningMessage = false;
-                    }, 5000);
-                    _this._globalURL.isLoading = false;
-                }
-            }
-            _this.reRenderDT();
-        }).catch(function (res) {
-            _this.showErrorMessage = true;
-            console.log(res.error);
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-            _this._globalURL.isLoading = false;
-        });
-    };
-    voSLDetailsComponent.prototype.getSLEntriesDetails = function (isAllEntries) {
-        var _this = this;
-        debugger;
-        this.districtService.get(this._globalURL.GET_SL_ENTRIES_DETAILS + this._globalVariable.VORoleId + "&loginId=" + this.selectedVOId + "&isAllEntries=" + isAllEntries, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.status === 401) {
-                sessionStorage.clear();
-                _this.showErrorMessage = true;
-                _this.message = _this._commonMessage.error401message;
-                setInterval(function () {
-                    _this.showErrorMessage = false;
-                }, 5000);
-                _this._globalURL.isLoading = false;
-                _this._router.navigate(['../login']);
-            }
-            if (res.Status == true) {
-                _this.slEntriesDetails = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-            _this.reRenderDT();
-        }).catch(function (res) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    voSLDetailsComponent.prototype.setUpdatedValues = function (voSLDetail) {
-        debugger;
-        this.convertToWords(voSLDetail.Amount);
-        this._voSLDetailsModel = voSLDetail;
-        this.slId = voSLDetail.Id;
-    };
-    voSLDetailsComponent.prototype.confirmUpdate = function (data) {
-        var _this = this;
-        debugger;
-        var shareDetails = this._globalURL.UPDATE_SL_DETAILS + "?roleId=" + this._globalVariable.VORoleId + "&id=" + this.slId + "&transactionTypeId=23" + "&amount=" + data.Amount + "&t_date=" + data.TransactionDate;
-        this.districtService.post(shareDetails, null, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if ((res.Status) == undefined) {
-                if (res.status === 200) {
-                    debugger;
-                    _this._globalURL.isLoading = false;
-                    _this.showMessage = true;
-                    _this.message = _this._commonMessage.UpdateMsg;
-                    setInterval(function () {
-                        _this.showMessage = false;
-                    }, 5000);
-                }
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    voSLDetailsComponent.prototype.reRenderDT = function () {
-        var _this = this;
-        this.dtElement.dtInstance.then(function (dtInstance) {
-            dtInstance.destroy();
-            _this.dtTrigger.next();
-        });
-    };
-    voSLDetailsComponent.prototype.convertToWords = function (num) {
-        debugger;
-        this.convertedWordsInEnglish = this._commonService.convertDigitToWordsInEnglish(num);
-        this.convertedWordsInHindi = this._commonService.convertDigitToWordsInHindi(num);
-        this.convertedWordsInMarathi = this._commonService.convertDigitToWordsInMarathi(num);
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_node_modules_angular_datatables__WEBPACK_IMPORTED_MODULE_10__["DataTableDirective"]),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _node_modules_angular_datatables__WEBPACK_IMPORTED_MODULE_10__["DataTableDirective"])
-    ], voSLDetailsComponent.prototype, "dtElement", void 0);
-    voSLDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            templateUrl: '../voSL/voSLDetails.component.html',
-            styleUrls: ['../../../components/app.css']
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_district_services__WEBPACK_IMPORTED_MODULE_2__["DISTRICTService"],
-            _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-            _environments_language_config__WEBPACK_IMPORTED_MODULE_4__["LangulageConf"],
-            _environments_access_token__WEBPACK_IMPORTED_MODULE_5__["AccessToken"],
-            _environments_Global__WEBPACK_IMPORTED_MODULE_6__["GlobalAssets"],
-            _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_7__["GlobalVariable"],
-            _services_common_service__WEBPACK_IMPORTED_MODULE_8__["CommonService"],
-            _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_9__["CommonMessageComponent"],
-            _voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_12__["voSLDetailsModel"],
-            _node_modules_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__["Title"]])
-    ], voSLDetailsComponent);
-    return voSLDetailsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/district/voSL/voSLDetails.model.component.ts":
-/*!*************************************************************************!*\
-  !*** ./src/app/components/district/voSL/voSLDetails.model.component.ts ***!
-  \*************************************************************************/
-/*! exports provided: voSLDetailsModel */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "voSLDetailsModel", function() { return voSLDetailsModel; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/@angular/core */ "./node_modules/@angular/core/esm5/core.js");
-
-
-var voSLDetailsModel = (function () {
-    function voSLDetailsModel() {
-        this.PaymentMode = 0;
-        this.Amount = 0;
-        this.TransactionDate = '';
-        this.FromName = '';
-        this.ToName = '';
-        this.SLTypeName = '';
-    }
-    voSLDetailsModel = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], voSLDetailsModel);
-    return voSLDetailsModel;
 }());
 
 
@@ -25516,7 +24774,7 @@ var SortPipe = (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"_globalURL.isLoading\">\r\n    <loading-selector>\r\n    </loading-selector>\r\n</div>\r\n<div *ngIf=\"showSuccessMessage\">\r\n    <message-selector [message]=\"message\">\r\n    </message-selector>\r\n</div>\r\n<div *ngIf=\"showErrorMessage\">\r\n    <error-message-selector [message]=\"message\">\r\n    </error-message-selector>\r\n</div>\r\n\r\n<section class=\"content repayment\">\r\n    <div class=\"row box box-default\">\r\n        <div class=\"col-md-4\">\r\n            <h4 class=\"member_loan_repayment_detail\">\r\n                <span *ngIf=\"lang.en\">MEMBER LOAN REPAYMENT DETAILS</span>\r\n                <span *ngIf=\"lang.mr\">सदस्य कर्ज परतफेड तपशील</span>\r\n            </h4>\r\n            <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/vo/loan\" style=\"margin-bottom:10px;\">\r\n                <span *ngIf=\"lang.en\">BACK</span>\r\n                <span *ngIf=\"lang.mr\">परत जा</span>\r\n            </button>\r\n        </div>\r\n\r\n        <div style=\"float: right;\">\r\n            <button class=\"btn btn-primary refresh-button\" (click)=\"ngOnInit()\">\r\n                <i class=\"fa fa-refresh\" aria-hidden=\"true\"></i>\r\n            </button>\r\n        </div>\r\n\r\n        <div class=\"col-md-8\">\r\n            <div class=\"box-body\">\r\n                <table *ngIf=\"memberLoanDetails != undefined\" class=\"table table-bordered\">\r\n                    <thead>\r\n                        <tr class=\"show_loan_detail\">\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">LOAN ID</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज आयडी</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाची मंजूर रक्कम</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">REMAINING LOAN AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">उरलेली कर्जाची रक्कम</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">MEMBER NAME</span>\r\n                                <span *ngIf=\"lang.mr\">सदस्याचे नाव</span>\r\n                            </th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr class=\"show_loan_detail\">\r\n                            <td>\r\n                                <b>{{memberLoanDetails.LoanId}}</b>\r\n                            </td>\r\n                            <td>\r\n                                <b>{{memberLoanDetails.LoanApprovedAmount | currency: 'INR'}}</b>\r\n                            </td>\r\n                            <td>\r\n                                <span *ngIf=\"remainingLoamAmount == 0\">\r\n                                    <span *ngIf=\"lang.en\">ALL AMOUNT APPROVED</span>\r\n                                    <span *ngIf=\"lang.mr\">मंजूर झालेली सर्व रक्कम</span>\r\n                                </span>\r\n                                <span *ngIf=\"remainingLoamAmount > 0\">\r\n                                    <button class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#addRemainingLoanAmountForm\">\r\n                                        <b>{{remainingLoamAmount | currency: 'INR'}}</b>\r\n                                        <span *ngIf=\"lang.en\"> ADD TO AMOUNT</span>\r\n                                        <span *ngIf=\"lang.mr\"> रक्कमे मध्ये जोडा</span>\r\n                                    </button>\r\n                                </span>\r\n                            </td>\r\n                            <td>\r\n                                <b>{{memberLoanDetails.MemberFirstName}} {{memberLoanDetails.MemberLastName}}</b>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-3\">\r\n                <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#cahToCabEntryModal\"\r\n                    (click)=\"getAvailableFund(memberLoanDetails.LoanId)\" style=\"margin:2px;\">\r\n                    <span>MAKE CASH AT HAND TO BANK ENTRY</span>\r\n                </button>\r\n            </div>\r\n\r\n            <div class=\"col-md-2\">\r\n                <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#loanDetails\" style=\"margin-bottom:20px;\">\r\n                    <span *ngIf=\"lang.en\">SHOW MORE DETAIL</span>\r\n                    <span *ngIf=\"lang.mr\">आणखी माहिती दर्शवा</span>\r\n                </button>\r\n            </div>\r\n\r\n            <div class=\"col-md-7\" style=\"float: right\">\r\n                <button class=\"btn btn-primary\" (click)=\"SHGLoanRepaymentExportToPdf()\" style=\"margin-left: 65px;\">\r\n                    <span>\r\n                        <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n                    </span>PDF\r\n                </button>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-12\">\r\n            <div class=\"box box-default\">\r\n                <div class=\"box-body\">\r\n                    <table *ngIf=\"memberLoanDetails != undefined && memberLoanDetails != null\" class=\"col-md-12 table table-bordered repayment_loan_details_table\" cellspacing=\"0\" width=\"100%\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">INTL NO</span>\r\n                                    <span *ngIf=\"lang.mr\">हफ्त्याचा क्रमांक</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">MONTH</span>\r\n                                    <span *ngIf=\"lang.mr\">महिना</span>\r\n                                </th>\r\n                                <th colspan=\"3\" style=\"text-align: center;\">\r\n                                    <span *ngIf=\"lang.en\">EXPECTED REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">अपेक्षित परतफेड</span>\r\n                                </th>\r\n                                <th colspan=\"5\" style=\"text-align: center\">\r\n                                    <span *ngIf=\"lang.en\">ACTUAL REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">वास्तविक परतफेड</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">OUTSTANDING AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">उर्वरित रक्कम</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">DUE/ PENAULTY AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">दंडाची रक्कम</span>\r\n                                </th>\r\n                                <th rowspan=\"2\" style=\"width:218px;\">\r\n                                    <span *ngIf=\"lang.en\">MARK REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">परतफेड दर्शवा</span>\r\n                                </th>\r\n                            </tr>\r\n                            <tr class=\"pad_zero\">\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PRINCIPAL AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">मूळ रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">INTEREST AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">व्याजाची रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">TOTAL PAYABLE AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">भरण्यासाठीची संपूर्ण रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PRINCIPAL AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली मूळ रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">INTEREST AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली व्याजाची रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">TOTAL AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली पूर्ण रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">% AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">देय रक्कम %</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PAID DATE</span>\r\n                                    <span *ngIf=\"lang.mr\">देय दिनांक</span>\r\n                                </th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr>\r\n                                <td colspan=\"10\"></td>\r\n                                <td>{{memberLoanDetails.LoanApprovedAmount | currency: 'INR'}}</td>\r\n                                <td colspan=\"2\"></td>\r\n                            </tr>\r\n                            <tr *ngFor=\"let memberLoanDetail of memLoanRepaymentDetails; let rowIndex=index\">\r\n                                <td># {{rowIndex+1}}</td>\r\n                                <td style=\"width:17%\">{{memberLoanDetail.Date | date: 'dd-MMM-yyyy'}}</td>\r\n                                <td>{{memberLoanDetail.FixedPayableAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.InterestAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.TotalPayableAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidTotalAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidIntrestAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidTotalAmt + memberLoanDetail.PaidIntrestAmount == 0 ? \"\" :\r\n                                    memberLoanDetail.PaidTotalAmt\r\n                                    + memberLoanDetail.PaidIntrestAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PerTotalAmountPaid == 0 ? \"\" :\r\n                                    memberLoanDetail.PerTotalAmountPaid + \" %\" }} </td>\r\n                                <td style=\"width:8%\">{{memberLoanDetail.PaidDate | date: 'dd-MMM-yyyy'}}</td>\r\n                                <td>{{memberLoanDetail.OutstandingAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.FineAmount | currency: 'INR'}}</td>\r\n\r\n                                <td class=\"col-md-12\" style=\"width:22%;text-align:center;\">\r\n                                    <span class=\"col-md-12\" *ngIf=\"memberLoanDetail.RepaymentDone\" style=\"display:inline-flex\">\r\n                                        <span *ngIf=\"memberLoanDetail.Photo == null\">\r\n                                            <b>NO FILE</b>\r\n                                        </span>\r\n                                        <a *ngIf=\"memberLoanDetail.Photo != null\" href={{memberLoanDetail.Photo}}\r\n                                            target=\"_blank\" class=\"btn btn-primary\">\r\n                                            <span class=\"glyphicon glyphicon-save\"></span>\r\n                                            <span *ngIf=\"lang.en\">RECEIPT</span>\r\n                                            <span *ngIf=\"lang.mr\">रसीद पहा</span>\r\n                                        </a>\r\n                                        <button type=\"button\" [disabled]=\"memberLoanDetail.RepaymentDone\" class=\"btn btn-primary\"\r\n                                            style=\"margin-left:2px;\">\r\n                                            <span style=\"color: white\" class=\"glyphicon glyphicon-ok\"></span>&nbsp;DONE</button>\r\n                                    </span>\r\n\r\n                                    <span data-toggle=\"modal\" *ngIf=\"memberLoanDetail.RepaymentDone\" data-target=\"#changePhoto\"\r\n                                        (click)=\"forchange(memberLoanDetail)\">\r\n                                        <button class=\"btn btn-primary\">\r\n                                            <i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\">CHANGE RECEIPT</i>\r\n                                        </button>\r\n                                    </span>\r\n\r\n                                    <span *ngIf=\"this.repaymentId == memberLoanDetail.RepaymentId && memberLoanDetails.Status != globalVariable.CLOSED_LOAN\"\r\n                                        class=\"\">\r\n                                        <button type=\"button\" (click)=\"setRepaymentData(memberLoanDetail, rowIndex)\"\r\n                                            class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#repaymentEntry\">MARK\r\n                                            REPAYMENT</button>\r\n                                    </span>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    <b>\r\n                                        <span *ngIf=\"lang.en\">TOTAL SUM</span>\r\n                                        <span *ngIf=\"lang.mr\">एकूण बेरीज</span>\r\n                                    </b>\r\n                                </td>\r\n                                <td>-</td>\r\n                                <td>\r\n                                    <b>{{totalPrinciple | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td>\r\n                                    <b>{{totalInterestAmt | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td>\r\n                                    <b>{{totalPrinciple + totalInterestAmt | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td>{{principleAmtPaid | currency: 'INR'}}</td>\r\n                                <td>{{interestAmtPaid | currency: 'INR'}}</td>\r\n                                <td>{{0}}</td>\r\n                                <td>{{totalPerAmtPaid | currency: 'INR'}}</td>\r\n                                <td>-</td>\r\n                                <td>-</td>\r\n                                <td>{{totalFineAmt | currency: 'INR'}}</td>\r\n                                <td>-</td>\r\n                            </tr>\r\n                        </tbody>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n\r\n<div id=\"addRemainingLoanAmountForm\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog modal-lg\" style=\"width: 60%\">\r\n        <div class=\"modal-content\">\r\n            <form class=\"input-group\" #repaymentForm=\"ngForm\">\r\n                <div class=\"modal-header\">\r\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                    <h4 class=\"modal-title\">\r\n                        ADD REMAINING LOAN AMOUNT FORM\r\n                    </h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    <div class=\"row\">\r\n                        <table class=\"col-md-10 table table-bordered box box-default\" style=\"padding-top: 20px;\">\r\n                            <thead>\r\n                                <tr>\r\n                                    <th>LOAN ID</th>\r\n                                    <th>TOTAL REQUEST AMOUNT</th>\r\n                                    <th>TOTAL APPROVED AMOUNT</th>\r\n                                    <th>LOAN REQUEST DATE</th>\r\n                                    <th>LOAN APPROVED DATE</th>\r\n                                    <th>TOTAL REMAINING AMOUNT TO ADD</th>\r\n                                </tr>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr>\r\n                                    <td>\r\n                                        {{memberLoanDetails.LoanId}}\r\n                                    </td>\r\n                                    <td>\r\n                                        {{memberLoanDetails.LoanAmount | currency: 'INR'}}\r\n                                    </td>\r\n                                    <td>\r\n                                        {{memberLoanDetails.LoanApprovedAmount | currency: 'INR'}}\r\n                                    </td>\r\n                                    <td>\r\n                                        {{memberLoanDetails.RequestDate | date: 'dd-MMM-yyyy'}}\r\n                                    </td>\r\n                                    <td>\r\n                                        {{memberLoanDetails.ApprovedDate | date: 'dd-MMM-yyyy'}}\r\n                                    </td>\r\n                                    <td>\r\n                                        {{remainingLoamAmount | currency: 'INR'}}\r\n                                    </td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                        <div class=\"col-md-12\">\r\n                            <div class=\"col-md-6 form-group\">\r\n                                <label class=\"control-label\" for=\"text\">\r\n                                    ENTER AMOUNT\r\n                                </label>\r\n                                <input type=\"number\" (ngModel)=\"amount\" #amount=\"ngModel\" class=\"form-control\" id=\"principleAmt\"\r\n                                    name=\"amount\" required maxlength=\"8\">\r\n                            </div>\r\n                            <div class=\"col-md-6 form-group\">\r\n                                <label class=\"control-label\" for=\"text\">\r\n                                    COMMENT\r\n                                </label>\r\n                                <input type=\"text\" (ngModel)=\"comment\" #comment=\"ngModel\" class=\"form-control\" id=\"principleAmt\"\r\n                                    name=\"comment\">\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <div class=\"col-md-12\">\r\n                        <button class=\"btn btn-primary btn-lg\" type=\"submit\" (click)=\"AddRemainingAmount(amount.value, memberLoanDetails.LoanId)\"\r\n                            data-dismiss=\"modal\" style=\"margin-left: 150px; margin-top: 2px;\">ADD AMOUNT</button>\r\n                        <button type=\"button\" id=\"click-button1\" data-dismiss=\"modal\" class=\"btn btn-default btn-lg\">CANCEL</button>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!-- Modal -->\r\n<div id=\"repaymentEntry\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog modal-lg\" style=\"width: 80%\">\r\n        <div class=\"modal-content\">\r\n            <form #repaymentForm=\"ngForm\" class=\"input-group\">\r\n                <div class=\"modal-header\">\r\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                    <h4 class=\"modal-title\">\r\n                        <span *ngIf=\"lang.en\">REPAYMENT ENTRY FORM</span>\r\n                        <span *ngIf=\"lang.mr\">परतफेड भरणा फॉर्म</span>\r\n                    </h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    <div class=\"col-md-6\">\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EXPECTED PRINCIPAL AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">अपेक्षित मूळ रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" disabled value=\"{{loanRepaymentdata.FixedPayableAmt}}\" class=\"form-control\"\r\n                                id=\"principleAmt\" name=\"principleAmt\" required maxlength=\"50\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EXPECTED INTEREST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">अपेक्षित व्याजाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" class=\"form-control custom_btn\" disabled value=\"{{loanRepaymentdata.InterestAmt}}\"\r\n                                id=\"InterestAmt\" name=\"InterestAmt\" maxlength=\"50\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL PRINCIPAL AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक मूळ रक्कम</span>\r\n                            </label>\r\n                            <input type=\"nmuber\" (ngModel)=\"actualPrincipleAmt\" name=\"actualPrincipleAmt\" (input)=\"convertToWords($event.target.value)\"\r\n                                class=\"form-control\" required maxlength=\"12\" #actualPrincipleAmt=\"ngModel\">\r\n                            <div *ngIf=\"actualPrincipleAmt.invalid && actualPrincipleAmt.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!actualPrincipleAmt.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Principal Amount is required !</span>\r\n                                    <span *ngIf=\"lang.mr\">मूळ रक्कम गरजेची !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL INTEREST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक व्याजाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" class=\"form-control\" (ngModel)=\"actualIntrestAmt\" (input)=\"convertToWordsForIntrest($event.target.value)\"\r\n                                name=\"actualIntrestAmt\" required maxlength=\"4\" #actualIntrestAmt=\"ngModel\">\r\n                            <div *ngIf=\"actualIntrestAmt.invalid && actualIntrestAmt.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!actualIntrestAmt.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Intrest Amount is required !</span>\r\n                                    <span *ngIf=\"lang.mr\">व्याजाची रक्कम गरजेची !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">DUE/ PENAULTY AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">दंडाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" (ngModel)=\"fineAmt\" name=\"fineAmt\" class=\"form-control\" maxlength=\"7\"\r\n                                pattern=\"[0-9]*\" #fineAmt=\"ngModel\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">AMOUNT PAID DATE</span>\r\n                                <span *ngIf=\"lang.mr\">रक्कम दिलेला दिनांक</span>\r\n                            </label>\r\n                            <input type=\"date\" (ngModel)=\"amtPaidDate\" class=\"form-control\" name=\"amtPaidDate\"\r\n                                #amtPaidDate=\"ngModel\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">ATTACH PAYMENT RECEIPT\r\n                            </label>\r\n                            <input class=\"custom_btn\" type=\"file\" ng-bind=\"fileData\" placeholder=\"Upload file\" accept=\".png,.jpeg,.jpg,.doc\">\r\n                        </div>\r\n                        <div class=\"col-md-12 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">PAYMENT MODE</span>\r\n                                <span *ngIf=\"lang.mr\">रक्कम भरणा मार्ग</span>\r\n                            </label>\r\n                            <select class=\"form-control\" (ngModel)=\"selectedPaymentModeId\" id=\"selectedPaymentModeId\"\r\n                                required name=\"selectedPaymentModeId\" #selectedPaymentModeId=\"ngModel\">\r\n                                <option [value]=\"1\">CASH IN HAND</option>\r\n                                <option [value]=\"2\">CASH AT BANK</option>\r\n                            </select>\r\n                            <div *ngIf=\"selectedPaymentModeId.invalid && selectedPaymentModeId.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!selectedPaymentModeId.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Please select payment mode !</span>\r\n                                    <span *ngIf=\"lang.mr\">कृपया रक्कम भरणा मार्ग निवडा !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-3\">\r\n                        <div class=\"card\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL PRINCIPAL AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक मूळ रक्कम</span>\r\n                            </label>\r\n                            <div class=\"card-header\">\r\n                                IN ENGLISH\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInEnglish}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                मराठी मधे\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInMarathi}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                हिंदी में\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInHindi}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-3\">\r\n                        <div class=\"card\">\r\n                            <label for=\"text\">ACTUAL INTEREST AMOUNT PAID</label>\r\n                            <div class=\"card-header\">\r\n                                IN ENGLISH\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInEnglishForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                मराठी मधे\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInMarathiForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                हिंदी में\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInHindiForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <div class=\"col-md-12\">\r\n                        <button class=\"btn btn-primary\" type=\"submit\" [disabled]=\"repaymentForm.invalid\" (click)=\"MarkRepayment(repaymentForm, $event.target.form[7].files[0])\"\r\n                            data-dismiss=\"modal\" style=\"margin-left: 150px; margin-top: 2px;\">SAVE REPAYMENT\r\n                            ENTRY</button>\r\n                        <button type=\"button\" id=\"click-button1\" data-dismiss=\"modal\" class=\"btn btn-default\">CANCEL</button>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"loanDetails\" *ngIf=\"memberLoanDetails != undefined && memberLoanDetails != null\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\">\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\" style=\"padding:5px;width: 730px;\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">\r\n                    <span *ngIf=\"lang.en\">MEMBER LOAN DETAILS -\r\n                        <b>LOAN ID - {{memberLoanDetails.LoanId}}</b>\r\n                    </span>\r\n                    <span *ngIf=\"lang.mr\">सदस्याच्या कर्जाची माहिती -\r\n                        <b>कर्जाचा आयडी - {{memberLoanDetails.LoanId}}</b>\r\n                    </span>\r\n                </h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">MEMBER FULL NAME</span>\r\n                                <span *ngIf=\"lang.mr\">सदस्याचे पूर्ण नाव</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <label for=\"text\">{{memberLoanDetails.MemberFirstName}} {{memberLoanDetails.MemberLastName}}\r\n                        </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">SHG NAME</span>\r\n                                <span *ngIf=\"lang.mr\">एसएचजी चे नाव</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.SHGName}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">SHG CODE</span>\r\n                                <span *ngIf=\"lang.mr\">एसएचजी क्रमांक</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.SHGCode}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN REQUEST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">विनंती केलेली कर्जाची रक्कम</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanAmount}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाची स्वीकृत रक्कम</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanApprovedAmount}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED DATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज मान्य केलेली तारीख</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.ApprovedDate | date: 'dd-MMM-yyyy'}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">INTEREST RATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाचा दर</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.IntrestRate}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">TENURE (NO. OF. INSTALLMENT)</span>\r\n                                <span *ngIf=\"lang.mr\">कालावधी (एकूण हफ्ते)</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.Tenure}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EFFECTIVE LOAN START DATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज भरणीची सुरवातीची तारीख</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.EffectiveStartDate}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN REASON</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाचे कारण</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanReason}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <!--<button class=\"btn btn-danger\" type=\"submit\" style=\"margin-top:10px;\" data-dismiss=\"modal\">CLOSE</button>-->\r\n\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" id=\"click-button1\" data-dismiss=\"modal\" class=\"pull-right\">\r\n                    <span *ngIf=\"lang.en\">CLOSE</span>\r\n                    <span *ngIf=\"lang.mr\">बंद करा</span>\r\n                </button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n<div id=\"cahToCabEntryModal\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\">\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\" style=\"padding:5px;width: 730px;\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">\r\n                    <span *ngIf=\"lang.en\">CASH AT HAND TO CASH AT HAND ENTRY FORM\r\n                        <!-- <b>LOAN ID - {{memberLoanDetails.LoanId}}</b> -->\r\n                    </span>\r\n                </h4>\r\n                <div *ngIf=\"showSuccessMessageForSLEntry\" class=\"alert alert-success\">\r\n                    {{messageForSLEntry}}\r\n                </div>\r\n                <table *ngIf=\"availableAmt != undefined && availableAmt != null\" class=\"table table-bordered\"\r\n                    cellspacing=\"0\" width=\"100%\">\r\n                    <tr>\r\n                        <th>LOAN ID</th>\r\n                        <th>SHG NAME</th>\r\n                        <th>MEMBER NAMME</th>\r\n                        <th>LOAN APPROVED AMOUNT</th>\r\n                        <th>LOAN PAID AMOUNT</th>\r\n                        <th>AMOUNT IN HAND</th>\r\n                        <th>AMOUNT AT BANK</th>\r\n                    </tr>\r\n                    <tr>\r\n                        <!-- | currency : 'INR' -->\r\n                        <td>{{memberLoanDetails.LoanId}}</td>\r\n                        <td>{{memberLoanDetails.SHGName }}</td>\r\n                        <td>{{memberLoanDetails.MemberFirstName}} {{memberLoanDetails.MemberLastName}}</td>\r\n                        <td>{{memberLoanDetails.LoanApprovedAmount | currency : 'INR'}}</td>\r\n                        <td>{{(availableAmt.convertedCashtoBankAmount + availableAmt.cashInHandAmount) | currency :\r\n                            'INR'}}</td>\r\n                        <td>{{availableAmt.cashInHandAmount | currency : 'INR'}}</td>\r\n                        <td>{{availableAmt.convertedCashtoBankAmount | currency : 'INR'}}</td>\r\n                    </tr>\r\n                </table>\r\n                <div *ngIf=\"isAmtMessage\" class=\"alert alert-warning\">\r\n                    <b> {{amtMessage}}</b>\r\n                </div>\r\n            </div>\r\n            <form #slEntryForm=\"ngForm\" class=\"\" novalidate>\r\n                <div class=\"modal-body\">\r\n                    <div class=\"col-md-12 input-group\">\r\n                        <div class=\"col-md-7\">\r\n                            <div class=\"form-group\">\r\n                                <label for=\"text\">\r\n                                    <span *ngIf=\"lang.en\">ENTER AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">रक्कम प्रविष्ट करा</span>\r\n                                    <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                                </label>\r\n                                <input type=\"number\" class=\"form-control\" (ngModel)=\"amount\" (input)=\"checkAmountValidation($event.target.value)\"\r\n                                    name=\"amount\" required maxlength=\"4\" #amount=\"ngModel\">\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"text\">\r\n                                    <span *ngIf=\"lang.en\">TRANSACTION DATE</span>\r\n                                    <span *ngIf=\"lang.mr\">व्यवहार तारीख</span>\r\n                                    <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                                </label>\r\n                                <input type=\"date\" (ngModel)=\"TransactionDate\" class=\"form-control\" id=\"TransactionDate\"\r\n                                    required name=\"TransactionDate\" #TransactionDate=\"ngModel\">\r\n                                <div *ngIf=\"TransactionDate.invalid && TransactionDate.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                    <span *ngIf=\"lang.en\">PLEASE ENTER TRANSACTION DATE</span>\r\n                                    <span *ngIf=\"lang.mr\">रक्कम आवश्यक !</span>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"text\">\r\n                                    <span *ngIf=\"lang.en\">COMMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">पेमेंट मोड निवडा</span>\r\n                                </label>\r\n                                <textarea class=\"form-control\" (ngModel)=\"comment\" name=\"comment\" required #comment=\"ngModel\"></textarea>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <div class=\"col-md-5\">\r\n                            <div class=\"card\">\r\n                                <div class=\"card-header\">\r\n                                    IN ENGLISH\r\n                                </div>\r\n                                <div class=\"card-body\">\r\n                                    <h5 class=\"card-title\">\r\n                                        <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 12px;text-align:center;\">\r\n                                            <b>{{convertedWordsInEnglish}}</b>\r\n                                        </div>\r\n                                    </h5>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card\">\r\n                                <div class=\"card-header\">\r\n                                    मराठी मधे\r\n                                </div>\r\n                                <div class=\"card-body\">\r\n                                    <h5 class=\"card-title\">\r\n                                        <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 12px;text-align:center;\">\r\n                                            <b>{{convertedWordsInMarathi}}</b>\r\n                                        </div>\r\n                                    </h5>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card\">\r\n                                <div class=\"card-header\">\r\n                                    हिंदी में\r\n                                </div>\r\n                                <div class=\"card-body\">\r\n                                    <h5 class=\"card-title\">\r\n                                        <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 12px;text-align:center;\">\r\n                                            <b>{{convertedWordsInHindi}}</b>\r\n                                        </div>\r\n                                    </h5>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <!-- *ngIf=\"!isAmtMessage\" -->\r\n                    <div *ngIf=\"!isAmtMessage\" class=\"col-md-12\" style=\"margin-top:10px;\">\r\n                        <button class=\"btn btn-primary\" [disabled]=\"slEntryForm.invalid\" (click)=\"cashAtHandToBankEntrySave(slEntryForm)\"\r\n                            type=\"button\">\r\n                            SAVE\r\n                        </button>\r\n                        <button class=\"btn btn-default\" data-dismiss=\"modal\" type=\"button\">\r\n                            <span *ngIf=\"lang.en\">CANCEL</span>\r\n                            <span *ngIf=\"lang.mr\">रद्द करा</span>\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"changePhoto\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\" style=\"width: 30%; margin-top:150px\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">Change Photo</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <form>\r\n                    <div>\r\n                        <input class=\"form-control\" type=\"file\" ng-bind=\"fileData\" placeholder=\"Upload file\" accept=\".png,.jpeg,.jpg\"\r\n                            style=\"width:222px;\">\r\n                        <button class=\"form-control btn btn-primary\" (click)=\"chnagePhoto($event.target.form[0].files[0],changePhotoDetail.RepaymentId, changePhotoDetail.PhotoId)\"\r\n                            data-dismiss=\"modal\">CHANGE</button>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" style=\"width:222px;\" data-dismiss=\"modal\">Close</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div *ngIf=\"_globalURL.isLoading\">\r\n    <loading-selector>\r\n    </loading-selector>\r\n</div>\r\n<div *ngIf=\"showSuccessMessage\">\r\n    <message-selector [message]=\"message\">\r\n    </message-selector>\r\n</div>\r\n<div *ngIf=\"showErrorMessage\">\r\n    <error-message-selector [message]=\"message\">\r\n    </error-message-selector>\r\n</div>\r\n\r\n<section class=\"content repayment\">\r\n    <div class=\"row box box-default\">\r\n        <div class=\"col-md-4\">\r\n            <h4 class=\"member_loan_repayment_detail\">\r\n                <span *ngIf=\"lang.en\">MEMBER LOAN REPAYMENT DETAILS</span>\r\n                <span *ngIf=\"lang.mr\">सदस्य कर्ज परतफेड तपशील</span>\r\n            </h4>\r\n            <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/vo/loan\" style=\"margin-bottom:10px;\">\r\n                <span *ngIf=\"lang.en\">BACK</span>\r\n                <span *ngIf=\"lang.mr\">परत जा</span>\r\n            </button>\r\n        </div>\r\n\r\n        <div style=\"float: right;\">\r\n            <button class=\"btn btn-primary refresh-button\" (click)=\"ngOnInit()\">\r\n                <i class=\"fa fa-refresh\" aria-hidden=\"true\"></i>\r\n            </button>\r\n        </div>\r\n\r\n        <div class=\"col-md-8\">\r\n            <div class=\"box-body\">\r\n                <table *ngIf=\"memberLoanDetails != undefined\" class=\"table table-bordered\">\r\n                    <thead>\r\n                        <tr class=\"show_loan_detail\">\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">LOAN ID</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज आयडी</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाची मंजूर रक्कम</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">REMAINING LOAN AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">उरलेली कर्जाची रक्कम</span>\r\n                            </th>\r\n                            <th>\r\n                                <span *ngIf=\"lang.en\">MEMBER NAME</span>\r\n                                <span *ngIf=\"lang.mr\">सदस्याचे नाव</span>\r\n                            </th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr class=\"show_loan_detail\">\r\n                            <td>\r\n                                <b>{{memberLoanDetails.LoanId}}</b>\r\n                            </td>\r\n                            <td>\r\n                                <b>{{memberLoanDetails.LoanApprovedAmount | currency: 'INR'}}</b>\r\n                            </td>\r\n                            <td>\r\n                                <span *ngIf=\"remainingLoamAmount == 0\">\r\n                                    <span *ngIf=\"lang.en\">ALL AMOUNT APPROVED</span>\r\n                                    <span *ngIf=\"lang.mr\">मंजूर झालेली सर्व रक्कम</span>\r\n                                </span>\r\n                                <span *ngIf=\"remainingLoamAmount > 0\">\r\n                                    <button class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#addRemainingLoanAmountForm\">\r\n                                        <b>{{remainingLoamAmount | currency: 'INR'}}</b>\r\n                                        <span *ngIf=\"lang.en\"> ADD TO AMOUNT</span>\r\n                                        <span *ngIf=\"lang.mr\"> रक्कमे मध्ये जोडा</span>\r\n                                    </button>\r\n                                </span>\r\n                            </td>\r\n                            <td>\r\n                                <b>{{memberLoanDetails.MemberFirstName}} {{memberLoanDetails.MemberLastName}}</b>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-3\">\r\n                <button disabled type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#cahToCabEntryModal\"\r\n                    (click)=\"getAvailableFund(memberLoanDetails.LoanId)\" style=\"margin:2px;\">\r\n                    <span>MAKE CASH AT HAND TO BANK ENTRY</span>\r\n                </button>\r\n            </div>\r\n\r\n            <div class=\"col-md-2\">\r\n                <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#loanDetails\" style=\"margin-bottom:20px;\">\r\n                    <span *ngIf=\"lang.en\">SHOW MORE DETAIL</span>\r\n                    <span *ngIf=\"lang.mr\">आणखी माहिती दर्शवा</span>\r\n                </button>\r\n            </div>\r\n\r\n            <div class=\"col-md-7\" style=\"float: right\">\r\n                <button class=\"btn btn-primary\" (click)=\"SHGLoanRepaymentExportToPdf()\" style=\"margin-left: 65px;\">\r\n                    <span>\r\n                        <img src=\"/assets/pdf/pdf5.png\" class=\"image-set\" />\r\n                    </span>PDF\r\n                </button>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-12\">\r\n            <div class=\"box box-default\">\r\n                <div class=\"box-body\">\r\n                    <table *ngIf=\"memberLoanDetails != undefined && memberLoanDetails != null\" class=\"col-md-12 table table-bordered repayment_loan_details_table\" cellspacing=\"0\" width=\"100%\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">INTL NO</span>\r\n                                    <span *ngIf=\"lang.mr\">हफ्त्याचा क्रमांक</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">MONTH</span>\r\n                                    <span *ngIf=\"lang.mr\">महिना</span>\r\n                                </th>\r\n                                <th colspan=\"3\" style=\"text-align: center;\">\r\n                                    <span *ngIf=\"lang.en\">EXPECTED REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">अपेक्षित परतफेड</span>\r\n                                </th>\r\n                                <th colspan=\"5\" style=\"text-align: center\">\r\n                                    <span *ngIf=\"lang.en\">ACTUAL REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">वास्तविक परतफेड</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">OUTSTANDING AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">उर्वरित रक्कम</span>\r\n                                </th>\r\n                                <th rowspan=\"2\">\r\n                                    <span *ngIf=\"lang.en\">DUE/ PENAULTY AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">दंडाची रक्कम</span>\r\n                                </th>\r\n                                <th rowspan=\"2\" style=\"width:218px;\">\r\n                                    <span *ngIf=\"lang.en\">MARK REPAYMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">परतफेड दर्शवा</span>\r\n                                </th>\r\n                            </tr>\r\n                            <tr class=\"pad_zero\">\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PRINCIPAL AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">मूळ रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">INTEREST AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">व्याजाची रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">TOTAL PAYABLE AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">भरण्यासाठीची संपूर्ण रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PRINCIPAL AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली मूळ रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">INTEREST AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली व्याजाची रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">TOTAL AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">भरलेली पूर्ण रक्कम</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">% AMOUNT PAID</span>\r\n                                    <span *ngIf=\"lang.mr\">देय रक्कम %</span>\r\n                                </th>\r\n                                <th>\r\n                                    <span *ngIf=\"lang.en\">PAID DATE</span>\r\n                                    <span *ngIf=\"lang.mr\">देय दिनांक</span>\r\n                                </th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr>\r\n                                <td colspan=\"10\"></td>\r\n                                <td>{{memberLoanDetails.LoanApprovedAmount | currency: 'INR'}}</td>\r\n                                <td colspan=\"2\"></td>\r\n                            </tr>\r\n                            <tr *ngFor=\"let memberLoanDetail of memLoanRepaymentDetails; let rowIndex=index\">\r\n                                <td># {{rowIndex+1}}</td>\r\n                                <td style=\"width:17%\">{{memberLoanDetail.Date | date: 'dd-MMM-yyyy'}}</td>\r\n                                <td>{{memberLoanDetail.FixedPayableAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.InterestAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.TotalPayableAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidTotalAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidIntrestAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PaidTotalAmt + memberLoanDetail.PaidIntrestAmount == 0 ? \"\" :\r\n                                    memberLoanDetail.PaidTotalAmt\r\n                                    + memberLoanDetail.PaidIntrestAmount | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.PerTotalAmountPaid == 0 ? \"\" :\r\n                                    memberLoanDetail.PerTotalAmountPaid + \" %\" }} </td>\r\n                                <td style=\"width:8%\">{{memberLoanDetail.PaidDate | date: 'dd-MMM-yyyy'}}</td>\r\n                                <td>{{memberLoanDetail.OutstandingAmt | currency: 'INR'}}</td>\r\n                                <td>{{memberLoanDetail.FineAmount | currency: 'INR'}}</td>\r\n\r\n                                <td class=\"col-md-12\" style=\"width:22%;text-align:center;\">\r\n                                    <span class=\"col-md-12\" *ngIf=\"memberLoanDetail.RepaymentDone\" style=\"display:inline-flex\">\r\n                                        <span *ngIf=\"memberLoanDetail.Photo == null\">\r\n                                            <b>NO FILE</b>\r\n                                        </span>\r\n                                        <a *ngIf=\"memberLoanDetail.Photo != null\" href={{memberLoanDetail.Photo}}\r\n                                            target=\"_blank\" class=\"btn btn-primary\">\r\n                                            <span class=\"glyphicon glyphicon-save\"></span>\r\n                                            <span *ngIf=\"lang.en\">RECEIPT</span>\r\n                                            <span *ngIf=\"lang.mr\">रसीद पहा</span>\r\n                                        </a>\r\n                                        <button type=\"button\" [disabled]=\"memberLoanDetail.RepaymentDone\" class=\"btn btn-primary\"\r\n                                            style=\"margin-left:2px;\">\r\n                                            <span style=\"color: white\" class=\"glyphicon glyphicon-ok\"></span>&nbsp;DONE</button>\r\n                                    </span>\r\n\r\n                                    <span data-toggle=\"modal\" *ngIf=\"memberLoanDetail.RepaymentDone\" data-target=\"#changePhoto\"\r\n                                        (click)=\"forchange(memberLoanDetail)\">\r\n                                        <button class=\"btn btn-primary\">\r\n                                            <i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\">CHANGE RECEIPT</i>\r\n                                        </button>\r\n                                    </span>\r\n\r\n                                    <span *ngIf=\"this.repaymentId == memberLoanDetail.RepaymentId && memberLoanDetails.Status != globalVariable.CLOSED_LOAN\"\r\n                                        class=\"\">\r\n                                        <button type=\"button\" (click)=\"setRepaymentData(memberLoanDetail, rowIndex)\"\r\n                                            class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#repaymentEntry\">MARK\r\n                                            REPAYMENT</button>\r\n                                    </span>\r\n                                </td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>\r\n                                    <b>\r\n                                        <span *ngIf=\"lang.en\">TOTAL SUM</span>\r\n                                        <span *ngIf=\"lang.mr\">एकूण बेरीज</span>\r\n                                    </b>\r\n                                </td>\r\n                                <td>-</td>\r\n                                <td>\r\n                                    <b>{{totalPrinciple | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td>\r\n                                    <b>{{totalInterestAmt | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td>\r\n                                    <b>{{totalPrinciple + totalInterestAmt | currency: 'INR'}}</b>\r\n                                </td>\r\n                                <td>{{principleAmtPaid | currency: 'INR'}}</td>\r\n                                <td>{{interestAmtPaid | currency: 'INR'}}</td>\r\n                                <td>{{0}}</td>\r\n                                <td>{{totalPerAmtPaid | currency: 'INR'}}</td>\r\n                                <td>-</td>\r\n                                <td>-</td>\r\n                                <td>{{totalFineAmt | currency: 'INR'}}</td>\r\n                                <td>-</td>\r\n                            </tr>\r\n                        </tbody>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n\r\n<div id=\"addRemainingLoanAmountForm\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog modal-lg\" style=\"width: 60%\">\r\n        <div class=\"modal-content\">\r\n            <form class=\"input-group\" #repaymentForm=\"ngForm\">\r\n                <div class=\"modal-header\">\r\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                    <h4 class=\"modal-title\">\r\n                        ADD REMAINING LOAN AMOUNT FORM\r\n                    </h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    <div class=\"row\">\r\n                        <table class=\"col-md-10 table table-bordered box box-default\" style=\"padding-top: 20px;\">\r\n                            <thead>\r\n                                <tr>\r\n                                    <th>LOAN ID</th>\r\n                                    <th>TOTAL REQUEST AMOUNT</th>\r\n                                    <th>TOTAL APPROVED AMOUNT</th>\r\n                                    <th>LOAN REQUEST DATE</th>\r\n                                    <th>LOAN APPROVED DATE</th>\r\n                                    <th>TOTAL REMAINING AMOUNT TO ADD</th>\r\n                                </tr>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr>\r\n                                    <td>\r\n                                        {{memberLoanDetails.LoanId}}\r\n                                    </td>\r\n                                    <td>\r\n                                        {{memberLoanDetails.LoanAmount | currency: 'INR'}}\r\n                                    </td>\r\n                                    <td>\r\n                                        {{memberLoanDetails.LoanApprovedAmount | currency: 'INR'}}\r\n                                    </td>\r\n                                    <td>\r\n                                        {{memberLoanDetails.RequestDate | date: 'dd-MMM-yyyy'}}\r\n                                    </td>\r\n                                    <td>\r\n                                        {{memberLoanDetails.ApprovedDate | date: 'dd-MMM-yyyy'}}\r\n                                    </td>\r\n                                    <td>\r\n                                        {{remainingLoamAmount | currency: 'INR'}}\r\n                                    </td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                        <div class=\"col-md-12\">\r\n                            <div class=\"col-md-6 form-group\">\r\n                                <label class=\"control-label\" for=\"text\">\r\n                                    ENTER AMOUNT\r\n                                </label>\r\n                                <input type=\"number\" (ngModel)=\"amount\" #amount=\"ngModel\" class=\"form-control\" id=\"principleAmt\"\r\n                                    name=\"amount\" required maxlength=\"8\">\r\n                            </div>\r\n                            <div class=\"col-md-6 form-group\">\r\n                                <label class=\"control-label\" for=\"text\">\r\n                                    COMMENT\r\n                                </label>\r\n                                <input type=\"text\" (ngModel)=\"comment\" #comment=\"ngModel\" class=\"form-control\" id=\"principleAmt\"\r\n                                    name=\"comment\">\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <div class=\"col-md-12\">\r\n                        <button class=\"btn btn-primary btn-lg\" type=\"submit\" (click)=\"AddRemainingAmount(amount.value, memberLoanDetails.LoanId)\"\r\n                            data-dismiss=\"modal\" style=\"margin-left: 150px; margin-top: 2px;\">ADD AMOUNT</button>\r\n                        <button type=\"button\" id=\"click-button1\" data-dismiss=\"modal\" class=\"btn btn-default btn-lg\">CANCEL</button>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!-- Modal -->\r\n<div id=\"repaymentEntry\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog modal-lg\" style=\"width: 80%\">\r\n        <div class=\"modal-content\">\r\n            <form #repaymentForm=\"ngForm\" class=\"input-group\">\r\n                <div class=\"modal-header\">\r\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                    <h4 class=\"modal-title\">\r\n                        <span *ngIf=\"lang.en\">REPAYMENT ENTRY FORM</span>\r\n                        <span *ngIf=\"lang.mr\">परतफेड भरणा फॉर्म</span>\r\n                    </h4>\r\n                </div>\r\n                <div class=\"modal-body\">\r\n                    <div class=\"col-md-6\">\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EXPECTED PRINCIPAL AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">अपेक्षित मूळ रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" disabled value=\"{{loanRepaymentdata.FixedPayableAmt}}\" class=\"form-control\"\r\n                                id=\"principleAmt\" name=\"principleAmt\" required maxlength=\"50\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EXPECTED INTEREST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">अपेक्षित व्याजाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" class=\"form-control custom_btn\" disabled value=\"{{loanRepaymentdata.InterestAmt}}\"\r\n                                id=\"InterestAmt\" name=\"InterestAmt\" maxlength=\"50\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL PRINCIPAL AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक मूळ रक्कम</span>\r\n                            </label>\r\n                            <input type=\"nmuber\" (ngModel)=\"actualPrincipleAmt\" name=\"actualPrincipleAmt\" (input)=\"convertToWords($event.target.value)\"\r\n                                class=\"form-control\" required maxlength=\"12\" #actualPrincipleAmt=\"ngModel\">\r\n                            <div *ngIf=\"actualPrincipleAmt.invalid && actualPrincipleAmt.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!actualPrincipleAmt.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Principal Amount is required !</span>\r\n                                    <span *ngIf=\"lang.mr\">मूळ रक्कम गरजेची !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL INTEREST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक व्याजाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" class=\"form-control\" (ngModel)=\"actualIntrestAmt\" (input)=\"convertToWordsForIntrest($event.target.value)\"\r\n                                name=\"actualIntrestAmt\" required maxlength=\"4\" #actualIntrestAmt=\"ngModel\">\r\n                            <div *ngIf=\"actualIntrestAmt.invalid && actualIntrestAmt.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!actualIntrestAmt.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Intrest Amount is required !</span>\r\n                                    <span *ngIf=\"lang.mr\">व्याजाची रक्कम गरजेची !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">DUE/ PENAULTY AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">दंडाची रक्कम</span>\r\n                            </label>\r\n                            <input type=\"number\" (ngModel)=\"fineAmt\" name=\"fineAmt\" class=\"form-control\" maxlength=\"7\"\r\n                                pattern=\"[0-9]*\" #fineAmt=\"ngModel\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">AMOUNT PAID DATE</span>\r\n                                <span *ngIf=\"lang.mr\">रक्कम दिलेला दिनांक</span>\r\n                            </label>\r\n                            <input type=\"date\" (ngModel)=\"amtPaidDate\" class=\"form-control\" name=\"amtPaidDate\"\r\n                                #amtPaidDate=\"ngModel\">\r\n                        </div>\r\n                        <div class=\"col-md-6 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">ATTACH PAYMENT RECEIPT\r\n                            </label>\r\n                            <input class=\"custom_btn\" type=\"file\" ng-bind=\"fileData\" placeholder=\"Upload file\" accept=\".png,.jpeg,.jpg,.doc\">\r\n                        </div>\r\n                        <div class=\"col-md-12 form-group\">\r\n                            <label class=\"control-label\" for=\"text\">\r\n                                <span *ngIf=\"lang.en\">PAYMENT MODE</span>\r\n                                <span *ngIf=\"lang.mr\">रक्कम भरणा मार्ग</span>\r\n                            </label>\r\n                            <select class=\"form-control\" (ngModel)=\"selectedPaymentModeId\" id=\"selectedPaymentModeId\"\r\n                                required name=\"selectedPaymentModeId\" #selectedPaymentModeId=\"ngModel\">\r\n                                <option [value]=\"1\">CASH IN HAND</option>\r\n                                <option [value]=\"2\">CASH AT BANK</option>\r\n                            </select>\r\n                            <div *ngIf=\"selectedPaymentModeId.invalid && selectedPaymentModeId.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                <div [hidden]=\"!selectedPaymentModeId.hasError('required')\">\r\n                                    <span *ngIf=\"lang.en\">Please select payment mode !</span>\r\n                                    <span *ngIf=\"lang.mr\">कृपया रक्कम भरणा मार्ग निवडा !</span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-3\">\r\n                        <div class=\"card\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">ACTUAL PRINCIPAL AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">वास्तविक मूळ रक्कम</span>\r\n                            </label>\r\n                            <div class=\"card-header\">\r\n                                IN ENGLISH\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInEnglish}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                मराठी मधे\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInMarathi}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                हिंदी में\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInHindi}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-3\">\r\n                        <div class=\"card\">\r\n                            <label for=\"text\">ACTUAL INTEREST AMOUNT PAID</label>\r\n                            <div class=\"card-header\">\r\n                                IN ENGLISH\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInEnglishForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                मराठी मधे\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInMarathiForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <div class=\"card-header\">\r\n                                हिंदी में\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <h5 class=\"card-title\">\r\n                                    <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 15px\">\r\n                                        <b>{{convertedWordsInHindiForIntrest}}</b>\r\n                                    </div>\r\n                                </h5>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <div class=\"col-md-12\">\r\n                        <button class=\"btn btn-primary\" type=\"submit\" [disabled]=\"repaymentForm.invalid\" (click)=\"MarkRepayment(repaymentForm, $event.target.form[7].files[0])\"\r\n                            data-dismiss=\"modal\" style=\"margin-left: 150px; margin-top: 2px;\">SAVE REPAYMENT\r\n                            ENTRY</button>\r\n                        <button type=\"button\" id=\"click-button1\" data-dismiss=\"modal\" class=\"btn btn-default\">CANCEL</button>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"loanDetails\" *ngIf=\"memberLoanDetails != undefined && memberLoanDetails != null\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\">\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\" style=\"padding:5px;width: 730px;\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">\r\n                    <span *ngIf=\"lang.en\">MEMBER LOAN DETAILS -\r\n                        <b>LOAN ID - {{memberLoanDetails.LoanId}}</b>\r\n                    </span>\r\n                    <span *ngIf=\"lang.mr\">सदस्याच्या कर्जाची माहिती -\r\n                        <b>कर्जाचा आयडी - {{memberLoanDetails.LoanId}}</b>\r\n                    </span>\r\n                </h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">MEMBER FULL NAME</span>\r\n                                <span *ngIf=\"lang.mr\">सदस्याचे पूर्ण नाव</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <label for=\"text\">{{memberLoanDetails.MemberFirstName}} {{memberLoanDetails.MemberLastName}}\r\n                        </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">SHG NAME</span>\r\n                                <span *ngIf=\"lang.mr\">एसएचजी चे नाव</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.SHGName}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">SHG CODE</span>\r\n                                <span *ngIf=\"lang.mr\">एसएचजी क्रमांक</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.SHGCode}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN REQUEST AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">विनंती केलेली कर्जाची रक्कम</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanAmount}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED AMOUNT</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाची स्वीकृत रक्कम</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanApprovedAmount}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN APPROVED DATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज मान्य केलेली तारीख</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.ApprovedDate | date: 'dd-MMM-yyyy'}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">INTEREST RATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाचा दर</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.IntrestRate}}\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">TENURE (NO. OF. INSTALLMENT)</span>\r\n                                <span *ngIf=\"lang.mr\">कालावधी (एकूण हफ्ते)</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.Tenure}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">EFFECTIVE LOAN START DATE</span>\r\n                                <span *ngIf=\"lang.mr\">कर्ज भरणीची सुरवातीची तारीख</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.EffectiveStartDate}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">\r\n                                <span *ngIf=\"lang.en\">LOAN REASON</span>\r\n                                <span *ngIf=\"lang.mr\">कर्जाचे कारण</span>\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"text\">{{memberLoanDetails.LoanReason}}\r\n                                <!--<span class=\"mandatory_field\" style=\"color:red;\">*</span>-->\r\n                            </label>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <!--<button class=\"btn btn-danger\" type=\"submit\" style=\"margin-top:10px;\" data-dismiss=\"modal\">CLOSE</button>-->\r\n\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" id=\"click-button1\" data-dismiss=\"modal\" class=\"pull-right\">\r\n                    <span *ngIf=\"lang.en\">CLOSE</span>\r\n                    <span *ngIf=\"lang.mr\">बंद करा</span>\r\n                </button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n<div id=\"cahToCabEntryModal\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\">\r\n        <!-- Modal content-->\r\n        <div class=\"modal-content\" style=\"padding:5px;width: 730px;\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">\r\n                    <span *ngIf=\"lang.en\">CASH AT HAND TO CASH AT HAND ENTRY FORM\r\n                        <!-- <b>LOAN ID - {{memberLoanDetails.LoanId}}</b> -->\r\n                    </span>\r\n                </h4>\r\n                <div *ngIf=\"showSuccessMessageForSLEntry\" class=\"alert alert-success\">\r\n                    {{messageForSLEntry}}\r\n                </div>\r\n                <table *ngIf=\"availableAmt != undefined && availableAmt != null\" class=\"table table-bordered\"\r\n                    cellspacing=\"0\" width=\"100%\">\r\n                    <tr>\r\n                        <th>LOAN ID</th>\r\n                        <th>SHG NAME</th>\r\n                        <th>MEMBER NAMME</th>\r\n                        <th>LOAN APPROVED AMOUNT</th>\r\n                        <th>LOAN PAID AMOUNT</th>\r\n                        <th>AMOUNT IN HAND</th>\r\n                        <th>AMOUNT AT BANK</th>\r\n                    </tr>\r\n                    <tr>\r\n                        <!-- | currency : 'INR' -->\r\n                        <td>{{memberLoanDetails.LoanId}}</td>\r\n                        <td>{{memberLoanDetails.SHGName }}</td>\r\n                        <td>{{memberLoanDetails.MemberFirstName}} {{memberLoanDetails.MemberLastName}}</td>\r\n                        <td>{{memberLoanDetails.LoanApprovedAmount | currency : 'INR'}}</td>\r\n                        <td>{{(availableAmt.convertedCashtoBankAmount + availableAmt.cashInHandAmount) | currency :\r\n                            'INR'}}</td>\r\n                        <td>{{availableAmt.cashInHandAmount | currency : 'INR'}}</td>\r\n                        <td>{{availableAmt.convertedCashtoBankAmount | currency : 'INR'}}</td>\r\n                    </tr>\r\n                </table>\r\n                <div *ngIf=\"isAmtMessage\" class=\"alert alert-warning\">\r\n                    <b> {{amtMessage}}</b>\r\n                </div>\r\n            </div>\r\n            <form #slEntryForm=\"ngForm\" class=\"\" novalidate>\r\n                <div class=\"modal-body\">\r\n                    <div class=\"col-md-12 input-group\">\r\n                        <div class=\"col-md-7\">\r\n                            <div class=\"form-group\">\r\n                                <label for=\"text\">\r\n                                    <span *ngIf=\"lang.en\">ENTER AMOUNT</span>\r\n                                    <span *ngIf=\"lang.mr\">रक्कम प्रविष्ट करा</span>\r\n                                    <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                                </label>\r\n                                <input type=\"number\" class=\"form-control\" (ngModel)=\"amount\" (input)=\"checkAmountValidation($event.target.value)\"\r\n                                    name=\"amount\" required maxlength=\"4\" #amount=\"ngModel\">\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"text\">\r\n                                    <span *ngIf=\"lang.en\">TRANSACTION DATE</span>\r\n                                    <span *ngIf=\"lang.mr\">व्यवहार तारीख</span>\r\n                                    <span class=\"mandatory_field\" style=\"color:red;\">*</span>\r\n                                </label>\r\n                                <input type=\"date\" (ngModel)=\"TransactionDate\" class=\"form-control\" id=\"TransactionDate\"\r\n                                    required name=\"TransactionDate\" #TransactionDate=\"ngModel\">\r\n                                <div *ngIf=\"TransactionDate.invalid && TransactionDate.touched\" class=\"alert-danger comman-error-mesage\">\r\n                                    <span *ngIf=\"lang.en\">PLEASE ENTER TRANSACTION DATE</span>\r\n                                    <span *ngIf=\"lang.mr\">रक्कम आवश्यक !</span>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"text\">\r\n                                    <span *ngIf=\"lang.en\">COMMENT</span>\r\n                                    <span *ngIf=\"lang.mr\">पेमेंट मोड निवडा</span>\r\n                                </label>\r\n                                <textarea class=\"form-control\" (ngModel)=\"comment\" name=\"comment\" required #comment=\"ngModel\"></textarea>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <div class=\"col-md-5\">\r\n                            <div class=\"card\">\r\n                                <div class=\"card-header\">\r\n                                    IN ENGLISH\r\n                                </div>\r\n                                <div class=\"card-body\">\r\n                                    <h5 class=\"card-title\">\r\n                                        <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 12px;text-align:center;\">\r\n                                            <b>{{convertedWordsInEnglish}}</b>\r\n                                        </div>\r\n                                    </h5>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card\">\r\n                                <div class=\"card-header\">\r\n                                    मराठी मधे\r\n                                </div>\r\n                                <div class=\"card-body\">\r\n                                    <h5 class=\"card-title\">\r\n                                        <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 12px;text-align:center;\">\r\n                                            <b>{{convertedWordsInMarathi}}</b>\r\n                                        </div>\r\n                                    </h5>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card\">\r\n                                <div class=\"card-header\">\r\n                                    हिंदी में\r\n                                </div>\r\n                                <div class=\"card-body\">\r\n                                    <h5 class=\"card-title\">\r\n                                        <div class=\"alert alert-danger\" role=\"alert\" style=\"font-size: 12px;text-align:center;\">\r\n                                            <b>{{convertedWordsInHindi}}</b>\r\n                                        </div>\r\n                                    </h5>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"modal-footer\">\r\n                    <!-- *ngIf=\"!isAmtMessage\" -->\r\n                    <div *ngIf=\"!isAmtMessage\" class=\"col-md-12\" style=\"margin-top:10px;\">\r\n                        <button class=\"btn btn-primary\" [disabled]=\"slEntryForm.invalid\" (click)=\"cashAtHandToBankEntrySave(slEntryForm)\"\r\n                            type=\"button\">\r\n                            SAVE\r\n                        </button>\r\n                        <button class=\"btn btn-default\" data-dismiss=\"modal\" type=\"button\">\r\n                            <span *ngIf=\"lang.en\">CANCEL</span>\r\n                            <span *ngIf=\"lang.mr\">रद्द करा</span>\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"changePhoto\" class=\"modal\" role=\"dialog\" data-backdrop=\"static\">\r\n    <div class=\"modal-dialog\" style=\"width: 30%; margin-top:150px\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                <h4 class=\"modal-title\">Change Photo</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <form>\r\n                    <div>\r\n                        <input class=\"form-control\" type=\"file\" ng-bind=\"fileData\" placeholder=\"Upload file\" accept=\".png,.jpeg,.jpg\"\r\n                            style=\"width:222px;\">\r\n                        <button class=\"form-control btn btn-primary\" (click)=\"chnagePhoto($event.target.form[0].files[0],changePhotoDetail.RepaymentId, changePhotoDetail.PhotoId)\"\r\n                            data-dismiss=\"modal\">CHANGE</button>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" style=\"width:222px;\" data-dismiss=\"modal\">Close</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
