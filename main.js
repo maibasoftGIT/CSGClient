@@ -200,24 +200,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_dashboard_selector__WEBPACK_IMPORTED_MODULE_132__ = __webpack_require__(/*! ./utils/dashboard-selector */ "./src/app/utils/dashboard-selector.ts");
 /* harmony import */ var _components_district_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_133__ = __webpack_require__(/*! ./components/district/loan/loanrepayment.component */ "./src/app/components/district/loan/loanrepayment.component.ts");
 /* harmony import */ var _components_district_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_134__ = __webpack_require__(/*! ./components/district/fund/fundrepayment.component */ "./src/app/components/district/fund/fundrepayment.component.ts");
-/* harmony import */ var _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_135__ = __webpack_require__(/*! ./components/district/voSL/voSLDetails.Component */ "./src/app/components/district/voSL/voSLDetails.Component.ts");
-/* harmony import */ var _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_136__ = __webpack_require__(/*! ./components/cmrc/bifurcation/bifurcation.component */ "./src/app/components/cmrc/bifurcation/bifurcation.component.ts");
-/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_137__ = __webpack_require__(/*! ./components/district/cmrcSL/cmrcSLDetails.model.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.model.component.ts");
-/* harmony import */ var _components_district_voSL_voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_138__ = __webpack_require__(/*! ./components/district/voSL/voSLDetails.model.component */ "./src/app/components/district/voSL/voSLDetails.model.component.ts");
-/* harmony import */ var _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_139__ = __webpack_require__(/*! ./services/reports/reportConstants */ "./src/app/services/reports/reportConstants.ts");
-/* harmony import */ var _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_140__ = __webpack_require__(/*! ./components/cmrc/loan/loan */ "./src/app/components/cmrc/loan/loan.ts");
-/* harmony import */ var _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_141__ = __webpack_require__(/*! ./components/vo/member_share/membershare.component */ "./src/app/components/vo/member_share/membershare.component.ts");
-/* harmony import */ var _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_142__ = __webpack_require__(/*! ./environments/loaderMessage */ "./src/app/environments/loaderMessage.ts");
-/* harmony import */ var _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_143__ = __webpack_require__(/*! ./utils/available-amt.model */ "./src/app/utils/available-amt.model.ts");
-/* harmony import */ var _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_144__ = __webpack_require__(/*! ./components/public/products/cmrc-product.component */ "./src/app/components/public/products/cmrc-product.component.ts");
-/* harmony import */ var _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_145__ = __webpack_require__(/*! ./components/cmrc/public-page/products/product.component */ "./src/app/components/cmrc/public-page/products/product.component.ts");
-/* harmony import */ var _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_146__ = __webpack_require__(/*! ./components/district/mavimdetail/mavimlinks.component */ "./src/app/components/district/mavimdetail/mavimlinks.component.ts");
-/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_147__ = __webpack_require__(/*! angular2-lightbox */ "./node_modules/angular2-lightbox/index.js");
-/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_147___default = /*#__PURE__*/__webpack_require__.n(angular2_lightbox__WEBPACK_IMPORTED_MODULE_147__);
-/* harmony import */ var _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_148__ = __webpack_require__(/*! ./components/district/products/mavimProduct.component */ "./src/app/components/district/products/mavimProduct.component.ts");
-/* harmony import */ var _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_149__ = __webpack_require__(/*! ./components/vo/report/report.component */ "./src/app/components/vo/report/report.component.ts");
-/* harmony import */ var _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_150__ = __webpack_require__(/*! ./components/vo/loanrepayment/loanrepayment.component */ "./src/app/components/vo/loanrepayment/loanrepayment.component.ts");
-/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_151__ = __webpack_require__(/*! ./components/district/cmrcSL/cmrcSLDetails.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts");
+/* harmony import */ var _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_135__ = __webpack_require__(/*! ./components/cmrc/bifurcation/bifurcation.component */ "./src/app/components/cmrc/bifurcation/bifurcation.component.ts");
+/* harmony import */ var _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_136__ = __webpack_require__(/*! ./services/reports/reportConstants */ "./src/app/services/reports/reportConstants.ts");
+/* harmony import */ var _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_137__ = __webpack_require__(/*! ./components/cmrc/loan/loan */ "./src/app/components/cmrc/loan/loan.ts");
+/* harmony import */ var _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_138__ = __webpack_require__(/*! ./components/vo/member_share/membershare.component */ "./src/app/components/vo/member_share/membershare.component.ts");
+/* harmony import */ var _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_139__ = __webpack_require__(/*! ./environments/loaderMessage */ "./src/app/environments/loaderMessage.ts");
+/* harmony import */ var _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_140__ = __webpack_require__(/*! ./utils/available-amt.model */ "./src/app/utils/available-amt.model.ts");
+/* harmony import */ var _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_141__ = __webpack_require__(/*! ./components/public/products/cmrc-product.component */ "./src/app/components/public/products/cmrc-product.component.ts");
+/* harmony import */ var _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_142__ = __webpack_require__(/*! ./components/cmrc/public-page/products/product.component */ "./src/app/components/cmrc/public-page/products/product.component.ts");
+/* harmony import */ var _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_143__ = __webpack_require__(/*! ./components/district/mavimdetail/mavimlinks.component */ "./src/app/components/district/mavimdetail/mavimlinks.component.ts");
+/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_144__ = __webpack_require__(/*! angular2-lightbox */ "./node_modules/angular2-lightbox/index.js");
+/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_144___default = /*#__PURE__*/__webpack_require__.n(angular2_lightbox__WEBPACK_IMPORTED_MODULE_144__);
+/* harmony import */ var _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_145__ = __webpack_require__(/*! ./components/district/products/mavimProduct.component */ "./src/app/components/district/products/mavimProduct.component.ts");
+/* harmony import */ var _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_146__ = __webpack_require__(/*! ./components/vo/report/report.component */ "./src/app/components/vo/report/report.component.ts");
+/* harmony import */ var _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_147__ = __webpack_require__(/*! ./components/vo/loanrepayment/loanrepayment.component */ "./src/app/components/vo/loanrepayment/loanrepayment.component.ts");
 
 
 
@@ -358,6 +354,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// import { voGLDetailsComponent } from './components/district/voSL/voSLDetails.Component';
+
+// import { CmrcSlDetailsModel } from './components/district/cmrcSL/cmrcSLDetails.model.component';
+// import { voSLDetailsModel } from './components/district/voSL/voSLDetails.model.component';
 
 
 
@@ -370,11 +370,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
+// import { cmrcSLDetailsComponent } from './components/district/cmrcSL/cmrcSLDetails.component';
 //import { MavimProductComponent, ProductMavimComponent } from './components/district/mavimdetail/mavimProduct.component';
 var AppModule = (function () {
     function AppModule() {
@@ -391,13 +387,13 @@ var AppModule = (function () {
                 _components_public_contact_contact_component__WEBPACK_IMPORTED_MODULE_85__["ContactComponent"],
                 _components_public_mavim_mavim_component__WEBPACK_IMPORTED_MODULE_63__["MavimComponent"],
                 _components_public_work_work_component__WEBPACK_IMPORTED_MODULE_64__["WorkComponent"],
-                _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_148__["MavimProductComponent"],
+                _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_145__["MavimProductComponent"],
                 //PublicPageProductComponent,
                 _components_vo_vo_members_vo_members_component__WEBPACK_IMPORTED_MODULE_30__["VOCMembersComponent"],
                 _components_vo_fix_deposite_fixdeposite_component__WEBPACK_IMPORTED_MODULE_9__["FixDepositeComponent"],
                 _components_vo_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["VoDashboardComponent"],
                 _components_vo_loan_loan_component__WEBPACK_IMPORTED_MODULE_12__["LoanComponent"],
-                _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_140__["CmrcLoanComponent"],
+                _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_137__["CmrcLoanComponent"],
                 _components_vo_shg_master_shg_master_component__WEBPACK_IMPORTED_MODULE_18__["ShgMasterComponent"],
                 _components_common_component__WEBPACK_IMPORTED_MODULE_16__["LoadingComponent"],
                 _components_common_component__WEBPACK_IMPORTED_MODULE_16__["MessageComponent"],
@@ -406,7 +402,7 @@ var AppModule = (function () {
                 _components_public_Public_Component__WEBPACK_IMPORTED_MODULE_14__["PublicComponent"],
                 _components_cmrc_public_page_photos_cmrc_photos_component__WEBPACK_IMPORTED_MODULE_117__["CMRCPublicPhotos"],
                 _components_vo_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_19__["LoanRepaymentComponent"],
-                _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_150__["LoanRepaymentMenuComponent"],
+                _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_147__["LoanRepaymentMenuComponent"],
                 _components_sc_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_20__["SCDashboardComponent"],
                 _components_cmrc_vo_vo_component__WEBPACK_IMPORTED_MODULE_34__["VoComponent"],
                 _components_sc_base_component__WEBPACK_IMPORTED_MODULE_21__["SCBaseComponent"],
@@ -468,7 +464,7 @@ var AppModule = (function () {
                 _components_district_member_member_component__WEBPACK_IMPORTED_MODULE_100__["DistrictMemberComponent"],
                 _components_cmrc_reports_memberreport_memberreport__WEBPACK_IMPORTED_MODULE_103__["MembeReports"],
                 _components_cmrc_reports_shg_Active_withdrawal_shg_Active_withdrawal_component__WEBPACK_IMPORTED_MODULE_104__["ActiveAndWithdrawlShgComponent"],
-                _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_136__["BifurCationComponent"],
+                _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_135__["BifurCationComponent"],
                 _components_cmrc_public_page_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_120__["PublicCMRCBifurCationComponent"],
                 _components_cmrc_public_page_news_news_component__WEBPACK_IMPORTED_MODULE_121__["NewsComponent"],
                 _components_cmrc_public_page_news_news_update_component__WEBPACK_IMPORTED_MODULE_122__["NewsUpdateComponent"],
@@ -487,13 +483,13 @@ var AppModule = (function () {
                 _components_district_PercentageIncome_PercentageIncome_Component__WEBPACK_IMPORTED_MODULE_128__["PercentageOnIncome"],
                 _components_district_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_133__["LoanUpdateRepaymentComponent"],
                 _components_district_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_134__["VOFundUpdateRepaymentComponent"],
-                _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_151__["cmrcSLDetailsComponent"],
-                _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_135__["voGLDetailsComponent"],
-                _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_141__["MemberShareComponent"],
-                _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_144__["CMRCProductComponent"],
-                _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_145__["ProductComponent"],
-                _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_146__["MavimLinksComponent"],
-                _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_149__["VoReportsComponent"]
+                // cmrcSLDetailsComponent,
+                // voGLDetailsComponent,
+                _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_138__["MemberShareComponent"],
+                _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_141__["CMRCProductComponent"],
+                _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_142__["ProductComponent"],
+                _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_143__["MavimLinksComponent"],
+                _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_146__["VoReportsComponent"]
             ],
             imports: [_angular_common__WEBPACK_IMPORTED_MODULE_22__["CommonModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["BrowserModule"],
@@ -502,21 +498,21 @@ var AppModule = (function () {
                 _routing_CSGRoutes__WEBPACK_IMPORTED_MODULE_15__["PublicRoutes"],
                 angular_datatables__WEBPACK_IMPORTED_MODULE_6__["DataTablesModule"],
                 ng2_datepicker__WEBPACK_IMPORTED_MODULE_76__["NgDatepickerModule"],
-                angular2_lightbox__WEBPACK_IMPORTED_MODULE_147__["LightboxModule"]
+                angular2_lightbox__WEBPACK_IMPORTED_MODULE_144__["LightboxModule"]
                 //Angular2ImageGalleryModule
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["App"]],
             providers: [_services_vo_services__WEBPACK_IMPORTED_MODULE_10__["VOService"],
-                _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_143__["AvailableAmountModel"],
+                _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_140__["AvailableAmountModel"],
                 _services_common_service__WEBPACK_IMPORTED_MODULE_27__["CommonService"],
                 _services_public_service__WEBPACK_IMPORTED_MODULE_109__["PublicService"],
                 _services_cmrc_services__WEBPACK_IMPORTED_MODULE_25__["CMRCService"],
                 _components_district_cmrc_cmrcdetails_model_component__WEBPACK_IMPORTED_MODULE_105__["CmrcDetailsModel"],
-                _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_139__["ReportConstant"],
+                _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_136__["ReportConstant"],
                 _environments_access_token__WEBPACK_IMPORTED_MODULE_5__["AccessToken"],
                 _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_31__["GlobalVariable"],
                 _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_50__["CommonMessageComponent"],
-                _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_142__["LoaderMessageComponent"],
+                _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_139__["LoaderMessageComponent"],
                 _services_reports_exportpdf__WEBPACK_IMPORTED_MODULE_68__["ExportToPDF"],
                 _environments_language_config__WEBPACK_IMPORTED_MODULE_72__["LangulageConf"],
                 //   ExportToExcel,
@@ -541,8 +537,6 @@ var AppModule = (function () {
                 _components_district_member_member_model_component__WEBPACK_IMPORTED_MODULE_101__["DistrictMemberModel"],
                 _utils_dashboard_url_util__WEBPACK_IMPORTED_MODULE_131__["DashboardURLs"],
                 _utils_dashboard_selector__WEBPACK_IMPORTED_MODULE_132__["DashboardDataChoiceSelector"],
-                _components_district_cmrcSL_cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_137__["CmrcSlDetailsModel"],
-                _components_district_voSL_voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_138__["voSLDetailsModel"]
             ]
         })
     ], AppModule);
@@ -14832,404 +14826,6 @@ var CmrcDetailsModel = (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts":
-/*!***********************************************************************!*\
-  !*** ./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts ***!
-  \***********************************************************************/
-/*! exports provided: cmrcSLDetailsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cmrcSLDetailsComponent", function() { return cmrcSLDetailsComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/@angular/core */ "./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var _services_district_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/district.services */ "./src/app/services/district.services.ts");
-/* harmony import */ var _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/@angular/router */ "./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var _environments_language_config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../environments/language.config */ "./src/app/environments/language.config.ts");
-/* harmony import */ var _environments_access_token__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../environments/access_token */ "./src/app/environments/access_token.ts");
-/* harmony import */ var _environments_Global__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../environments/Global */ "./src/app/environments/Global.ts");
-/* harmony import */ var _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../environments/GlobalVeriables */ "./src/app/environments/GlobalVeriables.ts");
-/* harmony import */ var _services_common_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../services/common.service */ "./src/app/services/common.service.ts");
-/* harmony import */ var _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../environments/CommanMssage */ "./src/app/environments/CommanMssage.ts");
-/* harmony import */ var _node_modules_angular_datatables_src_angular_datatables_directive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../../node_modules/angular-datatables/src/angular-datatables.directive */ "./node_modules/angular-datatables/src/angular-datatables.directive.js");
-/* harmony import */ var date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! date-fns/locale/en */ "./node_modules/date-fns/locale/en/index.js");
-/* harmony import */ var date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./cmrcSLDetails.model.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.model.component.ts");
-/* harmony import */ var _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../../node_modules/rxjs */ "./node_modules/rxjs/Rx.js");
-/* harmony import */ var _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _node_modules_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../../node_modules/@angular/platform-browser */ "./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-/* harmony import */ var _utils_constants_title_constants__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../utils/constants/title-constants */ "./src/app/utils/constants/title-constants.ts");
-/* harmony import */ var _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../environments/loaderMessage */ "./src/app/environments/loaderMessage.ts");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var cmrcSLDetailsComponent = (function () {
-    function cmrcSLDetailsComponent(districtService, _router, lang, _access_token, _globalURL, _globalVariable, _commonService, _loadingMessage, _commonMessage, _cmrcSLDetails, globalVariables, titleService) {
-        this.districtService = districtService;
-        this._router = _router;
-        this.lang = lang;
-        this._access_token = _access_token;
-        this._globalURL = _globalURL;
-        this._globalVariable = _globalVariable;
-        this._commonService = _commonService;
-        this._loadingMessage = _loadingMessage;
-        this._commonMessage = _commonMessage;
-        this._cmrcSLDetails = _cmrcSLDetails;
-        this.globalVariables = globalVariables;
-        this.titleService = titleService;
-        this.showErrorMessage = false;
-        this.dtTrigger = new _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__["Subject"]();
-        this.ToDt = new Date();
-        this.FromDt = new Date();
-        this.options = {
-            minYear: 2000,
-            maxYear: (new Date().getFullYear() + 1),
-            displayFormat: 'MMM D[,] YYYY',
-            barTitleFormat: 'MMMM YYYY',
-            dayNamesFormat: 'dd',
-            firstCalendarDay: 0,
-            locale: date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__,
-            barTitleIfEmpty: 'Click to select a date'
-        };
-        this.paymentModeText = "PAYMENT MODE";
-        this.isPMApplicable = true;
-        this.isAmtMessage = false;
-        this.setTitle(_utils_constants_title_constants__WEBPACK_IMPORTED_MODULE_15__["TitleConstants"].DISTRICT_CMRC_SL_DETAILS);
-    }
-    cmrcSLDetailsComponent.prototype.ngOnInit = function () {
-        this.getCMRCsKVP();
-    };
-    cmrcSLDetailsComponent.prototype.ngAfterViewInit = function () {
-        this.dtTrigger.next();
-    };
-    cmrcSLDetailsComponent.prototype.setTitle = function (newTitle) {
-        this.titleService.setTitle(newTitle);
-    };
-    cmrcSLDetailsComponent.prototype.setUIChangesForSelectedSL = function (slId) {
-        if (slId == this._globalVariable.CMRC_CASH_IN_HAND_TO_BANK) {
-            this.isPMApplicable = false;
-            return;
-        }
-        else {
-            this.isPMApplicable = true;
-        }
-        if (this._globalVariable.CMRC_EXPENSE == slId
-            || this._globalVariable.CMRC_BANK_EXPENSE == slId
-            || this._globalVariable.CMRC_CONTRIBUTION_WITHDRAWAL == slId
-            || this._globalVariable.MAVIM_CONTRIBUTION_WITHDRAWAL == slId) {
-            this.paymentModeText = "PAYING FROM MODE";
-        }
-        else {
-            this.paymentModeText = "PAYING TO MODE";
-            this.isAmtMessage = false;
-        }
-        this.setslId = slId;
-    };
-    cmrcSLDetailsComponent.prototype.getCMRCsKVP = function () {
-        var _this = this;
-        debugger;
-        this._globalURL.isLoading = true;
-        this.loaderMessage = this._loadingMessage.getCmrcSLloader;
-        this.districtService.get(this._globalURL.GET_KVP_DISTRICT_CMRC_DASHBOARD, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.Cmrcs = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    cmrcSLDetailsComponent.prototype.getSLDetails = function (cmrcId) {
-        var _this = this;
-        debugger;
-        this.selectedCMRCId = cmrcId;
-        this.districtService.get((this._globalURL.GET_CMRCS_SL_DETAILS + "?roleId=2" + "&id=" + cmrcId), sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.cmrcSLDetails = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-            _this.reRenderDT();
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    cmrcSLDetailsComponent.prototype.saveRecord = function (selectedId) {
-        this.selectedCMRCId = selectedId;
-    };
-    cmrcSLDetailsComponent.prototype.loadSLDetails = function (frDt, toDt) {
-        var _this = this;
-        debugger;
-        this.lastFinanceYearOrFromDt = this._commonService.convertToDate(frDt);
-        this.todaysOrToDt = this._commonService.convertToDate(toDt);
-        var urls = this._globalURL.GET_SL_ENTRIES_DETAILS + this._globalVariable.CMRCRoleId + "&loginId=" + this.selectedCMRCId + "&fromdt=" + this.lastFinanceYearOrFromDt + "&todt=" + this.todaysOrToDt;
-        this.districtService.get(urls, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.status === 401) {
-                sessionStorage.clear();
-                _this.showErrorMessage = true;
-                _this.message = _this._commonMessage.error401message;
-                setInterval(function () {
-                    _this.showErrorMessage = false;
-                }, 5000);
-                _this._globalURL.isLoading = false;
-                _this._router.navigate(['../login']);
-            }
-            if (res.Status == undefined)
-                if (res.status == 200) {
-                    if ((JSON.parse(res._body).Data.Status == 200))
-                        _this.slEntriesDetails = JSON.parse(res._body).Data;
-                    else {
-                        _this.showWarningMessage = true;
-                        _this.message = _this._commonMessage.WarningMsg;
-                        setInterval(function () {
-                            _this.showWarningMessage = false;
-                        }, 5000);
-                        _this._globalURL.isLoading = false;
-                    }
-                }
-                else {
-                    _this.showWarningMessage = true;
-                    _this.message = _this._commonMessage.WarningMsg;
-                    setInterval(function () {
-                        _this.showWarningMessage = false;
-                    }, 5000);
-                    _this._globalURL.isLoading = false;
-                }
-            else {
-                if (res.Status == true) {
-                    _this.slEntriesDetails = res.Data;
-                    _this._globalURL.isLoading = false;
-                }
-                else {
-                    _this.showWarningMessage = true;
-                    _this.message = _this._commonMessage.WarningMsg;
-                    setInterval(function () {
-                        _this.showWarningMessage = false;
-                    }, 5000);
-                    _this._globalURL.isLoading = false;
-                }
-            }
-            _this.reRenderDT();
-        }).catch(function (res) {
-            _this.showErrorMessage = true;
-            console.log(res.error);
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-            _this._globalURL.isLoading = false;
-        });
-    };
-    cmrcSLDetailsComponent.prototype.getSLEntriesDetails = function (isAllEntries) {
-        var _this = this;
-        debugger;
-        this.districtService.get(this._globalURL.GET_SL_ENTRIES_DETAILS + this._globalVariable.CMRCRoleId + "&loginId=" + this.selectedCMRCId + "&isAllEntries=" + isAllEntries, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.status === 401) {
-                sessionStorage.clear();
-                _this.showErrorMessage = true;
-                _this.message = _this._commonMessage.error401message;
-                setInterval(function () {
-                    _this.showErrorMessage = false;
-                }, 5000);
-                _this._globalURL.isLoading = false;
-                _this._router.navigate(['../login']);
-            }
-            if (res.Status == true) {
-                _this.slEntriesDetails = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-            _this.reRenderDT();
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    cmrcSLDetailsComponent.prototype.getSelectedSLDetails = function (slId) {
-        var _this = this;
-        debugger;
-        this._globalURL.isLoading = true;
-        this.districtService.get(this._globalURL.GET_SL_ENTRIES_DETAILS + this._globalVariable.CMRCRoleId + "&loginId=" + this.selectedCMRCId + "&isAllEntries=true&slid=" + slId, sessionStorage.getItem('access_token'))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.slEntriesDetails = res.Data;
-            }
-            _this._globalURL.isLoading = false;
-            _this.reRenderDT();
-        }).catch(function (res) {
-            _this._globalURL.isLoading = false;
-            console.log("UNable to get the SL details for selected SL, error - " + res);
-        });
-    };
-    cmrcSLDetailsComponent.prototype.setUpdatedValues = function (cmrcSLDetail) {
-        this.convertToWords(cmrcSLDetail.Amount);
-        this._cmrcSLDetails = cmrcSLDetail;
-        this.slId = cmrcSLDetail.Id;
-    };
-    cmrcSLDetailsComponent.prototype.confirmUpdate = function (data) {
-        var _this = this;
-        debugger;
-        var shareDetails = this._globalURL.UPDATE_SL_DETAILS + "?roleId=" + this._globalVariable.CMRCRoleId + "&id=" + this.slId + "&transactionTypeId=23" + "&amount=" + data.Amount + "&t_date=" + data.TransactionDate + "&PaymentMode=" + data.PaymentMode + "&SLType=" + data.SLType;
-        this.districtService.post(shareDetails, null, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.status === 200) {
-                _this.getSLDetails(_this.selectedCMRCId);
-                _this._globalURL.isLoading = false;
-                _this.showMessage = true;
-                _this.message = _this._commonMessage.UpdateMsg;
-                setInterval(function () {
-                    _this.showMessage = false;
-                }, 5000);
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    cmrcSLDetailsComponent.prototype.reRenderDT = function () {
-        var _this = this;
-        this.dtElement.dtInstance.then(function (dtInstance) {
-            dtInstance.destroy();
-            _this.dtTrigger.next();
-        });
-    };
-    cmrcSLDetailsComponent.prototype.convertToWords = function (num) {
-        debugger;
-        this.convertedWordsInEnglish = this._commonService.convertDigitToWordsInEnglish(num);
-        this.convertedWordsInHindi = this._commonService.convertDigitToWordsInHindi(num);
-        this.convertedWordsInMarathi = this._commonService.convertDigitToWordsInMarathi(num);
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_node_modules_angular_datatables_src_angular_datatables_directive__WEBPACK_IMPORTED_MODULE_10__["DataTableDirective"]),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _node_modules_angular_datatables_src_angular_datatables_directive__WEBPACK_IMPORTED_MODULE_10__["DataTableDirective"])
-    ], cmrcSLDetailsComponent.prototype, "dtElement", void 0);
-    cmrcSLDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            templateUrl: '../cmrcSL/cmrcSLDetails.component.html',
-            styleUrls: ['../../../components/app.css']
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_district_services__WEBPACK_IMPORTED_MODULE_2__["DISTRICTService"],
-            _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-            _environments_language_config__WEBPACK_IMPORTED_MODULE_4__["LangulageConf"],
-            _environments_access_token__WEBPACK_IMPORTED_MODULE_5__["AccessToken"],
-            _environments_Global__WEBPACK_IMPORTED_MODULE_6__["GlobalAssets"],
-            _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_7__["GlobalVariable"],
-            _services_common_service__WEBPACK_IMPORTED_MODULE_8__["CommonService"],
-            _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_16__["LoaderMessageComponent"],
-            _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_9__["CommonMessageComponent"],
-            _cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_12__["CmrcSlDetailsModel"],
-            _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_7__["GlobalVariable"],
-            _node_modules_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__["Title"]])
-    ], cmrcSLDetailsComponent);
-    return cmrcSLDetailsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/district/cmrcSL/cmrcSLDetails.model.component.ts":
-/*!*****************************************************************************!*\
-  !*** ./src/app/components/district/cmrcSL/cmrcSLDetails.model.component.ts ***!
-  \*****************************************************************************/
-/*! exports provided: CmrcSlDetailsModel */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CmrcSlDetailsModel", function() { return CmrcSlDetailsModel; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/@angular/core */ "./node_modules/@angular/core/esm5/core.js");
-
-
-var CmrcSlDetailsModel = (function () {
-    function CmrcSlDetailsModel() {
-        this.slId = 0;
-        this.Amount = 0;
-        this.TransactionDate = new Date();
-        this.FromName = '';
-        this.ToName = '';
-        this.SLTypeName = '';
-        this.PaymentMode = 1;
-    }
-    CmrcSlDetailsModel = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], CmrcSlDetailsModel);
-    return CmrcSlDetailsModel;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/components/district/dashboard/dashboard.component.html":
 /*!************************************************************************!*\
   !*** ./src/app/components/district/dashboard/dashboard.component.html ***!
@@ -20242,401 +19838,6 @@ var DistrictShgMasterModel = (function () {
         this.DesignationName = '';
     }
     return DistrictShgMasterModel;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/district/voSL/voSLDetails.Component.ts":
-/*!*******************************************************************!*\
-  !*** ./src/app/components/district/voSL/voSLDetails.Component.ts ***!
-  \*******************************************************************/
-/*! exports provided: voGLDetailsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "voGLDetailsComponent", function() { return voGLDetailsComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/@angular/core */ "./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var _services_district_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/district.services */ "./src/app/services/district.services.ts");
-/* harmony import */ var _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/@angular/router */ "./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var _environments_language_config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../environments/language.config */ "./src/app/environments/language.config.ts");
-/* harmony import */ var _environments_access_token__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../environments/access_token */ "./src/app/environments/access_token.ts");
-/* harmony import */ var _environments_Global__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../environments/Global */ "./src/app/environments/Global.ts");
-/* harmony import */ var _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../environments/GlobalVeriables */ "./src/app/environments/GlobalVeriables.ts");
-/* harmony import */ var _services_common_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../services/common.service */ "./src/app/services/common.service.ts");
-/* harmony import */ var _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../environments/CommanMssage */ "./src/app/environments/CommanMssage.ts");
-/* harmony import */ var _node_modules_angular_datatables__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../../node_modules/angular-datatables */ "./node_modules/angular-datatables/index.js");
-/* harmony import */ var date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! date-fns/locale/en */ "./node_modules/date-fns/locale/en/index.js");
-/* harmony import */ var date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./voSLDetails.model.component */ "./src/app/components/district/voSL/voSLDetails.model.component.ts");
-/* harmony import */ var _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../../node_modules/rxjs */ "./node_modules/rxjs/Rx.js");
-/* harmony import */ var _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _node_modules_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../../node_modules/@angular/platform-browser */ "./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-/* harmony import */ var _utils_constants_title_constants__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../utils/constants/title-constants */ "./src/app/utils/constants/title-constants.ts");
-/* harmony import */ var _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../environments/loaderMessage */ "./src/app/environments/loaderMessage.ts");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var voGLDetailsComponent = (function () {
-    function voGLDetailsComponent(districtService, _router, lang, _access_token, _globalURL, _globalVariable, _commonService, _commonMessage, _loadingMsg, _voSLDetailsModel, titleService) {
-        this.districtService = districtService;
-        this._router = _router;
-        this.lang = lang;
-        this._access_token = _access_token;
-        this._globalURL = _globalURL;
-        this._globalVariable = _globalVariable;
-        this._commonService = _commonService;
-        this._commonMessage = _commonMessage;
-        this._loadingMsg = _loadingMsg;
-        this._voSLDetailsModel = _voSLDetailsModel;
-        this.titleService = titleService;
-        this.showSuccMessage = false;
-        this.showErrorMessage = false;
-        this.dtTrigger = new _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_13__["Subject"]();
-        this.ToDt = new Date();
-        this.FromDt = new Date();
-        this.options = {
-            minYear: 2000,
-            maxYear: (new Date().getFullYear() + 1),
-            displayFormat: 'MMM D[,] YYYY',
-            barTitleFormat: 'MMMM YYYY',
-            dayNamesFormat: 'dd',
-            firstCalendarDay: 0,
-            locale: date_fns_locale_en__WEBPACK_IMPORTED_MODULE_11__,
-            barTitleIfEmpty: 'Click to select a date'
-        };
-        this.setTitle(_utils_constants_title_constants__WEBPACK_IMPORTED_MODULE_15__["TitleConstants"].DISTRICT_VO_SL_DETAILS);
-    }
-    voGLDetailsComponent.prototype.ngOnInit = function () {
-        this.getCMRCsKVP();
-    };
-    voGLDetailsComponent.prototype.ngAfterViewInit = function () {
-        this.dtTrigger.next();
-    };
-    voGLDetailsComponent.prototype.setTitle = function (newTitle) {
-        this.titleService.setTitle(newTitle);
-    };
-    voGLDetailsComponent.prototype.getCMRCsKVP = function () {
-        var _this = this;
-        debugger;
-        this._globalURL.isLoading = true;
-        this.loaderMessage = this._loadingMsg.getvoSLloader;
-        this.districtService.get(this._globalURL.GET_KVP_DISTRICT_CMRC_DASHBOARD, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.Cmrcs = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.showErrorMessage = true;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            setInterval(function () {
-                _this.showWarningMessage = false;
-            }, 5000);
-        });
-    };
-    voGLDetailsComponent.prototype.getVoByCmrcId = function (selectCmrc) {
-        var _this = this;
-        debugger;
-        this._globalURL.isLoading = true;
-        this.districtService.get((this._globalURL.GET_VO_BY_CMRC_ID + "?cmrcId=" + selectCmrc), sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.Vos = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.showErrorMessage = true;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            setInterval(function () {
-                _this.showWarningMessage = false;
-            }, 5000);
-        });
-    };
-    voGLDetailsComponent.prototype.getSLDetails = function (voId) {
-        var _this = this;
-        debugger;
-        this.districtService.get((this._globalURL.GET_CMRCS_SL_DETAILS + "?roleId=3" + "&id=" + voId), sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.cmrcSLDetails = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.showErrorMessage = true;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            setInterval(function () {
-                _this.showWarningMessage = false;
-            }, 5000);
-        });
-    };
-    voGLDetailsComponent.prototype.saveRecord = function (selectedId) {
-        this.selectedVOId = selectedId;
-    };
-    voGLDetailsComponent.prototype.loadSLDetails = function (frDt, toDt) {
-        var _this = this;
-        debugger;
-        // this.lastFinanceYearOrFromDt = this._commonService.convertToDate(frDt);
-        // this.todaysOrToDt = this._commonService.convertToDate(toDt);
-        var urls = this._globalURL.GET_SL_ENTRIES_DETAILS + this._globalVariable.VORoleId + "&loginId=" + this.selectedVOId + "&fromdt=" + frDt + "&todt=" + toDt;
-        this.districtService.get(urls, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.status === 401) {
-                sessionStorage.clear();
-                _this.showErrorMessage = true;
-                _this.message = _this._commonMessage.error401message;
-                setInterval(function () {
-                    _this.showErrorMessage = false;
-                }, 5000);
-                _this._globalURL.isLoading = false;
-                _this._router.navigate(['../login']);
-            }
-            if (res.Status == undefined)
-                if (res.status == 200) {
-                    if ((JSON.parse(res._body).Data.Status == 200))
-                        _this.slEntriesDetails = JSON.parse(res._body).Data;
-                    else {
-                        _this.showWarningMessage = true;
-                        _this.message = _this._commonMessage.WarningMsg;
-                        setInterval(function () {
-                            _this.showWarningMessage = false;
-                        }, 5000);
-                        _this._globalURL.isLoading = false;
-                    }
-                }
-                else {
-                    _this.showWarningMessage = true;
-                    _this.message = _this._commonMessage.WarningMsg;
-                    setInterval(function () {
-                        _this.showWarningMessage = false;
-                    }, 5000);
-                    _this._globalURL.isLoading = false;
-                }
-            else {
-                if (res.Status == true) {
-                    _this.slEntriesDetails = res.Data;
-                    _this._globalURL.isLoading = false;
-                }
-                else {
-                    _this.showWarningMessage = true;
-                    _this.message = _this._commonMessage.WarningMsg;
-                    setInterval(function () {
-                        _this.showWarningMessage = false;
-                    }, 5000);
-                    _this._globalURL.isLoading = false;
-                }
-            }
-            _this.reRenderDT();
-        }).catch(function (res) {
-            _this.showErrorMessage = true;
-            console.log(res.error);
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-            _this._globalURL.isLoading = false;
-        });
-    };
-    voGLDetailsComponent.prototype.getSLEntriesDetails = function (isAllEntries) {
-        var _this = this;
-        debugger;
-        this.slEntriesDetails = null;
-        this.districtService.get(this._globalURL.GET_SL_ENTRIES_DETAILS + this._globalVariable.VORoleId + "&loginId=" + this.selectedVOId + "&isAllEntries=" + isAllEntries + "&slId=" + this.selectedSlId, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.slEntriesDetails = res.Data;
-                _this._globalURL.isLoading = false;
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-            _this.reRenderDT();
-        }).catch(function (res) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-        this.reRenderDT();
-    };
-    voGLDetailsComponent.prototype.setUpdatedValues = function (voSLDetail) {
-        debugger;
-        this.convertToWords(voSLDetail.Amount);
-        this._voSLDetailsModel = voSLDetail;
-        this.slId = voSLDetail.Id;
-    };
-    voGLDetailsComponent.prototype.confirmUpdate = function (data) {
-        var _this = this;
-        debugger;
-        var shareDetails = this._globalURL.UPDATE_SL_DETAILS + "?roleId=" + this._globalVariable.VORoleId + "&id=" + this.slId + "&transactionTypeId=23" + "&amount=" + data.Amount + "&t_date=" + data.TransactionDate + "&PaymentMode=" + data.PaymentMode + "&SLType=" + data.SLType;
-        this.districtService.post(shareDetails, null, sessionStorage.getItem("access_token"))
-            .then(function (res) {
-            if ((res.Status) == undefined) {
-                if (res.status === 200) {
-                    debugger;
-                    _this._globalURL.isLoading = false;
-                    _this.showMessage = true;
-                    _this.message = _this._commonMessage.UpdateMsg;
-                    setInterval(function () {
-                        _this.showMessage = false;
-                    }, 5000);
-                }
-            }
-            else {
-                _this._globalURL.isLoading = false;
-                _this.showWarningMessage = true;
-                _this.message = _this._commonMessage.WarningMsg;
-                setInterval(function () {
-                    _this.showWarningMessage = false;
-                }, 5000);
-            }
-        }).catch(function (error) {
-            _this._globalURL.isLoading = false;
-            _this.message = _this._commonMessage.CatchBlockMsg;
-            _this.showErrorMessage = true;
-            setInterval(function () {
-                _this.showErrorMessage = false;
-            }, 5000);
-        });
-    };
-    voGLDetailsComponent.prototype.getSelectedSLDetails = function (slId) {
-        var _this = this;
-        debugger;
-        // this.selectedSlId = slId;
-        this._globalURL.isLoading = true;
-        this.districtService.get(this._globalURL.GET_SL_ENTRIES_DETAILS + this._globalVariable.VORoleId + "&loginId=" + this.selectedVOId + "&isAllEntries=true&slid=" + slId, sessionStorage.getItem('access_token'))
-            .then(function (res) {
-            if (res.Status == true) {
-                _this.slEntriesDetails = res.Data;
-            }
-            _this._globalURL.isLoading = false;
-            _this.reRenderDT();
-        }).catch(function (res) {
-            _this._globalURL.isLoading = false;
-            console.log("UNable to get the SL details for selected SL, error - " + res);
-        });
-    };
-    voGLDetailsComponent.prototype.reRenderDT = function () {
-        var _this = this;
-        this.dtElement.dtInstance.then(function (dtInstance) {
-            dtInstance.destroy();
-            _this.dtTrigger.next();
-        });
-    };
-    voGLDetailsComponent.prototype.convertToWords = function (num) {
-        debugger;
-        this.convertedWordsInEnglish = this._commonService.convertDigitToWordsInEnglish(num);
-        this.convertedWordsInHindi = this._commonService.convertDigitToWordsInHindi(num);
-        this.convertedWordsInMarathi = this._commonService.convertDigitToWordsInMarathi(num);
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_node_modules_angular_datatables__WEBPACK_IMPORTED_MODULE_10__["DataTableDirective"]),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _node_modules_angular_datatables__WEBPACK_IMPORTED_MODULE_10__["DataTableDirective"])
-    ], voGLDetailsComponent.prototype, "dtElement", void 0);
-    voGLDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            templateUrl: '../voSL/voSLDetails.component.html',
-            styleUrls: ['../../../components/app.css']
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_district_services__WEBPACK_IMPORTED_MODULE_2__["DISTRICTService"],
-            _node_modules_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-            _environments_language_config__WEBPACK_IMPORTED_MODULE_4__["LangulageConf"],
-            _environments_access_token__WEBPACK_IMPORTED_MODULE_5__["AccessToken"],
-            _environments_Global__WEBPACK_IMPORTED_MODULE_6__["GlobalAssets"],
-            _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_7__["GlobalVariable"],
-            _services_common_service__WEBPACK_IMPORTED_MODULE_8__["CommonService"],
-            _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_9__["CommonMessageComponent"],
-            _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_16__["LoaderMessageComponent"],
-            _voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_12__["voSLDetailsModel"],
-            _node_modules_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__["Title"]])
-    ], voGLDetailsComponent);
-    return voGLDetailsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/district/voSL/voSLDetails.model.component.ts":
-/*!*************************************************************************!*\
-  !*** ./src/app/components/district/voSL/voSLDetails.model.component.ts ***!
-  \*************************************************************************/
-/*! exports provided: voSLDetailsModel */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "voSLDetailsModel", function() { return voSLDetailsModel; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/@angular/core */ "./node_modules/@angular/core/esm5/core.js");
-
-
-var voSLDetailsModel = (function () {
-    function voSLDetailsModel() {
-        this.slId = 0;
-        this.Amount = 0;
-        this.TransactionDate = '';
-        this.FromName = '';
-        this.ToName = '';
-        this.SLTypeName = '';
-        this.PaymentMode = 1;
-    }
-    voSLDetailsModel = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], voSLDetailsModel);
-    return voSLDetailsModel;
 }());
 
 
@@ -31538,16 +30739,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/esm5/common.js");
 /* harmony import */ var _components_district_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! ../components/district/loan/loanrepayment.component */ "./src/app/components/district/loan/loanrepayment.component.ts");
 /* harmony import */ var _components_district_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! ../components/district/fund/fundrepayment.component */ "./src/app/components/district/fund/fundrepayment.component.ts");
-/* harmony import */ var _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! ../components/district/voSL/voSLDetails.Component */ "./src/app/components/district/voSL/voSLDetails.Component.ts");
-/* harmony import */ var _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! ../components/vo/member_share/membershare.component */ "./src/app/components/vo/member_share/membershare.component.ts");
-/* harmony import */ var _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! ../components/cmrc/loan/loan */ "./src/app/components/cmrc/loan/loan.ts");
-/* harmony import */ var _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! ../components/public/products/cmrc-product.component */ "./src/app/components/public/products/cmrc-product.component.ts");
-/* harmony import */ var _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! ../components/cmrc/public-page/products/product.component */ "./src/app/components/cmrc/public-page/products/product.component.ts");
-/* harmony import */ var _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! ../components/district/mavimdetail/mavimlinks.component */ "./src/app/components/district/mavimdetail/mavimlinks.component.ts");
-/* harmony import */ var _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! ../components/district/products/mavimProduct.component */ "./src/app/components/district/products/mavimProduct.component.ts");
-/* harmony import */ var _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! ../components/vo/report/report.component */ "./src/app/components/vo/report/report.component.ts");
-/* harmony import */ var _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! ../components/vo/loanrepayment/loanrepayment.component */ "./src/app/components/vo/loanrepayment/loanrepayment.component.ts");
-/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! ../components/district/cmrcSL/cmrcSLDetails.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts");
+/* harmony import */ var _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! ../components/vo/member_share/membershare.component */ "./src/app/components/vo/member_share/membershare.component.ts");
+/* harmony import */ var _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! ../components/cmrc/loan/loan */ "./src/app/components/cmrc/loan/loan.ts");
+/* harmony import */ var _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! ../components/public/products/cmrc-product.component */ "./src/app/components/public/products/cmrc-product.component.ts");
+/* harmony import */ var _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! ../components/cmrc/public-page/products/product.component */ "./src/app/components/cmrc/public-page/products/product.component.ts");
+/* harmony import */ var _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! ../components/district/mavimdetail/mavimlinks.component */ "./src/app/components/district/mavimdetail/mavimlinks.component.ts");
+/* harmony import */ var _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! ../components/district/products/mavimProduct.component */ "./src/app/components/district/products/mavimProduct.component.ts");
+/* harmony import */ var _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! ../components/vo/report/report.component */ "./src/app/components/vo/report/report.component.ts");
+/* harmony import */ var _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! ../components/vo/loanrepayment/loanrepayment.component */ "./src/app/components/vo/loanrepayment/loanrepayment.component.ts");
 
 
 
@@ -31641,6 +30840,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// import { voGLDetailsComponent } from '../components/district/voSL/voSLDetails.Component';
 
 
 
@@ -31649,8 +30849,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
+// import { cmrcSLDetailsComponent } from '../components/district/cmrcSL/cmrcSLDetails.component';
 var publicroutes = [
     {
         path: '', component: _components_public_Public_Component__WEBPACK_IMPORTED_MODULE_4__["PublicComponent"], children: [
@@ -31662,7 +30861,7 @@ var publicroutes = [
             { path: 'login', component: _components_public_login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"] },
             { path: 'contact', component: _components_public_contact_contact_component__WEBPACK_IMPORTED_MODULE_65__["ContactComponent"] },
             { path: 'work', component: _components_public_work_work_component__WEBPACK_IMPORTED_MODULE_47__["WorkComponent"] },
-            { path: 'cmrcproduct', component: _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_96__["CMRCProductComponent"] }
+            { path: 'cmrcproduct', component: _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_95__["CMRCProductComponent"] }
         ]
         // path: '', component: PublicComponent, children: [
         //     { path: '', component: LoginComponent },
@@ -31691,7 +30890,7 @@ var publicroutes = [
             { path: 'fixdeposite', component: _components_vo_fix_deposite_fixdeposite_component__WEBPACK_IMPORTED_MODULE_8__["FixDepositeComponent"] },
             { path: 'loan', component: _components_vo_loan_loan_component__WEBPACK_IMPORTED_MODULE_9__["LoanComponent"] },
             { path: 'loanrepayment', component: _components_vo_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_11__["LoanRepaymentComponent"] },
-            { path: 'repayment', component: _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_101__["LoanRepaymentMenuComponent"] },
+            { path: 'repayment', component: _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_100__["LoanRepaymentMenuComponent"] },
             { path: 'vo_members', component: _components_vo_vo_members_vo_members_component__WEBPACK_IMPORTED_MODULE_20__["VOCMembersComponent"] },
             { path: 'sc_member/vo_members', component: _components_vo_vo_members_vo_members_component__WEBPACK_IMPORTED_MODULE_20__["VOCMembersComponent"] },
             { path: 'fund', component: _components_vo_fund_fund_component__WEBPACK_IMPORTED_MODULE_41__["VOFundComponent"] },
@@ -31702,8 +30901,8 @@ var publicroutes = [
             { path: 'AccTransaction', component: _components_vo_AccountTransaction_accounttransaction_component__WEBPACK_IMPORTED_MODULE_49__["VOViewAccountTransctionComponent"] },
             { path: 'SLEntry', component: _components_vo_ledgerentries_ledgerentries_component__WEBPACK_IMPORTED_MODULE_48__["SLEntryComponent"] },
             { path: 'Finance', component: _components_vo_finance_finance_component__WEBPACK_IMPORTED_MODULE_61__["VOFinanceComponent"] },
-            { path: 'membershare', component: _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_94__["MemberShareComponent"] },
-            { path: 'report', component: _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_100__["VoReportsComponent"] }
+            { path: 'membershare', component: _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_93__["MemberShareComponent"] },
+            { path: 'report', component: _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_99__["VoReportsComponent"] }
         ]
     },
     {
@@ -31759,10 +30958,10 @@ var publicroutes = [
             { path: 'PercentageOnIncome', component: _components_district_PercentageIncome_PercentageIncome_Component__WEBPACK_IMPORTED_MODULE_89__["PercentageOnIncome"] },
             { path: 'UpdateLoanRepayment', component: _components_district_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_91__["LoanUpdateRepaymentComponent"] },
             { path: 'UpdateFundRepayment', component: _components_district_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_92__["VOFundUpdateRepaymentComponent"] },
-            { path: 'cmrcSL', component: _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_102__["cmrcSLDetailsComponent"] },
-            { path: 'voSL', component: _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_93__["voGLDetailsComponent"] },
-            { path: 'mavimLinks', component: _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_98__["MavimLinksComponent"] },
-            { path: 'mavimproducts', component: _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_99__["MavimProductComponent"] }
+            // { path : 'cmrcSL', component: cmrcSLDetailsComponent },
+            // { path: 'voSL', component: voGLDetailsComponent },
+            { path: 'mavimLinks', component: _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_97__["MavimLinksComponent"] },
+            { path: 'mavimproducts', component: _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_98__["MavimProductComponent"] }
         ]
     },
     {
@@ -31770,7 +30969,7 @@ var publicroutes = [
             { path: '', component: _components_cmrc_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_16__["CMRCDashboardComponent"] },
             { path: 'dashboard', component: _components_cmrc_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_16__["CMRCDashboardComponent"] },
             { path: 'vo', component: _components_cmrc_vo_vo_component__WEBPACK_IMPORTED_MODULE_17__["VoComponent"] },
-            { path: 'cmrc_Loan', component: _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_95__["CmrcLoanComponent"] },
+            { path: 'cmrc_Loan', component: _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_94__["CmrcLoanComponent"] },
             { path: 'district', component: _components_cmrc_district_district_component__WEBPACK_IMPORTED_MODULE_19__["CmrcdistrictComponent"] },
             { path: 'fund', component: _components_cmrc_fund_fund_component__WEBPACK_IMPORTED_MODULE_22__["CMRCFundComponent"] },
             { path: 'fundRepayment', component: _components_cmrc_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_51__["CMRCFundRepaymentComponent"] },
@@ -31813,7 +31012,7 @@ var publicroutes = [
             { path: 'work', component: _components_cmrc_public_page_work_work_component__WEBPACK_IMPORTED_MODULE_86__["CmrcWorkComponent"] },
             { path: 'cmrcPhoto', component: _components_cmrc_public_page_photos_cmrc_photos_component__WEBPACK_IMPORTED_MODULE_87__["CMRCPublicPhotos"] },
             { path: 'training', component: _components_cmrc_public_page_training_training_component__WEBPACK_IMPORTED_MODULE_88__["CMRCTraining"] },
-            { path: 'product', component: _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_97__["ProductComponent"] }
+            { path: 'product', component: _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_96__["ProductComponent"] }
         ]
     }
 ];
