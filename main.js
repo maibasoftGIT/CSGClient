@@ -200,24 +200,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_dashboard_selector__WEBPACK_IMPORTED_MODULE_132__ = __webpack_require__(/*! ./utils/dashboard-selector */ "./src/app/utils/dashboard-selector.ts");
 /* harmony import */ var _components_district_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_133__ = __webpack_require__(/*! ./components/district/loan/loanrepayment.component */ "./src/app/components/district/loan/loanrepayment.component.ts");
 /* harmony import */ var _components_district_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_134__ = __webpack_require__(/*! ./components/district/fund/fundrepayment.component */ "./src/app/components/district/fund/fundrepayment.component.ts");
-/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_135__ = __webpack_require__(/*! ./components/district/cmrcSL/cmrcSLDetails.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts");
-/* harmony import */ var _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_136__ = __webpack_require__(/*! ./components/district/voSL/voSLDetails.Component */ "./src/app/components/district/voSL/voSLDetails.Component.ts");
-/* harmony import */ var _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_137__ = __webpack_require__(/*! ./components/cmrc/bifurcation/bifurcation.component */ "./src/app/components/cmrc/bifurcation/bifurcation.component.ts");
-/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_138__ = __webpack_require__(/*! ./components/district/cmrcSL/cmrcSLDetails.model.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.model.component.ts");
-/* harmony import */ var _components_district_voSL_voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_139__ = __webpack_require__(/*! ./components/district/voSL/voSLDetails.model.component */ "./src/app/components/district/voSL/voSLDetails.model.component.ts");
-/* harmony import */ var _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_140__ = __webpack_require__(/*! ./services/reports/reportConstants */ "./src/app/services/reports/reportConstants.ts");
-/* harmony import */ var _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_141__ = __webpack_require__(/*! ./components/cmrc/loan/loan */ "./src/app/components/cmrc/loan/loan.ts");
-/* harmony import */ var _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_142__ = __webpack_require__(/*! ./components/vo/member_share/membershare.component */ "./src/app/components/vo/member_share/membershare.component.ts");
-/* harmony import */ var _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_143__ = __webpack_require__(/*! ./environments/loaderMessage */ "./src/app/environments/loaderMessage.ts");
-/* harmony import */ var _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_144__ = __webpack_require__(/*! ./utils/available-amt.model */ "./src/app/utils/available-amt.model.ts");
-/* harmony import */ var _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_145__ = __webpack_require__(/*! ./components/public/products/cmrc-product.component */ "./src/app/components/public/products/cmrc-product.component.ts");
-/* harmony import */ var _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_146__ = __webpack_require__(/*! ./components/cmrc/public-page/products/product.component */ "./src/app/components/cmrc/public-page/products/product.component.ts");
-/* harmony import */ var _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_147__ = __webpack_require__(/*! ./components/district/mavimdetail/mavimlinks.component */ "./src/app/components/district/mavimdetail/mavimlinks.component.ts");
-/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_148__ = __webpack_require__(/*! angular2-lightbox */ "./node_modules/angular2-lightbox/index.js");
-/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_148___default = /*#__PURE__*/__webpack_require__.n(angular2_lightbox__WEBPACK_IMPORTED_MODULE_148__);
-/* harmony import */ var _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_149__ = __webpack_require__(/*! ./components/district/products/mavimProduct.component */ "./src/app/components/district/products/mavimProduct.component.ts");
-/* harmony import */ var _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_150__ = __webpack_require__(/*! ./components/vo/report/report.component */ "./src/app/components/vo/report/report.component.ts");
-/* harmony import */ var _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_151__ = __webpack_require__(/*! ./components/vo/loanrepayment/loanrepayment.component */ "./src/app/components/vo/loanrepayment/loanrepayment.component.ts");
+/* harmony import */ var _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_135__ = __webpack_require__(/*! ./components/district/voSL/voSLDetails.Component */ "./src/app/components/district/voSL/voSLDetails.Component.ts");
+/* harmony import */ var _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_136__ = __webpack_require__(/*! ./components/cmrc/bifurcation/bifurcation.component */ "./src/app/components/cmrc/bifurcation/bifurcation.component.ts");
+/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_137__ = __webpack_require__(/*! ./components/district/cmrcSL/cmrcSLDetails.model.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.model.component.ts");
+/* harmony import */ var _components_district_voSL_voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_138__ = __webpack_require__(/*! ./components/district/voSL/voSLDetails.model.component */ "./src/app/components/district/voSL/voSLDetails.model.component.ts");
+/* harmony import */ var _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_139__ = __webpack_require__(/*! ./services/reports/reportConstants */ "./src/app/services/reports/reportConstants.ts");
+/* harmony import */ var _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_140__ = __webpack_require__(/*! ./components/cmrc/loan/loan */ "./src/app/components/cmrc/loan/loan.ts");
+/* harmony import */ var _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_141__ = __webpack_require__(/*! ./components/vo/member_share/membershare.component */ "./src/app/components/vo/member_share/membershare.component.ts");
+/* harmony import */ var _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_142__ = __webpack_require__(/*! ./environments/loaderMessage */ "./src/app/environments/loaderMessage.ts");
+/* harmony import */ var _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_143__ = __webpack_require__(/*! ./utils/available-amt.model */ "./src/app/utils/available-amt.model.ts");
+/* harmony import */ var _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_144__ = __webpack_require__(/*! ./components/public/products/cmrc-product.component */ "./src/app/components/public/products/cmrc-product.component.ts");
+/* harmony import */ var _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_145__ = __webpack_require__(/*! ./components/cmrc/public-page/products/product.component */ "./src/app/components/cmrc/public-page/products/product.component.ts");
+/* harmony import */ var _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_146__ = __webpack_require__(/*! ./components/district/mavimdetail/mavimlinks.component */ "./src/app/components/district/mavimdetail/mavimlinks.component.ts");
+/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_147__ = __webpack_require__(/*! angular2-lightbox */ "./node_modules/angular2-lightbox/index.js");
+/* harmony import */ var angular2_lightbox__WEBPACK_IMPORTED_MODULE_147___default = /*#__PURE__*/__webpack_require__.n(angular2_lightbox__WEBPACK_IMPORTED_MODULE_147__);
+/* harmony import */ var _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_148__ = __webpack_require__(/*! ./components/district/products/mavimProduct.component */ "./src/app/components/district/products/mavimProduct.component.ts");
+/* harmony import */ var _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_149__ = __webpack_require__(/*! ./components/vo/report/report.component */ "./src/app/components/vo/report/report.component.ts");
+/* harmony import */ var _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_150__ = __webpack_require__(/*! ./components/vo/loanrepayment/loanrepayment.component */ "./src/app/components/vo/loanrepayment/loanrepayment.component.ts");
+/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_151__ = __webpack_require__(/*! ./components/district/cmrcSL/cmrcSLDetails.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts");
 
 
 
@@ -391,13 +391,13 @@ var AppModule = (function () {
                 _components_public_contact_contact_component__WEBPACK_IMPORTED_MODULE_85__["ContactComponent"],
                 _components_public_mavim_mavim_component__WEBPACK_IMPORTED_MODULE_63__["MavimComponent"],
                 _components_public_work_work_component__WEBPACK_IMPORTED_MODULE_64__["WorkComponent"],
-                _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_149__["MavimProductComponent"],
+                _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_148__["MavimProductComponent"],
                 //PublicPageProductComponent,
                 _components_vo_vo_members_vo_members_component__WEBPACK_IMPORTED_MODULE_30__["VOCMembersComponent"],
                 _components_vo_fix_deposite_fixdeposite_component__WEBPACK_IMPORTED_MODULE_9__["FixDepositeComponent"],
                 _components_vo_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["VoDashboardComponent"],
                 _components_vo_loan_loan_component__WEBPACK_IMPORTED_MODULE_12__["LoanComponent"],
-                _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_141__["CmrcLoanComponent"],
+                _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_140__["CmrcLoanComponent"],
                 _components_vo_shg_master_shg_master_component__WEBPACK_IMPORTED_MODULE_18__["ShgMasterComponent"],
                 _components_common_component__WEBPACK_IMPORTED_MODULE_16__["LoadingComponent"],
                 _components_common_component__WEBPACK_IMPORTED_MODULE_16__["MessageComponent"],
@@ -406,7 +406,7 @@ var AppModule = (function () {
                 _components_public_Public_Component__WEBPACK_IMPORTED_MODULE_14__["PublicComponent"],
                 _components_cmrc_public_page_photos_cmrc_photos_component__WEBPACK_IMPORTED_MODULE_117__["CMRCPublicPhotos"],
                 _components_vo_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_19__["LoanRepaymentComponent"],
-                _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_151__["LoanRepaymentMenuComponent"],
+                _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_150__["LoanRepaymentMenuComponent"],
                 _components_sc_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_20__["SCDashboardComponent"],
                 _components_cmrc_vo_vo_component__WEBPACK_IMPORTED_MODULE_34__["VoComponent"],
                 _components_sc_base_component__WEBPACK_IMPORTED_MODULE_21__["SCBaseComponent"],
@@ -468,7 +468,7 @@ var AppModule = (function () {
                 _components_district_member_member_component__WEBPACK_IMPORTED_MODULE_100__["DistrictMemberComponent"],
                 _components_cmrc_reports_memberreport_memberreport__WEBPACK_IMPORTED_MODULE_103__["MembeReports"],
                 _components_cmrc_reports_shg_Active_withdrawal_shg_Active_withdrawal_component__WEBPACK_IMPORTED_MODULE_104__["ActiveAndWithdrawlShgComponent"],
-                _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_137__["BifurCationComponent"],
+                _components_cmrc_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_136__["BifurCationComponent"],
                 _components_cmrc_public_page_bifurcation_bifurcation_component__WEBPACK_IMPORTED_MODULE_120__["PublicCMRCBifurCationComponent"],
                 _components_cmrc_public_page_news_news_component__WEBPACK_IMPORTED_MODULE_121__["NewsComponent"],
                 _components_cmrc_public_page_news_news_update_component__WEBPACK_IMPORTED_MODULE_122__["NewsUpdateComponent"],
@@ -487,13 +487,13 @@ var AppModule = (function () {
                 _components_district_PercentageIncome_PercentageIncome_Component__WEBPACK_IMPORTED_MODULE_128__["PercentageOnIncome"],
                 _components_district_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_133__["LoanUpdateRepaymentComponent"],
                 _components_district_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_134__["VOFundUpdateRepaymentComponent"],
-                _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_135__["cmrcSLDetailsComponent"],
-                _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_136__["voSLDetailsComponent"],
-                _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_142__["MemberShareComponent"],
-                _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_145__["CMRCProductComponent"],
-                _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_146__["ProductComponent"],
-                _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_147__["MavimLinksComponent"],
-                _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_150__["VoReportsComponent"]
+                _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_151__["cmrcSLDetailsComponent"],
+                _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_135__["voGLDetailsComponent"],
+                _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_141__["MemberShareComponent"],
+                _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_144__["CMRCProductComponent"],
+                _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_145__["ProductComponent"],
+                _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_146__["MavimLinksComponent"],
+                _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_149__["VoReportsComponent"]
             ],
             imports: [_angular_common__WEBPACK_IMPORTED_MODULE_22__["CommonModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["BrowserModule"],
@@ -502,21 +502,21 @@ var AppModule = (function () {
                 _routing_CSGRoutes__WEBPACK_IMPORTED_MODULE_15__["PublicRoutes"],
                 angular_datatables__WEBPACK_IMPORTED_MODULE_6__["DataTablesModule"],
                 ng2_datepicker__WEBPACK_IMPORTED_MODULE_76__["NgDatepickerModule"],
-                angular2_lightbox__WEBPACK_IMPORTED_MODULE_148__["LightboxModule"]
+                angular2_lightbox__WEBPACK_IMPORTED_MODULE_147__["LightboxModule"]
                 //Angular2ImageGalleryModule
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["App"]],
             providers: [_services_vo_services__WEBPACK_IMPORTED_MODULE_10__["VOService"],
-                _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_144__["AvailableAmountModel"],
+                _utils_available_amt_model__WEBPACK_IMPORTED_MODULE_143__["AvailableAmountModel"],
                 _services_common_service__WEBPACK_IMPORTED_MODULE_27__["CommonService"],
                 _services_public_service__WEBPACK_IMPORTED_MODULE_109__["PublicService"],
                 _services_cmrc_services__WEBPACK_IMPORTED_MODULE_25__["CMRCService"],
                 _components_district_cmrc_cmrcdetails_model_component__WEBPACK_IMPORTED_MODULE_105__["CmrcDetailsModel"],
-                _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_140__["ReportConstant"],
+                _services_reports_reportConstants__WEBPACK_IMPORTED_MODULE_139__["ReportConstant"],
                 _environments_access_token__WEBPACK_IMPORTED_MODULE_5__["AccessToken"],
                 _environments_GlobalVeriables__WEBPACK_IMPORTED_MODULE_31__["GlobalVariable"],
                 _environments_CommanMssage__WEBPACK_IMPORTED_MODULE_50__["CommonMessageComponent"],
-                _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_143__["LoaderMessageComponent"],
+                _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_142__["LoaderMessageComponent"],
                 _services_reports_exportpdf__WEBPACK_IMPORTED_MODULE_68__["ExportToPDF"],
                 _environments_language_config__WEBPACK_IMPORTED_MODULE_72__["LangulageConf"],
                 //   ExportToExcel,
@@ -541,8 +541,8 @@ var AppModule = (function () {
                 _components_district_member_member_model_component__WEBPACK_IMPORTED_MODULE_101__["DistrictMemberModel"],
                 _utils_dashboard_url_util__WEBPACK_IMPORTED_MODULE_131__["DashboardURLs"],
                 _utils_dashboard_selector__WEBPACK_IMPORTED_MODULE_132__["DashboardDataChoiceSelector"],
-                _components_district_cmrcSL_cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_138__["CmrcSlDetailsModel"],
-                _components_district_voSL_voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_139__["voSLDetailsModel"]
+                _components_district_cmrcSL_cmrcSLDetails_model_component__WEBPACK_IMPORTED_MODULE_137__["CmrcSlDetailsModel"],
+                _components_district_voSL_voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_138__["voSLDetailsModel"]
             ]
         })
     ], AppModule);
@@ -20252,12 +20252,12 @@ var DistrictShgMasterModel = (function () {
 /*!*******************************************************************!*\
   !*** ./src/app/components/district/voSL/voSLDetails.Component.ts ***!
   \*******************************************************************/
-/*! exports provided: voSLDetailsComponent */
+/*! exports provided: voGLDetailsComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "voSLDetailsComponent", function() { return voSLDetailsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "voGLDetailsComponent", function() { return voGLDetailsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/@angular/core */ "./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var _services_district_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/district.services */ "./src/app/services/district.services.ts");
@@ -20294,8 +20294,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var voSLDetailsComponent = (function () {
-    function voSLDetailsComponent(districtService, _router, lang, _access_token, _globalURL, _globalVariable, _commonService, _commonMessage, _loadingMsg, _voSLDetailsModel, titleService) {
+var voGLDetailsComponent = (function () {
+    function voGLDetailsComponent(districtService, _router, lang, _access_token, _globalURL, _globalVariable, _commonService, _commonMessage, _loadingMsg, _voSLDetailsModel, titleService) {
         this.districtService = districtService;
         this._router = _router;
         this.lang = lang;
@@ -20324,16 +20324,16 @@ var voSLDetailsComponent = (function () {
         };
         this.setTitle(_utils_constants_title_constants__WEBPACK_IMPORTED_MODULE_15__["TitleConstants"].DISTRICT_VO_SL_DETAILS);
     }
-    voSLDetailsComponent.prototype.ngOnInit = function () {
+    voGLDetailsComponent.prototype.ngOnInit = function () {
         this.getCMRCsKVP();
     };
-    voSLDetailsComponent.prototype.ngAfterViewInit = function () {
+    voGLDetailsComponent.prototype.ngAfterViewInit = function () {
         this.dtTrigger.next();
     };
-    voSLDetailsComponent.prototype.setTitle = function (newTitle) {
+    voGLDetailsComponent.prototype.setTitle = function (newTitle) {
         this.titleService.setTitle(newTitle);
     };
-    voSLDetailsComponent.prototype.getCMRCsKVP = function () {
+    voGLDetailsComponent.prototype.getCMRCsKVP = function () {
         var _this = this;
         debugger;
         this._globalURL.isLoading = true;
@@ -20361,7 +20361,7 @@ var voSLDetailsComponent = (function () {
             }, 5000);
         });
     };
-    voSLDetailsComponent.prototype.getVoByCmrcId = function (selectCmrc) {
+    voGLDetailsComponent.prototype.getVoByCmrcId = function (selectCmrc) {
         var _this = this;
         debugger;
         this._globalURL.isLoading = true;
@@ -20388,7 +20388,7 @@ var voSLDetailsComponent = (function () {
             }, 5000);
         });
     };
-    voSLDetailsComponent.prototype.getSLDetails = function (voId) {
+    voGLDetailsComponent.prototype.getSLDetails = function (voId) {
         var _this = this;
         debugger;
         this.districtService.get((this._globalURL.GET_CMRCS_SL_DETAILS + "?roleId=3" + "&id=" + voId), sessionStorage.getItem("access_token"))
@@ -20414,10 +20414,10 @@ var voSLDetailsComponent = (function () {
             }, 5000);
         });
     };
-    voSLDetailsComponent.prototype.saveRecord = function (selectedId) {
+    voGLDetailsComponent.prototype.saveRecord = function (selectedId) {
         this.selectedVOId = selectedId;
     };
-    voSLDetailsComponent.prototype.loadSLDetails = function (frDt, toDt) {
+    voGLDetailsComponent.prototype.loadSLDetails = function (frDt, toDt) {
         var _this = this;
         debugger;
         // this.lastFinanceYearOrFromDt = this._commonService.convertToDate(frDt);
@@ -20481,7 +20481,7 @@ var voSLDetailsComponent = (function () {
             _this._globalURL.isLoading = false;
         });
     };
-    voSLDetailsComponent.prototype.getSLEntriesDetails = function (isAllEntries) {
+    voGLDetailsComponent.prototype.getSLEntriesDetails = function (isAllEntries) {
         var _this = this;
         debugger;
         this.slEntriesDetails = null;
@@ -20510,13 +20510,13 @@ var voSLDetailsComponent = (function () {
         });
         this.reRenderDT();
     };
-    voSLDetailsComponent.prototype.setUpdatedValues = function (voSLDetail) {
+    voGLDetailsComponent.prototype.setUpdatedValues = function (voSLDetail) {
         debugger;
         this.convertToWords(voSLDetail.Amount);
         this._voSLDetailsModel = voSLDetail;
         this.slId = voSLDetail.Id;
     };
-    voSLDetailsComponent.prototype.confirmUpdate = function (data) {
+    voGLDetailsComponent.prototype.confirmUpdate = function (data) {
         var _this = this;
         debugger;
         var shareDetails = this._globalURL.UPDATE_SL_DETAILS + "?roleId=" + this._globalVariable.VORoleId + "&id=" + this.slId + "&transactionTypeId=23" + "&amount=" + data.Amount + "&t_date=" + data.TransactionDate + "&PaymentMode=" + data.PaymentMode + "&SLType=" + data.SLType;
@@ -20550,7 +20550,7 @@ var voSLDetailsComponent = (function () {
             }, 5000);
         });
     };
-    voSLDetailsComponent.prototype.getSelectedSLDetails = function (slId) {
+    voGLDetailsComponent.prototype.getSelectedSLDetails = function (slId) {
         var _this = this;
         debugger;
         // this.selectedSlId = slId;
@@ -20567,14 +20567,14 @@ var voSLDetailsComponent = (function () {
             console.log("UNable to get the SL details for selected SL, error - " + res);
         });
     };
-    voSLDetailsComponent.prototype.reRenderDT = function () {
+    voGLDetailsComponent.prototype.reRenderDT = function () {
         var _this = this;
         this.dtElement.dtInstance.then(function (dtInstance) {
             dtInstance.destroy();
             _this.dtTrigger.next();
         });
     };
-    voSLDetailsComponent.prototype.convertToWords = function (num) {
+    voGLDetailsComponent.prototype.convertToWords = function (num) {
         debugger;
         this.convertedWordsInEnglish = this._commonService.convertDigitToWordsInEnglish(num);
         this.convertedWordsInHindi = this._commonService.convertDigitToWordsInHindi(num);
@@ -20583,8 +20583,8 @@ var voSLDetailsComponent = (function () {
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_node_modules_angular_datatables__WEBPACK_IMPORTED_MODULE_10__["DataTableDirective"]),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _node_modules_angular_datatables__WEBPACK_IMPORTED_MODULE_10__["DataTableDirective"])
-    ], voSLDetailsComponent.prototype, "dtElement", void 0);
-    voSLDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    ], voGLDetailsComponent.prototype, "dtElement", void 0);
+    voGLDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_node_modules_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             templateUrl: '../voSL/voSLDetails.component.html',
             styleUrls: ['../../../components/app.css']
@@ -20600,8 +20600,8 @@ var voSLDetailsComponent = (function () {
             _environments_loaderMessage__WEBPACK_IMPORTED_MODULE_16__["LoaderMessageComponent"],
             _voSLDetails_model_component__WEBPACK_IMPORTED_MODULE_12__["voSLDetailsModel"],
             _node_modules_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__["Title"]])
-    ], voSLDetailsComponent);
-    return voSLDetailsComponent;
+    ], voGLDetailsComponent);
+    return voGLDetailsComponent;
 }());
 
 
@@ -31538,16 +31538,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/esm5/common.js");
 /* harmony import */ var _components_district_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! ../components/district/loan/loanrepayment.component */ "./src/app/components/district/loan/loanrepayment.component.ts");
 /* harmony import */ var _components_district_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! ../components/district/fund/fundrepayment.component */ "./src/app/components/district/fund/fundrepayment.component.ts");
-/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! ../components/district/cmrcSL/cmrcSLDetails.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts");
-/* harmony import */ var _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! ../components/district/voSL/voSLDetails.Component */ "./src/app/components/district/voSL/voSLDetails.Component.ts");
-/* harmony import */ var _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! ../components/vo/member_share/membershare.component */ "./src/app/components/vo/member_share/membershare.component.ts");
-/* harmony import */ var _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! ../components/cmrc/loan/loan */ "./src/app/components/cmrc/loan/loan.ts");
-/* harmony import */ var _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! ../components/public/products/cmrc-product.component */ "./src/app/components/public/products/cmrc-product.component.ts");
-/* harmony import */ var _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! ../components/cmrc/public-page/products/product.component */ "./src/app/components/cmrc/public-page/products/product.component.ts");
-/* harmony import */ var _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! ../components/district/mavimdetail/mavimlinks.component */ "./src/app/components/district/mavimdetail/mavimlinks.component.ts");
-/* harmony import */ var _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! ../components/district/products/mavimProduct.component */ "./src/app/components/district/products/mavimProduct.component.ts");
-/* harmony import */ var _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! ../components/vo/report/report.component */ "./src/app/components/vo/report/report.component.ts");
-/* harmony import */ var _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! ../components/vo/loanrepayment/loanrepayment.component */ "./src/app/components/vo/loanrepayment/loanrepayment.component.ts");
+/* harmony import */ var _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! ../components/district/voSL/voSLDetails.Component */ "./src/app/components/district/voSL/voSLDetails.Component.ts");
+/* harmony import */ var _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! ../components/vo/member_share/membershare.component */ "./src/app/components/vo/member_share/membershare.component.ts");
+/* harmony import */ var _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! ../components/cmrc/loan/loan */ "./src/app/components/cmrc/loan/loan.ts");
+/* harmony import */ var _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! ../components/public/products/cmrc-product.component */ "./src/app/components/public/products/cmrc-product.component.ts");
+/* harmony import */ var _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! ../components/cmrc/public-page/products/product.component */ "./src/app/components/cmrc/public-page/products/product.component.ts");
+/* harmony import */ var _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! ../components/district/mavimdetail/mavimlinks.component */ "./src/app/components/district/mavimdetail/mavimlinks.component.ts");
+/* harmony import */ var _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! ../components/district/products/mavimProduct.component */ "./src/app/components/district/products/mavimProduct.component.ts");
+/* harmony import */ var _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! ../components/vo/report/report.component */ "./src/app/components/vo/report/report.component.ts");
+/* harmony import */ var _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! ../components/vo/loanrepayment/loanrepayment.component */ "./src/app/components/vo/loanrepayment/loanrepayment.component.ts");
+/* harmony import */ var _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! ../components/district/cmrcSL/cmrcSLDetails.component */ "./src/app/components/district/cmrcSL/cmrcSLDetails.component.ts");
 
 
 
@@ -31662,7 +31662,7 @@ var publicroutes = [
             { path: 'login', component: _components_public_login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"] },
             { path: 'contact', component: _components_public_contact_contact_component__WEBPACK_IMPORTED_MODULE_65__["ContactComponent"] },
             { path: 'work', component: _components_public_work_work_component__WEBPACK_IMPORTED_MODULE_47__["WorkComponent"] },
-            { path: 'cmrcproduct', component: _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_97__["CMRCProductComponent"] }
+            { path: 'cmrcproduct', component: _components_public_products_cmrc_product_component__WEBPACK_IMPORTED_MODULE_96__["CMRCProductComponent"] }
         ]
         // path: '', component: PublicComponent, children: [
         //     { path: '', component: LoginComponent },
@@ -31691,7 +31691,7 @@ var publicroutes = [
             { path: 'fixdeposite', component: _components_vo_fix_deposite_fixdeposite_component__WEBPACK_IMPORTED_MODULE_8__["FixDepositeComponent"] },
             { path: 'loan', component: _components_vo_loan_loan_component__WEBPACK_IMPORTED_MODULE_9__["LoanComponent"] },
             { path: 'loanrepayment', component: _components_vo_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_11__["LoanRepaymentComponent"] },
-            { path: 'repayment', component: _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_102__["LoanRepaymentMenuComponent"] },
+            { path: 'repayment', component: _components_vo_loanrepayment_loanrepayment_component__WEBPACK_IMPORTED_MODULE_101__["LoanRepaymentMenuComponent"] },
             { path: 'vo_members', component: _components_vo_vo_members_vo_members_component__WEBPACK_IMPORTED_MODULE_20__["VOCMembersComponent"] },
             { path: 'sc_member/vo_members', component: _components_vo_vo_members_vo_members_component__WEBPACK_IMPORTED_MODULE_20__["VOCMembersComponent"] },
             { path: 'fund', component: _components_vo_fund_fund_component__WEBPACK_IMPORTED_MODULE_41__["VOFundComponent"] },
@@ -31702,8 +31702,8 @@ var publicroutes = [
             { path: 'AccTransaction', component: _components_vo_AccountTransaction_accounttransaction_component__WEBPACK_IMPORTED_MODULE_49__["VOViewAccountTransctionComponent"] },
             { path: 'SLEntry', component: _components_vo_ledgerentries_ledgerentries_component__WEBPACK_IMPORTED_MODULE_48__["SLEntryComponent"] },
             { path: 'Finance', component: _components_vo_finance_finance_component__WEBPACK_IMPORTED_MODULE_61__["VOFinanceComponent"] },
-            { path: 'membershare', component: _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_95__["MemberShareComponent"] },
-            { path: 'report', component: _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_101__["VoReportsComponent"] }
+            { path: 'membershare', component: _components_vo_member_share_membershare_component__WEBPACK_IMPORTED_MODULE_94__["MemberShareComponent"] },
+            { path: 'report', component: _components_vo_report_report_component__WEBPACK_IMPORTED_MODULE_100__["VoReportsComponent"] }
         ]
     },
     {
@@ -31759,10 +31759,10 @@ var publicroutes = [
             { path: 'PercentageOnIncome', component: _components_district_PercentageIncome_PercentageIncome_Component__WEBPACK_IMPORTED_MODULE_89__["PercentageOnIncome"] },
             { path: 'UpdateLoanRepayment', component: _components_district_loan_loanrepayment_component__WEBPACK_IMPORTED_MODULE_91__["LoanUpdateRepaymentComponent"] },
             { path: 'UpdateFundRepayment', component: _components_district_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_92__["VOFundUpdateRepaymentComponent"] },
-            { path: 'cmrcSL', component: _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_93__["cmrcSLDetailsComponent"] },
-            { path: 'voSL', component: _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_94__["voSLDetailsComponent"] },
-            { path: 'mavimLinks', component: _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_99__["MavimLinksComponent"] },
-            { path: 'mavimproducts', component: _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_100__["MavimProductComponent"] }
+            { path: 'cmrcSL', component: _components_district_cmrcSL_cmrcSLDetails_component__WEBPACK_IMPORTED_MODULE_102__["cmrcSLDetailsComponent"] },
+            { path: 'voSL', component: _components_district_voSL_voSLDetails_Component__WEBPACK_IMPORTED_MODULE_93__["voGLDetailsComponent"] },
+            { path: 'mavimLinks', component: _components_district_mavimdetail_mavimlinks_component__WEBPACK_IMPORTED_MODULE_98__["MavimLinksComponent"] },
+            { path: 'mavimproducts', component: _components_district_products_mavimProduct_component__WEBPACK_IMPORTED_MODULE_99__["MavimProductComponent"] }
         ]
     },
     {
@@ -31770,7 +31770,7 @@ var publicroutes = [
             { path: '', component: _components_cmrc_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_16__["CMRCDashboardComponent"] },
             { path: 'dashboard', component: _components_cmrc_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_16__["CMRCDashboardComponent"] },
             { path: 'vo', component: _components_cmrc_vo_vo_component__WEBPACK_IMPORTED_MODULE_17__["VoComponent"] },
-            { path: 'cmrc_Loan', component: _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_96__["CmrcLoanComponent"] },
+            { path: 'cmrc_Loan', component: _components_cmrc_loan_loan__WEBPACK_IMPORTED_MODULE_95__["CmrcLoanComponent"] },
             { path: 'district', component: _components_cmrc_district_district_component__WEBPACK_IMPORTED_MODULE_19__["CmrcdistrictComponent"] },
             { path: 'fund', component: _components_cmrc_fund_fund_component__WEBPACK_IMPORTED_MODULE_22__["CMRCFundComponent"] },
             { path: 'fundRepayment', component: _components_cmrc_fund_fundrepayment_component__WEBPACK_IMPORTED_MODULE_51__["CMRCFundRepaymentComponent"] },
@@ -31813,7 +31813,7 @@ var publicroutes = [
             { path: 'work', component: _components_cmrc_public_page_work_work_component__WEBPACK_IMPORTED_MODULE_86__["CmrcWorkComponent"] },
             { path: 'cmrcPhoto', component: _components_cmrc_public_page_photos_cmrc_photos_component__WEBPACK_IMPORTED_MODULE_87__["CMRCPublicPhotos"] },
             { path: 'training', component: _components_cmrc_public_page_training_training_component__WEBPACK_IMPORTED_MODULE_88__["CMRCTraining"] },
-            { path: 'product', component: _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_98__["ProductComponent"] }
+            { path: 'product', component: _components_cmrc_public_page_products_product_component__WEBPACK_IMPORTED_MODULE_97__["ProductComponent"] }
         ]
     }
 ];
