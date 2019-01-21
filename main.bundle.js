@@ -30300,6 +30300,11 @@ var GlobalAssets = (function () {
         this.GET_LOAN_TAKEN_MEMBER = this.BASE_URL + "/Loan/GetLoanTakenMemberCount?shgId=";
         this.GET_LOAN_TAKEN_SHG = this.BASE_URL + "/Loan/GetLoanTakenMemberCountCmrc?voId=";
         this.GET_SCHEMEWISE_DATA = this.BASE_URL + "/Dashboard/GetSchemeWiseSHGData";
+        this.GET_CASTWISE_DATA = this.BASE_URL + "/Dashboard/GetCastWiseMemberData";
+        this.GET_PURPOSEWISE_DATA = this.BASE_URL + "/Dashboard/GetLoanPurposeWiseDetaildata";
+        this.GET_AGEWISEDETAIL_DATA = this.BASE_URL + "/Dashboard/GetAgewiseMemberDetailData";
+        this.GET_MARTIALWISE_DETAIL_DATA = this.BASE_URL + "/Dashboard/GetMartialWiseDetailData";
+        this.GET_SHGAGE_DETAIL_DATA = this.BASE_URL + "/Dashboard/GetSHGAgeWiseDetail";
         //end
     }
     return GlobalAssets;
