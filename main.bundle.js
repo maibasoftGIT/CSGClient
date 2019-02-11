@@ -30617,8 +30617,8 @@ var GlobalAssets = (function () {
         //public environment: string = "azureProd";
         this.environment = "local";
         //this.environment = "local";
-        //this.environment = "azureProd";
-        this.environment = "azureuat";
+        this.environment = "azureProd";
+        //this.environment = "azureuat";
         if (this.environment === "local") {
             this.BASE_URL = "http://localhost:59611/api";
             this.TOKEN = "http://localhost:59611/Token";
