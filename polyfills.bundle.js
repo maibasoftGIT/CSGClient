@@ -45,7 +45,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 /** IE10 and IE11 requires the following for the Reflect API. */
-// import 'core-js/es6/reflect';
 /** Evergreen browsers require these. **/
 // Used for reflect-metadata in JIT. If you use AOT (and only Angular decorators), you can remove.
 
@@ -5117,7 +5116,7 @@ Zone.__load_patch('PromiseRejectionEvent', function (global, Zone, api) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("../../../../../src/polyfills.ts");
@@ -5125,5 +5124,5 @@ module.exports = __webpack_require__("../../../../../src/polyfills.ts");
 
 /***/ })
 
-},[4]);
+},[1]);
 //# sourceMappingURL=polyfills.bundle.js.map
